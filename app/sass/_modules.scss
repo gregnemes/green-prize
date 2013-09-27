@@ -1,0 +1,72 @@
+$top-bar-bg: black;
+$top-bar-height: 30px;
+
+$nav-height: $top-bar-height;
+
+$top-bar-font-size: 12px;
+
+.top-bar {
+    
+    @extend %cf;
+    position: fixed;
+
+    top: 0; left: 0;
+    width: 100%;
+    height: $top-bar-height;
+    min-width: 1000px;
+    padding: 10px;
+    font-size: $top-bar-font-size;
+
+    background: $top-bar-bg;
+    z-index: 1;
+    
+
+    a {
+        text-decoration: none;
+        display: block;
+    }
+    
+    > a {
+        width: 18%;
+        float: left;
+        font-size: 40px;
+        letter-spacing: 10px;
+        line-height: $top-bar-height - 10px;
+    }
+
+    nav {
+        float: left;
+        width: 80%;
+        height: $top-bar-height - 10px;
+    }
+}
+
+
+nav[role='navigation'] {
+    
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    > ul > li {
+        width: ( 100 / 5 ) * 1%;
+        display: inline-block;
+        
+        > a {
+            height: $nav-height;
+            line-height: $nav-height;
+
+            color: white;
+            font-size: em-calc( 16px );
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+    
+    .sub-nav {
+        position: absolute;
+        display: none;
+    }
+}

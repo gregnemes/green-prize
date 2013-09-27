@@ -1,0 +1,57 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-width: 1000px;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    
+    > section {
+        padding: 100px 0 200px;
+    }
+}
+
+
+.content-area {
+    @extend %cf;
+    width: $content-area-width;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.fifty {
+    float: left;
+    width: 50%;
+}
+
+.canvas-row {
+    background: #fff;
+}
+
+
+[class*='squeeze-'] {
+    width: 50%;
+}
+
+.squeeze-right {
+    float: right;
+
+    .alignleft {
+        margin-left: -100%;
+    }
+
+}
+
+.squeeze-left {
+    float: left;
+
+    .alignright {
+        margin-right: -100%;
+    }
+}

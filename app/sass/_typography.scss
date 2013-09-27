@@ -1,0 +1,63 @@
+// =Base
+$base-line-height: 1.5;
+
+// =Headers 
+$header-font-family: sans-serif;
+
+$h1-size: em-calc( 38px );
+$h2-size: em-calc( 32px );
+$h3-size: em-calc( 28px );
+$h4-size: em-calc( 21px );
+$h5-size: em-calc( $base-font-size );
+$h6-size: em-calc( 14px );
+
+
+//= Paragraphs
+$p-line-height: 1.5;
+$txt-margin: 25px;
+
+body {
+    font-size: $base-font-size;
+    font-family: $base-font-family;
+    line-height: $base-line-height;
+}
+
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0 0 $txt-margin;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $header-font-family;
+}
+
+h1 {
+    font-size: $h1-size;
+}
+
+h2 {
+    font-size: $h2-size;
+}
+
+h3 {
+    font-size: $h3-size;
+}
+
+h4 {
+    font-size: $h4-size;
+}
+
+h5 {
+    font-size: $h5-size;
+}
+
+h6 {
+    font-size: $h6-size;
+}
+
+blockquote,
+textarea,
+p {
+    line-height: $base-line-height;
+}
+

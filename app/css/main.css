@@ -1,0 +1,382 @@
+/* Clearfix */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_helpers\.scss}line{font-family:\000034}}
+.top-bar, .content-area {
+  *zoom: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+.top-bar:after, .content-area:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Align */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_helpers\.scss}line{font-family:\000039}}
+.alignright {
+  float: right;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_helpers\.scss}line{font-family:\0000313}}
+.alignleft {
+  float: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000317}}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000322}}
+html {
+  line-height: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000324}}
+ol, ul {
+  list-style: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000326}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000328}}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000330}}
+q, blockquote {
+  quotes: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003103}}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000332}}
+a img {
+  border: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003116}}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_base\.scss}line{font-family:\000033}}
+* {
+  @incldue box-sizing( border-box );
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_typography\.scss}line{font-family:\0000319}}
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_typography\.scss}line{font-family:\0000326}}
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0 0 25px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_typography\.scss}line{font-family:\0000330}}
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_typography\.scss}line{font-family:\0000334}}
+h1 {
+  font-size: 2.375em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_typography\.scss}line{font-family:\0000338}}
+h2 {
+  font-size: 2em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_typography\.scss}line{font-family:\0000342}}
+h3 {
+  font-size: 1.75em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_typography\.scss}line{font-family:\0000346}}
+h4 {
+  font-size: 1.3125em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_typography\.scss}line{font-family:\0000350}}
+h5 {
+  font-size: 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_typography\.scss}line{font-family:\0000354}}
+h6 {
+  font-size: 0.875em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_typography\.scss}line{font-family:\0000360}}
+blockquote,
+textarea,
+p {
+  line-height: 1.5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_media\.scss}line{font-family:\0000313}}
+figure.alignleft,
+img.alignleft {
+  margin-right: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_media\.scss}line{font-family:\0000317}}
+figure.alignright,
+img.alignright {
+  margin-left: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_media\.scss}line{font-family:\0000323}}
+figure figcaption {
+  width: 240px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_media\.scss}line{font-family:\0000329}}
+img {
+  border: 0;
+  max-width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_media\.scss}line{font-family:\0000335}}
+.caption,
+figcaption {
+  border-top: 1px solid black;
+  font-size: 0.75em;
+  margin: 20px 0;
+  padding-top: 10px;
+  width: 280px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_media\.scss}line{font-family:\0000345}}
+.video {
+  clear: both;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+  margin-bottom: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_media\.scss}line{font-family:\0000353}}
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_modules\.scss}line{font-family:\000038}}
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  min-width: 1000px;
+  padding: 10px;
+  font-size: 12px;
+  background: black;
+  z-index: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_modules\.scss}line{font-family:\0000324}}
+.top-bar a {
+  text-decoration: none;
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_modules\.scss}line{font-family:\0000329}}
+.top-bar > a {
+  width: 18%;
+  float: left;
+  font-size: 40px;
+  letter-spacing: 10px;
+  line-height: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_modules\.scss}line{font-family:\0000337}}
+.top-bar nav {
+  float: left;
+  width: 80%;
+  height: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_modules\.scss}line{font-family:\0000347}}
+nav[role='navigation'] ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_modules\.scss}line{font-family:\0000353}}
+nav[role='navigation'] > ul > li {
+  width: 20%;
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_modules\.scss}line{font-family:\0000357}}
+nav[role='navigation'] > ul > li > a {
+  height: 30px;
+  line-height: 30px;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_modules\.scss}line{font-family:\0000368}}
+nav[role='navigation'] .sub-nav {
+  position: absolute;
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_layout\.scss}line{font-family:\000031}}
+html {
+  height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_layout\.scss}line{font-family:\000035}}
+body {
+  min-width: 1000px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_layout\.scss}line{font-family:\000039}}
+.wrap {
+  min-height: 100%;
+  height: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_layout\.scss}line{font-family:\0000313}}
+.wrap > section {
+  padding: 100px 0 200px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_layout\.scss}line{font-family:\0000319}}
+.content-area {
+  width: 680px;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_layout\.scss}line{font-family:\0000328}}
+.fifty {
+  float: left;
+  width: 50%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_layout\.scss}line{font-family:\0000333}}
+.canvas-row {
+  background: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_layout\.scss}line{font-family:\0000338}}
+[class*='squeeze-'] {
+  width: 50%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_layout\.scss}line{font-family:\0000342}}
+.squeeze-right {
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_layout\.scss}line{font-family:\0000345}}
+.squeeze-right .alignleft {
+  margin-left: -100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_layout\.scss}line{font-family:\0000351}}
+.squeeze-left {
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_layout\.scss}line{font-family:\0000354}}
+.squeeze-left .alignright {
+  margin-right: -100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_medellin\.scss}line{font-family:\000031}}
+#medellin-intro {
+  background-image: url(http://placehold.it/1400x800);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 500px;
+  padding-top: 200px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_medellin\.scss}line{font-family:\0000310}}
+#medellin-intro aside {
+  padding-left: 50%;
+  font-size: 1.125em;
+  line-height: 1.5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_medellin\.scss}line{font-family:\0000318}}
+#medellin-intro-2 {
+  background: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_medellin\.scss}line{font-family:\0000322}}
+#medellin-intro-2 blockquote {
+  font-size: 1.5em;
+  line-height: 1.5;
+  color: #a8a8a8;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_medellin\.scss}line{font-family:\0000327}}
+#medellin-intro-2 blockquote:before {
+  content: "“";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_medellin\.scss}line{font-family:\0000330}}
+#medellin-intro-2 blockquote:after {
+  content: "”";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_medellin\.scss}line{font-family:\0000335}}
+#medellin-intro-2 figure {
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_medellin\.scss}line{font-family:\0000338}}
+#medellin-intro-2 figure figcaption {
+  min-height: 180px;
+  position: absolute;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_medellin\.scss}line{font-family:\0000345}}
+#medellin-intro-2 footer {
+  margin-top: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_medellin\.scss}line{font-family:\0000349}}
+#medellin-intro-2 article {
+  margin-bottom: 50px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_medellin\.scss}line{font-family:\0000359}}
+#medellin-intro-3 {
+  background-image: url('/images/medellin-map.jpg?1380317688');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-attachment: fixed;
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/_medellin\.scss}line{font-family:\0000363}}
+#medellin-intro-3 .content-area {
+  padding-bottom: 40px;
+}

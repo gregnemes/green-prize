@@ -1,0 +1,66 @@
+#medellin-intro {
+    background-image: url(http://placehold.it/1400x800);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    height: 500px;
+    padding-top: 200px;
+
+    aside {
+        padding-left: 50%;
+        font-size: em-calc(18px);
+        line-height: 1.5;
+    }
+
+}
+
+#medellin-intro-2 {
+    background: #fff;
+    
+    
+    blockquote {
+        font-size: em-calc(24px);
+        line-height: 1.5;
+        color: #a8a8a8;
+
+        &:before {
+            content: "“";
+        }
+        &:after {
+            content: "”";
+        }
+    }
+    
+    figure {
+        position: relative;
+
+        figcaption {
+            min-height: 180px;
+            position: absolute;
+        }
+    }
+
+
+    footer {
+        margin-top: 20px;
+    }
+    
+    article {
+        margin-bottom: 50px;
+    }
+
+}
+
+
+#medellin-video { }
+
+
+#medellin-intro-3 {
+    @include bg( "medellin-map.jpg", $position: 0 0 );
+    color: white;
+
+    .content-area {
+        padding-bottom: 40px;
+    }
+}

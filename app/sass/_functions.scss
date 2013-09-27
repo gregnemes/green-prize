@@ -1,0 +1,3 @@
+@function em-calc( $size: $base-font-size ) {
+    @return ( $size / $base-font-size ) * 1em;
+}

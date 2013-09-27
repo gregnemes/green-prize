@@ -1,0 +1,23 @@
+@import "compass/utilities/general/clearfix";
+
+@mixin cf{
+    @include pie-clearfix;
+}
+
+
+@mixin bg( $image, $repeat: no-repeat, $position: top center, $attachment: fixed ) {
+    
+    background-image: image-url( $image );
+
+    @if $repeat {
+        background-repeat: $repeat;
+    }
+
+    @if $position {
+        background-position: $position;
+    }
+
+    @if $attachment {
+        background-attachment: $attachment;
+    }
+}
