@@ -1,15 +1,13 @@
 $image-margin: 20px;
 
-
 $caption-border: 1px solid black;
-$caption-font-size: em-calc( 12px );
+$caption-font-size: em-calc( 13px );
 $caption-margin: 20px;
 $caption-padding: 10px;
 
 figure,
 img {
     
-
     &.alignleft {
         margin-right: $image-margin;
     }
@@ -17,6 +15,12 @@ img {
     &.alignright {
         margin-left: $image-margin;
     }
+
+    &.alignleft,
+    &.alignright {
+        margin-top: $image-margin;
+    }
+
 }
 
 figure {

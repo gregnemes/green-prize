@@ -8,7 +8,6 @@
     padding-top: 200px;
 
     aside {
-        padding-left: 50%;
         font-size: em-calc(18px);
         line-height: 1.5;
     }
@@ -18,19 +17,6 @@
 #medellin-intro-2 {
     background: #fff;
     
-    
-    blockquote {
-        font-size: em-calc(24px);
-        line-height: 1.5;
-        color: #a8a8a8;
-
-        &:before {
-            content: "“";
-        }
-        &:after {
-            content: "”";
-        }
-    }
     
     figure {
         position: relative;
@@ -64,3 +50,42 @@
         padding-bottom: 40px;
     }
 }
+
+#medellin-intro-5 {
+    height: 500px;
+    background: url( 'http://placehold.it/1400x800' ) 0 0 no-repeat;
+    color: white;
+    font-size: em-calc(28px);
+}
+
+
+#map {
+    background: #666;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#interactive-map {
+    
+    @include bg( "medellin-interactive-map.jpg", $position: center center, $attachment: scroll );
+
+    width: 566px;
+    height: 428px;
+    
+    margin-left: -181px;
+}   
+
+    #areas {
+        display: none;
+    }
+    
+    #green-line {
+        stroke-dasharray: 360px;
+        stroke-dashoffset: -360px;
+    }
+
+#interactive-graph {
+    background: #fff;
+    min-height: 240px;
+}
+#interactive-content {}

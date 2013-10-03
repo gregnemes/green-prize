@@ -1,3 +1,4 @@
+$top-bar-font-family: "Flama", #{$font-fallback};
 $top-bar-bg: black;
 $top-bar-height: 30px;
 
@@ -15,8 +16,11 @@ $top-bar-font-size: 12px;
     height: $top-bar-height;
     min-width: 1000px;
     padding: 10px;
-    font-size: $top-bar-font-size;
-
+    font: {
+        size: $top-bar-font-size;
+        family: $top-bar-font-family;
+    };
+    
     background: $top-bar-bg;
     z-index: 1;
     

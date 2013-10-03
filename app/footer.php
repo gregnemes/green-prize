@@ -15,6 +15,7 @@
 
         <!-- build:js scripts/main.js -->
         <script src="bower_components/jquery/jquery.js"></script>
+        <script src="scripts/d3.v3.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 </body>

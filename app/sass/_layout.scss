@@ -1,3 +1,7 @@
+@import "compass/css3/box-sizing";
+@import "grid";
+
+
 html {
     height: 100%;
 }
@@ -7,6 +11,8 @@ body {
 }
 
 .wrap {
+    @extend %sizing;
+
     min-height: 100%;
     height: auto;
     
@@ -15,43 +21,12 @@ body {
     }
 }
 
-
-.content-area {
-    @extend %cf;
-    width: $content-area-width;
-    margin: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-
-.fifty {
-    float: left;
-    width: 50%;
-}
-
 .canvas-row {
     background: #fff;
-}
-
-
-[class*='squeeze-'] {
-    width: 50%;
-}
-
-.squeeze-right {
-    float: right;
-
-    .alignleft {
-        margin-left: -100%;
+    
+    &.passive {
+        background: rgba( black, .45 );
     }
 
 }
 
-.squeeze-left {
-    float: left;
-
-    .alignright {
-        margin-right: -100%;
-    }
-}

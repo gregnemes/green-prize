@@ -21,3 +21,15 @@
         background-attachment: $attachment;
     }
 }
+
+/* =Font Embed */
+@mixin face( $name, $src, $weight: normal, $style: normal, $eot: true ) {
+    
+    $eotFont: false !default;
+
+    @if $eot {
+        $eotFont: "#{$src}.eot";
+    } 
+
+    @include font-face( $name, font-files( "#{$src}.woff", "#{$src}.svg" ), $eot: $eotFont, $weight: $weight, $style: $style );
+}

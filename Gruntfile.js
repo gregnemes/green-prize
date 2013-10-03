@@ -55,7 +55,8 @@ module.exports = function (grunt) {
                 httpImagesPath: '/images',
                 httpGeneratedImagesPath: '/images/generated',
                 httpFontsPath: '/css/fonts',
-                relativeAssets: false
+                relativeAssets: false,
+                require: 'compass'
             },
             dist: {
                 options: {

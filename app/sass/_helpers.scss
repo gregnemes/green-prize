@@ -5,6 +5,16 @@
     @include cf;
 }
 
+.cf {
+    @extend %cf;
+}
+
+
+%sizing {
+    @include box-sizing( border-box );
+}
+
+
 /* Align */
 .alignright {
     float: right;
