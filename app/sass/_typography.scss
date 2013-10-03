@@ -1,8 +1,8 @@
 // =Base
-$base-line-height: 1.5;
+$base-line-height: 1.6;
 
 // =Headers 
-$header-font-family: sans-serif;
+$header-font-family: $base-font-family;
 
 $h1-size: em-calc( 38px );
 $h2-size: em-calc( 32px );
@@ -11,20 +11,39 @@ $h4-size: em-calc( 21px );
 $h5-size: em-calc( $base-font-size );
 $h6-size: em-calc( 14px );
 
-
 //= Paragraphs
 $p-line-height: 1.5;
 $txt-margin: 25px;
+
+//= Intro
+$large-intro-font-size: 20px;
+$large-intro-line-height: ( 30 / strip-unit( $large-intro-font-size ) );
+
+//= Callout and blockquote
+$callout-font-family: "Flama", $font-fallback;
+$callout-font-size: 34px;
+$callout-line-height: ( 48 / strip-unit( $callout-font-size ) );
+$callout-txt-color: #a8a8a8;
+
+
+html {
+    -webkit-font-smoothing: antialiased;
+}
 
 body {
     font-size: $base-font-size;
     font-family: $base-font-family;
     line-height: $base-line-height;
+    font-weight: normal;
 }
 
 
 h1, h2, h3, h4, h5, h6, p {
     margin: 0 0 $txt-margin;
+}
+
+p {
+    margin-top: $txt-margin;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -47,17 +66,72 @@ h4 {
     font-size: $h4-size;
 }
 
-h5 {
+h5,
+.heading {
     font-size: $h5-size;
+    font-weight: 700;
 }
 
 h6 {
     font-size: $h6-size;
 }
 
-blockquote,
 textarea,
-p {
+p,
+.callout {
     line-height: $base-line-height;
 }
 
+
+strong {
+    font-weight: 600;
+}
+
+
+blockquote,
+.callout {
+    
+    color: $callout-txt-color;
+
+    font: {
+        family: $callout-font-family;
+        weight: normal;
+    };
+    
+}
+
+blockquote {
+    quotes: "\201C""\201D""\2018""\2019";
+    position: relative;
+
+    &:before {
+          content: open-quote;
+          position: absolute;
+          left: -0.5em;
+    }
+
+    &:after {
+        content: close-quote;
+    }
+
+}
+
+
+.callout {
+    font-size: em-calc( $callout-font-size );
+    line-height: $callout-line-height;
+}
+
+.attribution {
+
+}
+
+.large-intro-text {
+    font-size: em-calc( $large-intro-font-size );
+    line-height: $large-intro-line-height;
+    
+    &.map-intro {
+        color: blue;
+    }
+
+}
