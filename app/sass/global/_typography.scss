@@ -25,7 +25,6 @@ $callout-font-size: 34px;
 $callout-line-height: ( 48 / strip-unit( $callout-font-size ) );
 $callout-txt-color: #a8a8a8;
 
-
 html {
     -webkit-font-smoothing: antialiased;
 }
@@ -134,4 +133,8 @@ blockquote {
         color: blue;
     }
 
+}
+
+.txt-highlight {
+    color: $txt-highlight;
 }

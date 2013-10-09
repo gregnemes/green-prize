@@ -1,35 +1,7 @@
-@import "compass/utilities/general/clearfix";
+@import "bg";
+@import "clearfix";
+@import "face";
+@import "image-replace";
 
-@mixin cf{
-    @include pie-clearfix;
-}
 
 
-@mixin bg( $image, $repeat: no-repeat, $position: top center, $attachment: fixed ) {
-    
-    background-image: image-url( $image );
-
-    @if $repeat {
-        background-repeat: $repeat;
-    }
-
-    @if $position {
-        background-position: $position;
-    }
-
-    @if $attachment {
-        background-attachment: $attachment;
-    }
-}
-
-/* =Font Embed */
-@mixin face( $name, $src, $weight: normal, $style: normal, $eot: true ) {
-    
-    $eotFont: false !default;
-
-    @if $eot {
-        $eotFont: "#{$src}.eot";
-    } 
-
-    @include font-face( $name, font-files( "#{$src}.woff", "#{$src}.svg" ), $eot: $eotFont, $weight: $weight, $style: $style );
-}

@@ -1,8 +1,6 @@
 #medellin-intro {
-    background-image: url(http://placehold.it/1400x800);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+
+    @include bg( "medellin-intro.jpg", $position: 0 0, $repeat: no-repeat );
     
     height: 500px;
     padding-top: 200px;
@@ -17,17 +15,6 @@
 #medellin-intro-2 {
     background: #fff;
     
-    
-    figure {
-        position: relative;
-
-        figcaption {
-            min-height: 180px;
-            position: absolute;
-        }
-    }
-
-
     footer {
         margin-top: 20px;
     }
@@ -44,6 +31,8 @@
 
 #medellin-intro-3 {
     @include bg( "medellin-map.jpg", $position: 0 0 );
+    background-size: cover;
+
     color: white;
 
     .content-area {
@@ -52,8 +41,13 @@
 }
 
 #medellin-intro-5 {
-    height: 500px;
-    background: url( 'http://placehold.it/1400x800' ) 0 0 no-repeat;
+    
+    
+    padding-top: 200px;
+
+    @include bg( "medellin-intro-5.jpg", $position: center center );
+    background-size: cover;
+
     color: white;
     font-size: em-calc(28px);
 }
@@ -75,10 +69,6 @@
     margin-left: -181px;
 }   
 
-    #areas {
-        display: none;
-    }
-    
     #green-line {
         stroke-dasharray: 360px;
         stroke-dashoffset: -360px;
@@ -86,6 +76,72 @@
 
 #interactive-graph {
     background: #fff;
+    
+    padding-left: 181px;
+    margin-left: -181px;
+
     min-height: 240px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .button-group {
+        
+        font-size: em-calc( 12px );
+
+        li {
+            &:nth-child(1) {
+                width: 146px;
+            }
+            &:nth-child(2) {
+                
+            }
+            &:nth-child(3) {
+                width: 140px;
+            }   
+        }
+    }
 }
-#interactive-content {}
+
+#locations {
+    
+    circle {
+        cursor: pointer;
+        @include transform( scale( 1 ) );
+        @include transform-origin( 50% );
+        
+        &.active,
+        &:hover {
+            fill: #000;
+            @include transform( scale( 1.4 ) );
+        }
+    }
+}
+
+
+.js #location-content {
+
+    padding-top: 80px;
+    
+    color: white;
+
+    > div {
+        display: none;
+    }
+
+}
+
+
+#map-intro {
+
+    aside {
+        @include transition( color .5s linear );
+    }
+
+    &.intro-active {
+        aside {
+            color: $txt-highlight;
+        }
+    }
+
+}
+

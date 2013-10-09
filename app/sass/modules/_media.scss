@@ -5,6 +5,11 @@ $caption-font-size: em-calc( 13px );
 $caption-margin: 20px;
 $caption-padding: 10px;
 
+
+figure {
+    position: relative;
+}
+
 figure,
 img {
     
@@ -22,13 +27,6 @@ img {
     }
 
 }
-
-figure {
-    figcaption {
-        width: 240px;
-    }
-}
-
 
 img {
     border: 0;
@@ -57,10 +55,15 @@ figcaption {
     padding-top: $caption-padding;
 
     width: 280px;
+
+    &.out-of-flow {
+        min-height: 180px;
+        position: absolute;
+    }
 }
 
 
-.video {
+body .video {
     clear: both;
     position: relative;
     padding-bottom: 56.25%;

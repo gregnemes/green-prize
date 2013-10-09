@@ -63,7 +63,7 @@
 
 
 
-// =Pull and Push
+// =Pull, Push, Prefix and Postfix
 @for $col from 1 through $total-columns {
     
     .push-#{$col} {
@@ -81,6 +81,14 @@
 
     .push-flow-#{$col} {
         margin-right: -( column($col ) );
+    }
+
+    .prefix-#{$col} {
+        padding-left: column($col);
+    }
+
+    .postfix-#{$col} {
+        padding-right: column( $col );
     }
 
 }

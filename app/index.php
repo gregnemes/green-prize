@@ -1,7 +1,7 @@
 <?php require 'header.php'; ?>
 
 <section id="home">
-    <article>
+    <article class="content-area">
         <header>The Veronica Rudge Green Prize in Urban Design</header>
         <section>
             <header>

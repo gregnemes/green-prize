@@ -1,0 +1,17 @@
+
+#porto-intro {
+    @include bg( "porto/intro-image.jpg", $position: top center );
+
+    color: white;
+}
+
+
+#naw-first {
+    @include bg( "porto/naw-bg.jpg", $position: top center, $attachment: scroll );
+    background-size: cover;   
+}
+
+#naw-second {
+    @include bg( "porto/naw-second-bg.jpg", $position: top left, $attachment: scroll );
+}
+

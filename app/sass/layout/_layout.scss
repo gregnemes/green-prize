@@ -8,6 +8,7 @@ html {
 
 body {
     min-width: 1000px;
+    padding-top: $top-bar-height + ($top-bar-padding * 2);
 }
 
 .wrap {
@@ -25,8 +26,41 @@ body {
     background: #fff;
     
     &.passive {
-        background: rgba( black, .45 );
+        background: rgba( black, .65 );
+    }
+}
+
+.over-dark {
+    color: white;
+    background-color: #666;
+}
+
+.over-light {
+    background-color: white;
+}
+
+
+
+// =Breathing room
+
+@each $breath in 20, 40, 60, 80, 100, 120, 140, 160, 180, 200 {
+    
+    .breath-top-#{$breath} {
+        margin-top: $breath * 1px;
+    }
+
+    .breath-bottom-#{$breath} {
+        margin-bottom: $breath * 1px;
+    }
+    
+
+    .push-top-#{$breath} {
+        padding-top: $breath * 1px;
+    }
+    
+
+    .push-bottom-#{$breath} {
+        padding-bottom: $breath * 1px;
     }
 
 }
-

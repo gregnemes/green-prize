@@ -1,15 +1,13 @@
 @import "compass/css3";
 
 @import "variables";
-@import "functions";
-@import "mixins";
-@import "fonts";
-@import "helpers";
-@import "base";
-@import "typography";
-@import "media";
-@import "modules";
-@import "layout";
-@import "medellin";
+
+@import "functions/all";
+@import "mixins/all";
+
+@import "global/all";
+@import "modules/all";
+
+@import "layout/all";
 
 
