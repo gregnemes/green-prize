@@ -74,3 +74,37 @@ nav[role='navigation'] {
         display: none;
     }
 }
+
+
+
+
+
+// =Buttons
+.button-group {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    li {
+        display: inline-block;
+    }
+    
+}
+
+
+button,
+.button {
+
+    display: block;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none;
+    background: #a8a8a8;
+    color: #000;
+
+}
+
+
+
+
+

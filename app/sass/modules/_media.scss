@@ -35,6 +35,20 @@ img {
     max-width: 100%;
 }
 
+
+figure,
+img {
+    &.big-border,
+    &.border {
+        border: 1px solid white;
+    }
+
+    &.big-border {
+        border-width: 10px;
+    }
+}
+
+
 .caption,
 figcaption {
     border-top: $caption-border;

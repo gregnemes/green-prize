@@ -11,20 +11,20 @@
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css(.tmp) css/main.css -->
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="/css/main.css">
         <!-- endbuild -->
         <!-- build:js scripts/vendor/modernizr.js -->
-        <script src="bower_components/modernizr/modernizr.js"></script>
+        <script src="/bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
     </head>
     <body>
         <div class="wrap">
             <div class="top-bar">
-                <a href="/" title="Back to Home">[]</a>
+                <a href="/" title="Back to Home">The Veronica Rudge Green Prize in Urban Design</a>
                 <nav role="navigation">
                     <ul>
                         <li>
-                            <a href="#porto">Porto</a>
+                            <a href="/porto">Porto</a>
                             <ul class="sub-nav">
                                 <li><a href="#introduction">Introduction</a></li>
                                 <li><a href="#timeline">Timeline</a></li>
@@ -33,7 +33,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="medellin.php">Medellin</a>
+                            <a href="/medellin">Medellin</a>
                             <ul class="sub-nav">
                                 <li><a href="#introduction">Introduction</a></li>
                                 <li><a href="#timeline">Timeline</a></li>
@@ -42,13 +42,13 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#about-the-prize">About the Prize</a>
+                            <a href="#about">About the Prize</a>
                             <ul class="sub-nav">
                                 <li><a href="#jury">Jury</a></li>
                                 <li><a href="#history">History</a></li>
                             </ul>
                         </li>
-                        <li><a href="#video">Video</a></li>
+                        <li><a href="#videos">Video</a></li>
                     </ul>
                 </nav>
             </div>
