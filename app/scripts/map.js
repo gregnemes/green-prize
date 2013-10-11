@@ -1,9 +1,6 @@
 'use strict';
 
-(function(window, undefined ) {
-
-
-    var App = window.App;
+(function(window, App, undefined ) {
 
 
     App.UI.Map = (function($, d3, Utils){
@@ -120,4 +117,4 @@
 
 
 
-})(window);
+})(window, window.App );

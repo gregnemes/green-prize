@@ -21,27 +21,27 @@
         <div class="wrap">
             <div class="top-bar">
                 <a href="/" title="Back to Home">The Veronica Rudge Green Prize in Urban Design</a>
-                <nav role="navigation">
+                <nav id="navigation" role="navigation">
                     <ul>
-                        <li>
+                        <li class="has-points">
                             <a href="/porto">Porto</a>
                             <ul class="sub-nav">
-                                <li><a href="#introduction">Introduction</a></li>
+                                <li><a href="#porto-intro">Introduction</a></li>
                                 <li><a href="#timeline">Timeline</a></li>
                                 <li><a href="#map">Interactive Map</a></li>
                                 <li><a href="#credits">Project Credits</a></li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="has-points">
                             <a href="/medellin">Medellin</a>
                             <ul class="sub-nav">
-                                <li><a href="#introduction">Introduction</a></li>
+                                <li><a href="#medellin-intro" class="nav-waypoint" data-section="#medellin-intro-2" data-section-text="Medellin : Introduction" data-section-default="Medellin">Introduction</a></li>
                                 <li><a href="#timeline">Timeline</a></li>
-                                <li><a href="#map">Interactive Map</a></li>
+                                <li><a href="#map" class='nav-waypoint' data-section='#map' data-section-text="Medellin : Interactive Map" data-section-default="Medellin : Introduction">Interactive Map</a></li>
                                 <li><a href="#credits">Project Credits</a></li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="has-points">
                             <a href="#about">About the Prize</a>
                             <ul class="sub-nav">
                                 <li><a href="#jury">Jury</a></li>

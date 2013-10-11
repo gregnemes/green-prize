@@ -61,7 +61,8 @@ nav[role='navigation'] {
     > ul > li {
         width: ( 100 / 5 ) * 1%;
         display: inline-block;
-        
+        position: relative;
+
         > a {
             height: $nav-height;
             line-height: $nav-height;
@@ -71,10 +72,71 @@ nav[role='navigation'] {
             text-align: center;
             text-transform: uppercase;
         }
+
+        &:hover {
+            .sub-nav {
+                visibility: visible;
+            }
+        }
+
+        &:nth-child(3) {
+            .sub-nav {
+                width: 144px;
+                left: 25%;
+            }
+        }
+
+        &:nth-child(2) {
+            .sub-nav {
+                width: 480px;
+            }
+        }
+
+        &:nth-child(1) {
+            .sub-nav{
+                width: 480px;
+            }
+        }
     }
     
     .sub-nav {
+        
+        padding: 20px 0;
+
         position: absolute;
-        display: none;
+        visibility: hidden;
+        
+        left: -50%;
+        
+        text-transform: uppercase;
+        
+
+        a {
+            color: #000;
+            font-weight: bold;
+            padding: 2px 5px 0 5px;
+
+            &:after {
+                content: "|";
+                padding-left: 15px;
+            }
+
+        }
+
+        li {
+            float: left;
+            margin-right: 5px;
+            
+
+            &:last-child a:after {
+                content: "";
+            }
+        }
+    
+        &.show {
+            visibility: visible;
+        }
     }
+
+
 }

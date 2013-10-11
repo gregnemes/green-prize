@@ -1,0 +1,25 @@
+.gallery-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 2;
+
+    &.hidden {
+        display: none;
+    }
+
+}
+
+.gallery-close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    z-index: 1;
+}

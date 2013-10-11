@@ -13,6 +13,8 @@
     /** =D3 Library */
     App.UI.D3 = window.d3;
 
+    /** =Fotoram Library */
+    App.UI.Fotorama = App.$.Fotorama;
 
     /** =Utilities */
     App.Utils = (function Utils($) {
@@ -38,12 +40,47 @@
 
         };
 
+        exports.inherits = function( _obj, _super ) {
+            $.extend( true, _obj.prototype, _super.prototype );
+        };
+
         
         return exports;
 
 
     })( App.$ );
 
-    
-
 })(window);
+
+
+(function(window, App ){
+
+    App.UI.BaseModule = (function( $ ) {
+        
+        var BaseModule = function() {};
+
+        BaseModule.prototype.options = null;
+
+        BaseModule.prototype.setOptions = function( opts, defaults ) {
+
+            var options = this.options || $.extend( {}, defaults, opts );
+            
+            /* classNames requires a deep copy */
+            options.classNames = $.extend( {}, options.classNames, opts.classNames || {} );
+
+            this.options = options;
+
+            return this;
+        };
+
+        BaseModule.prototype._getClass = function( _id ) {
+
+            return this.options.classNames[ _id ];
+
+        };
+
+        return BaseModule;
+
+    })( App.$ );
+
+})(window, window.App);

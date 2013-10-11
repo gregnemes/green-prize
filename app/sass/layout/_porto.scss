@@ -15,3 +15,16 @@
     @include bg( "porto/naw-second-bg.jpg", $position: top left, $attachment: scroll );
 }
 
+#porto-intro-5 {
+    @include bg( "porto/section-4-bg.jpg", $position: top center, $attachment: fixed );
+    background-size: cover;
+    
+    padding-top: 300px;
+    padding-bottom: 300px;
+
+    aside {
+        color: white;
+        font-size: em-calc( 30px );
+        text-align: center;
+    }
+}
