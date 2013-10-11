@@ -18,7 +18,8 @@ module.exports = function (grunt) {
 
     // configurable paths
     var yeomanConfig = {
-        app: 'app'
+        app: 'app',
+        dist: 'dist'
     };
 
     grunt.initConfig({
@@ -41,6 +42,69 @@ module.exports = function (grunt) {
                     '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
                     '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
                 ]
+            }
+        },
+        clean: {
+            dist: {
+                files:[{
+                    dot: true,
+                    src: [
+                        '<%= yeoman.dist %>/*',
+                        '<%= yeoman.dist %>/.git*'
+                    ]
+                }]
+            }
+        },
+        useminPrepare: {
+            options: {
+                dest: '<%= yeoman.dist %>'
+            },
+            html: ['<%= yeoman.app %>/footer.php','<%= yeoman.app %>/header.php']
+        },
+        usemin: {
+            options: {
+                dirs: ['<%= yeoman.dist %>']
+            },
+            html: ['<% yeoman.dist %>/{,*/}*.php'],
+            css: ['<% yeoman.dist %>/css/{,*/}*.css']
+
+        },
+        imagemin: {
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: '<%= yeoman.app %>/images',
+                    src: '{,*/{,*/{,*/}}}*.{png,jpg,jpeg}',
+                    dest: '<%= yeoman.dist %>/images'
+                }]
+            }
+        },
+        htmlmin: {
+            dist: {
+                options:{},
+                files: [{
+                    expand: true,
+                    cwd: '<%= yeoman.app %>',
+                    src: '*.php',
+                    dest: '<%= yeoman.dist %>'
+                }]
+            }
+        },
+        copy: {
+            dist: {
+                files: [{
+                    expand: true,
+                    dot: true,
+                    cwd: '<%= yeoman.app %>',
+                    dest: '<%= yeoman.dist %>',
+                    src: [
+                        '*.{ico,png,txt}',
+                        '.htaccess',
+                        'images/{,*/}*.{webp,gif}',
+                        'css/**',
+                        '{,*/{,*/}}*.php'
+                    ]
+                }]
             }
         },
         compass: {
@@ -81,9 +145,27 @@ module.exports = function (grunt) {
                     }
                 }
             }
+        },
+        concurrent: {
+            dist: [
+                'compass',
+                'imagemin',
+                'htmlmin'
+            ]
         }
     });
+    
 
+    grunt.registerTask('build',[
+        'clean:dist',
+        'useminPrepare',
+        'concurrent:dist',
+        'concat',
+        'uglify',
+        'copy:dist',
+        'cssmin',
+        'usemin'
+    ]);
     
     
 };
