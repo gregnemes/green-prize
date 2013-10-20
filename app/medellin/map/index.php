@@ -1,3 +1,4 @@
+<?php require realpath('../../header.php' ); ?>
 <section id="map" class="cf snap">
     <div class="row">
         <div class="col-5">
@@ -27,7 +28,7 @@
                     <?php 
                         foreach( array( 'dwelling', 'paseo', 'puente', 'improving-road', 'parque-imaginacion', 'parque-lineal', 'parque-biblioteca', 'paseo-calle', 'santo-domingo', 'granzial-sports' ) as $file ) {
 
-                            include "map/{$file}.php";
+                            include "{$file}.php";
                         
                         } 
                     ?>
@@ -37,3 +38,4 @@
         </div>
     </div>
 </section>
+<?php require realpath('../../footer.php' ); ?>
