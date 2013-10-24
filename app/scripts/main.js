@@ -2,8 +2,8 @@
 
 (function($, Medellin, Map){
 
-    var $mapWrap    = $('#map'),
-        $intro      = $mapWrap.find('#map-intro').show()
+    var $medellinMap    = $( '#medellin-map' ),
+        $intro          = $medellinMap.find( '.map-intro' ).show()
     ;
     
 
@@ -15,7 +15,7 @@
 
         $intro.addClass( 'intro-active' );
 
-        var map = new Map( 'interactive-map' );
+        var map = new Map( $medellinMap.get(0) );
 
         map.ready(function(e, dMap){
             
@@ -27,13 +27,42 @@
 
     }
 
-
-    if( $mapWrap.length > 0 ) {
-        $mapWrap.waypoint( startMedellinMap, { offset: 100, triggerOnce: true } );
+    if( $medellinMap.length > 0 ) {
+        startMedellinMap();
     }
+
 
 })(jQuery, window.Medellin, window.App.UI.Map );
 
+;(function($, Porto, Map){
+
+    var $portoMap       = $( '#porto-map' ),
+        $intro          = $portoMap.find( '.map-intro' ).show()
+    ;
+    
+
+    function showIntro() {
+        $intro.show();
+    }
+
+    function startPortoMap() {
+
+        $intro.addClass( 'intro-active' );
+
+        var map = new Map( $portoMap.get(0) );
+
+        map.ready(function(e, dMap) {
+            Porto.init( dMap );
+        });
+
+    }
+
+    if( $portoMap.length > 0 ) {
+        startPortoMap();
+    }
+
+
+})(jQuery, window.Porto, window.App.UI.Map );
 
 ;(function($){
 
@@ -161,8 +190,10 @@ $(document).ready(function(){
     //var s = skrollr.init();
 
 
-    $('.gallery').gallery();
+    //$('.gallery').gallery();
 
+
+    
 
     $('#navigation').navPoints();
 

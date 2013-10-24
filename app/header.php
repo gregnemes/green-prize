@@ -26,29 +26,31 @@
                         <li class="has-points">
                             <a href="/porto">Porto</a>
                             <ul class="sub-nav">
-                                <li><a href="#porto-intro">Introduction</a></li>
-                                <li><a href="#timeline">Timeline</a></li>
-                                <li><a href="#map">Interactive Map</a></li>
-                                <li><a href="#credits">Project Credits</a></li>
+                                <li><a href="/porto/#porto-intro">Introduction</a></li>
+                                <li><a href="/porto/timeline">Timeline</a></li>
+                                <li><a href="/porto/map">Interactive Map</a></li>
+                                <li><a href="/porto/credits">Project Credits</a></li>
                             </ul>
                         </li>
                         <li class="has-points">
                             <a href="/medellin">Medellin</a>
                             <ul class="sub-nav">
-                                <li><a href="#medellin-intro" class="nav-waypoint" data-section="#medellin-intro-2" data-section-text="Medellin : Introduction" data-section-default="Medellin">Introduction</a></li>
-                                <li><a href="#timeline">Timeline</a></li>
-                                <li><a href="#map" class='nav-waypoint' data-section='#map' data-section-text="Medellin : Interactive Map" data-section-default="Medellin : Introduction">Interactive Map</a></li>
-                                <li><a href="#credits">Project Credits</a></li>
+                                <li><a href="/medellin/#medellin-intro" class="nav-waypoint" data-section="#medellin-intro-2" data-section-text="Medellin : Introduction" data-section-default="Medellin">Introduction</a></li>
+                                <li><a href="/medellin/timeline">Timeline</a></li>
+                                <li><a href="/medellin/map" class='nav-waypoint' data-section='#map' data-section-text="Medellin : Interactive Map" data-section-default="Medellin : Introduction">Interactive Map</a></li>
+                                <li><a href="/medellin/credits">Project Credits</a></li>
                             </ul>
                         </li>
                         <li class="has-points">
-                            <a href="#about">About the Prize</a>
+                            <a href="/about">About the Prize</a>
                             <ul class="sub-nav">
-                                <li><a href="#jury">Jury</a></li>
-                                <li><a href="#history">History</a></li>
+                                <li><a href="/about/jury">Jury</a></li>
+                                <li><a href="/about/history">History</a></li>
                             </ul>
                         </li>
-                        <li><a href="#videos">Video</a></li>
+                        <li><a href="/videos">Video</a></li>
+                        <li><a href="/credits">Credits</a></li>
+                    </ul>
                     </ul>
                 </nav>
             </div>

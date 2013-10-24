@@ -25,10 +25,6 @@
 
 }
 
-
-#medellin-video { }
-
-
 #medellin-intro-3 {
     @include bg( "medellin-map.jpg", $position: 0 0 );
     background-size: cover;
@@ -53,20 +49,11 @@
 }
 
 
-#map {
-    background: #666;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-#interactive-map {
-    
-    @include bg( "medellin-interactive-map.jpg", $position: center center, $attachment: scroll );
-
-    width: 566px;
-    height: 428px;
-    
-    margin-left: -181px;
+#medellin-map {
+    .map {
+        height: 428px;
+        @include bg( "medellin-interactive-map.jpg", $position: center center, $attachment: scroll );
+    }
 }   
 
     #green-line {
@@ -100,48 +87,5 @@
             }   
         }
     }
-}
-
-#locations {
-    
-    circle {
-        cursor: pointer;
-        @include transform( scale( 1 ) );
-        @include transform-origin( 50% );
-        
-        &.active,
-        &:hover {
-            fill: #000;
-            @include transform( scale( 1.4 ) );
-        }
-    }
-}
-
-
-.js #location-content {
-
-    padding-top: 80px;
-    
-    color: white;
-
-    > div {
-        display: none;
-    }
-
-}
-
-
-#map-intro {
-
-    aside {
-        @include transition( color .5s linear );
-    }
-
-    &.intro-active {
-        aside {
-            color: $txt-highlight;
-        }
-    }
-
 }
 

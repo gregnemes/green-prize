@@ -34,7 +34,7 @@
 
             var dMap        = this.dMap,
                 node        = this.node = document.importNode( xml.documentElement, true ),
-                data        = this.$el.data(),
+                data        = this.$map.data(),
                 imageSrc    = data.image,
                 imageWidth  = data.imageWidth || 566,
                 imageHeight = data.imageHeight || 428
@@ -79,12 +79,15 @@
             // Get a jQuery reference
             this.$el    = $( this.el );
 
+            // Get a reference to the map
+            this.$map   = this.$el.find( '.map' );
+
             // Get the d3 Map reference
-            this.dMap    = d3.select( this.el );
+            this.dMap    = d3.select( this.$map.get(0) );
 
             // Have D3 Fetch the xml file.
             // Then call buildMap with the xml result
-            d3.xml( this.$el.data( 'svg' ), 'image/xvg+xml', function( xml ) {
+            d3.xml( this.$map.data( 'svg' ), 'image/xvg+xml', function( xml ) {
             
                 cb.call( self, xml );
             

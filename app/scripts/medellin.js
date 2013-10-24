@@ -11,16 +11,31 @@
 
         dMap: null,
 
+        d3: App.UI.D3,
+
         el: {
             areas: null,
             locations: null,
             stations:  null,
             greenLine: null,
             mask:      null,
-            locationContent: null
+            locationContent: null,
+            tooltip: null
         },
         
-        
+        tips: {
+            'puente-mirador': 'Puente Mirador: Andaluci\'a-la fancia bridge',
+            'dwelling-consolidation': 'Dwelling consolidation and environmental restoration in juan bobo stream',
+            'paseo-urbano': 'Paseo urbano de la 107',
+            'improving-road': 'Improving the road system: 42C, 42D, and 43',
+            'parque-imaginacion': 'Parque de la imaginacio\'n',
+            'parque-lineal': 'Parque lineal la herrera',
+            'parque-biblioteca': 'Parque biblioteca españa, Santo Domingo',
+            'paseo-calle': 'Paseo calle 106, urban street promenade',
+            'santo-domingo': 'Santo domingo savio cedezo',
+            'granzial-sports': 'Granzial Sports Complex'
+        },
+
         transition: null,
 
         draw: {
@@ -124,6 +139,7 @@
             el.greenLine        = dMap.select( '#green-line' );
             el.mask             = dMap.select( '#area-mask' ).style( 'opacity', 0 );
             el.locationContent  = $( '#location-content' ).find( '[data-location]');
+            el.tooltip          = dMap.append('div').attr( 'class', 'tooltip rotate');
 
             return this;
         },
@@ -138,8 +154,52 @@
 
             bindEvents: function() {
 
-                Medellin.el.locations.on( 'click', this.findLocation );
+                Medellin.el.locations
+                    .on( 'click', this.findLocation )
+                    .on( 'mouseover', this.showTip )
+                    .on( 'mouseout', this.hideTip )
+                ;
+
                 Utils.pubSub.sub( 'location:found', Medellin.showLocation );
+            },
+
+            hideTip: function( d, idx ) {
+                Medellin.el.tooltip.classed('show', false);
+            },
+
+            showTip: function( d, idx ) {
+                
+                var that        = this,
+                    location    = Medellin.el.locations.filter(function(){ return this === that; } ),
+                    data        = location.datum(),
+                    d3          = Medellin.d3,
+                    mouse       = d3.mouse( this ),
+                    id          = location.property('id'),
+                    text        = data ? data.text : Medellin.tips[id],
+                    tooltip     = Medellin.el.tooltip.text(text).classed( 'show', true ),
+                    height      = data ? data.height : parseInt( tooltip.style('height'), 10 ),
+                    width       = data ? data.width :  parseInt( tooltip.style('width'), 10 ) + 10,
+                    coords      = {
+                        left:   parseInt( mouse[0], 10 ) - ( width / 2 ) + 'px',
+                        top:    parseInt( mouse[1], 10 ) + ( width / 2 ) + 40 + 'px'
+                    }
+                ;
+                
+                // Set the coordinates
+                tooltip.style(coords);
+
+                // Cache the known width + height properties
+                if( !data ) {
+                    location.datum({
+                        height: height,
+                        width: width,
+                        text: text
+                    });
+                }
+                
+                
+                
+
             },
 
             findLocation: function( d, locationIndex ) {
@@ -196,14 +256,13 @@
 
             return this;
         },
+
         prev: function(idx) {
             
             this.events.findLocation( null, idx );
 
             return this;
         },
-
-
 
         toggleArea: function( area, opacity ) {
 

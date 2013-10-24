@@ -1,0 +1,39 @@
+.map {
+    position: relative;
+    width: 566px;
+    margin-left: -181px;
+}
+
+.fixed-map {
+    
+    
+    .map {
+        position: fixed;
+    }
+
+}
+
+.map #locations {
+    
+    circle {
+        cursor: pointer;
+        @include transform( scale( 1 ) );
+        @include transform-origin( 50% );
+        
+        &.active,
+        &:hover {
+            fill: #000;
+            @include transform( scale( 1.4 ), translateZ( 100 ) );
+        }
+    }
+}
+
+
+.js #location-content {
+
+    > div {
+        display: none;
+    }
+
+}
+

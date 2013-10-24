@@ -28,3 +28,14 @@
         text-align: center;
     }
 }
+
+#porto-map {
+    .map {
+        height: 752px;
+        @include bg( "porto/map/porto-map-bg.jpg", $position: center center, $attachment: scroll );
+    }
+
+    .fixed-map {
+        height: 752px;
+    }
+}

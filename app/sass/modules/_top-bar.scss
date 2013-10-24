@@ -9,6 +9,8 @@ $nav-height: $top-bar-height;
 
 $top-bar-font-size: 12px;
 
+$sub-nav-padding: 10px;
+
 .top-bar {
     
     @extend %cf;
@@ -59,7 +61,7 @@ nav[role='navigation'] {
     }
 
     > ul > li {
-        width: ( 100 / 5 ) * 1%;
+        width: ( 100 / 6 ) * 1%;
         display: inline-block;
         position: relative;
 
@@ -71,6 +73,7 @@ nav[role='navigation'] {
             font-size: em-calc( 16px );
             text-align: center;
             text-transform: uppercase;
+            margin-bottom: $sub-nav-padding;
         }
 
         &:hover {
@@ -79,38 +82,44 @@ nav[role='navigation'] {
             }
         }
 
-        &:nth-child(3) {
-            .sub-nav {
-                width: 144px;
-                left: 25%;
+        &:nth-child(1) {
+            .sub-nav{
+                padding-left: 10%;
             }
         }
 
         &:nth-child(2) {
             .sub-nav {
-                width: 480px;
+                padding-left: 25%;
             }
         }
 
-        &:nth-child(1) {
-            .sub-nav{
-                width: 480px;
+        &:nth-child(3) {
+            .sub-nav {
+               padding-left: 48%;
             }
         }
+
+
+        
     }
     
     .sub-nav {
         
-        padding: 20px 0;
+        padding: $sub-nav-padding;
 
-        position: absolute;
+        position: fixed;
         visibility: hidden;
-        
-        left: -50%;
+        width: 100%;
+
+        background: #fff;
+        background: rgba( white, .85 );
+
+        left: 0;
         
         text-transform: uppercase;
         
-
+        
         a {
             color: #000;
             font-weight: bold;

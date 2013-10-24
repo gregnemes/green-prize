@@ -115,6 +115,17 @@ blockquote {
 
 }
 
+.location-text {
+    color: white;
+}
+
+.medellin-aside {
+    color: $txt-highlight;
+}
+
+.porto-aside {
+    color: $txt-active;
+}
 
 .callout {
     font-size: em-calc( $callout-font-size );

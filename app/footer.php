@@ -25,6 +25,7 @@
         <script src="/scripts/app.js"></script>
         <script src="/scripts/map.js"></script>
         <script src="/scripts/medellin.js"></script>
+        <script src="/scripts/porto.js"></script>
         <script src="/scripts/gallery-frame.js"></script>
         <script src="/scripts/gallery.js"></script>
         <script src="/scripts/main.js"></script>
