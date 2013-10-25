@@ -1,8 +1,7 @@
 <?php require realpath('../../header.php' ); 
 
-    $pages = array_filter( scandir( './' ), function( $file ){
-        return $file !== 'index.php' && $file !== '.' && $file !== '..';
-    });
+$exclude = array( 'index.php', '.', '..' );
+$pages = array_diff( scandir( './' ), $exclude );
 
 ?>
 <section id="porto-map" class="cf map-wrap">
@@ -20,8 +19,11 @@
                             <p>In the construction of the Porto Metro architecture assumes a fundamental, predominant role given its capacity to coordinate the complex articulation of an interdisciplinary task, demonstrating in exemplary fashion the need for this performance by architecture as an exercise of proposal and synthesis of all the process to transform the territory, regardless of the scope of the intervention.</p>
                         </article>
                     </div>
-                    <?php foreach( $pages as $page ): ?>
-                        <div data-location="<?php echo $page; ?>">
+                    <?php foreach( $pages as $page ): 
+                        $info = pathinfo($page);
+                        $name = $info['filename'];
+                    ?>
+                        <div data-location="<?php echo $name; ?>">
                             <article>
                                 <?php include $page; ?>
                             </article>
