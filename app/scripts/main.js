@@ -19,9 +19,7 @@
 
         map.ready(function(e, dMap){
             
-            Medellin.init( dMap )
-                .on( 'locations:hidden', showIntro )
-            ;
+            Medellin.init( dMap ).on( 'locations:hidden', showIntro );
 
         });
 
@@ -52,7 +50,7 @@
         var map = new Map( $portoMap.get(0) );
 
         map.ready(function(e, dMap) {
-            Porto.init( dMap );
+            Porto.init( dMap ).on( 'locations:hidden', showIntro );
         });
 
     }

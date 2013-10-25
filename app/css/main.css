@@ -1358,7 +1358,6 @@ button,
   height: auto;
   background: #fff;
   opacity: 0;
-  z-index: -1;
   text-transform: uppercase;
   -webkit-transform: translateX(-10px);
   -moz-transform: translateX(-10px);
@@ -1370,11 +1369,11 @@ button,
   -o-transition: opacity 0.5s ease, -o-transform 0.5s ease;
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/modules\/_tooltip\.scss}line{font-family:\0000315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/modules\/_tooltip\.scss}line{font-family:\0000314}}
 .tooltip.smaller {
   width: 110px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/modules\/_tooltip\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/modules\/_tooltip\.scss}line{font-family:\0000318}}
 .tooltip:after {
   content: "";
   width: 30px;
@@ -1383,13 +1382,49 @@ button,
   z-index: 0;
   right: -29px;
   top: 0;
-  background: url('/images/triangle.svg?1382397947') right center no-repeat;
+  background: url('/images/triangle.svg?1382712050') right center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/modules\/_tooltip\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/modules\/_tooltip\.scss}line{font-family:\0000332}}
+.tooltip.left {
+  padding-right: 10px;
+  padding-left: 1px;
+  -webkit-transform: translateX(10px);
+  -moz-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  -o-transform: translateX(10px);
+  transform: translateX(10px);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/modules\/_tooltip\.scss}line{font-family:\0000337}}
+.tooltip.left:after {
+  background: url('/images/triangle-l.svg?1382712079') right center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  right: auto;
+  left: -29px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/modules\/_tooltip\.scss}line{font-family:\0000346}}
+.tooltip.rotate {
+  -webkit-transform: rotate(-90deg) translateX(-10px);
+  -moz-transform: rotate(-90deg) translateX(-10px);
+  -ms-transform: rotate(-90deg) translateX(-10px);
+  -o-transform: rotate(-90deg) translateX(-10px);
+  transform: rotate(-90deg) translateX(-10px);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/modules\/_tooltip\.scss}line{font-family:\0000349}}
+.tooltip.rotate.show {
+  -webkit-transform: rotate(-90deg) translateX(0);
+  -moz-transform: rotate(-90deg) translateX(0);
+  -ms-transform: rotate(-90deg) translateX(0);
+  -o-transform: rotate(-90deg) translateX(0);
+  transform: rotate(-90deg) translateX(0);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/modules\/_tooltip\.scss}line{font-family:\0000355}}
 .tooltip.show {
   opacity: 1;
   z-index: 1;
@@ -1398,22 +1433,6 @@ button,
   -ms-transform: translateX(0);
   -o-transform: translateX(0);
   transform: translateX(0);
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/modules\/_tooltip\.scss}line{font-family:\0000339}}
-.tooltip.rotate {
-  -webkit-transform: rotate(-90deg) translateX(-10px);
-  -moz-transform: rotate(-90deg) translateX(-10px);
-  -ms-transform: rotate(-90deg) translateX(-10px);
-  -o-transform: rotate(-90deg) translateX(-10px);
-  transform: rotate(-90deg) translateX(-10px);
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/modules\/_tooltip\.scss}line{font-family:\0000342}}
-.tooltip.rotate.show {
-  -webkit-transform: rotate(-90deg) translateX(0);
-  -moz-transform: rotate(-90deg) translateX(0);
-  -ms-transform: rotate(-90deg) translateX(0);
-  -o-transform: rotate(-90deg) translateX(0);
-  transform: rotate(-90deg) translateX(0);
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/juve\/www\/srainwater\/sites\/greenprize\/app\/sass\/modules\/_map\.scss}line{font-family:\000031}}

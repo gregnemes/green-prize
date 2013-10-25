@@ -48,32 +48,38 @@
                     content = el.locationContent.filter( '[data-location="' + location.attr('id') + '"]' )
                 ;
 
-
                 Utils.pubSub.pub( 'location:found', [location, content, locationIndex]);
+
             },
 
             hideTip: function(d, idx) {
-                Porto.el.tooltip.classed('show', false);
+                Porto.el.tooltip.classed('show', false).style({top:'auto',left:'auto'});
             },
 
             showTip: function(d, idx) {
-                var that = this,
-                    location = Porto.el.locations.filter(function(){ return this === that; } ),
-                    data = location.datum(),
-                    d3 = Porto.d3,
-                    mouse = d3.mouse( that ),
-                    id = location.property('id'),
-                    text = data ? data.text : Porto.tips[id],
-                    tooltip = Porto.el.tooltip.text(text).classed('show',true),
-                    height = data ? data.height : parseInt( tooltip.style('height'), 10),
-                    width = data ? data.width : parseInt( tooltip.style('width'), 10 ),
-                    coords = {
-                        left: parseInt( mouse[0], 10 ) - ( width + 60 ) + 'px',
-                        top: parseInt( mouse[1], 10 ) - 20 + 'px'
+                var that        = this,
+                    location    = Porto.el.locations.filter(function(){ return this === that; } ),
+                    data        = location.datum(),
+                    d3          = Porto.d3,
+                    mouse       = d3.mouse( that ),
+                    id          = location.property('id'),
+                    text        = data ? data.text : Porto.tips[id],
+                    tooltip     = Porto.el.tooltip.html(text).classed('show',true),
+                    height      = data ? data.height : parseInt( tooltip.style('height'), 10) + 10,
+                    width       = data ? data.width : parseInt( tooltip.style('width'), 10 ),
+                    coords      = {
+                        left: parseInt( mouse[0], 10 ) + (width / 2) + 'px',
+                        top: parseInt( mouse[1], 10 ) - ( height / 2 ) + 'px'
                     }
                 ;
 
+
+
                 tooltip.style(coords);
+
+                if( mouse[0] < 300 ) {
+                    console.log(' yes ', mouse[0] );
+                }
 
                 if( !data ) {
                     location.datum({
@@ -82,9 +88,12 @@
                         text: text
                     });
                 }
+
+
+                
             },
 
-            bindEvents: function(){
+            bindEvents: function() {
 
                 Porto.el.locations
                     .on( 'click', this.findLocation )
@@ -111,7 +120,7 @@
             locations.classed('active', false );
             location.classed( 'active', isActive );
             locationContent.hide();
-
+            
             if( !isActive ) {
 
                 Utils.pubSub.pub( 'locations:hidden' );
@@ -124,6 +133,13 @@
 
         },
 
+        on: function( evt, cb ) {
+            
+            Utils.pubSub.sub( evt, cb );
+
+            return this;
+
+        },
 
         initElements: function() {
             var el = this.el,
@@ -132,15 +148,17 @@
 
 
             el.locations = dMap.select( '#locations' ).selectAll( 'circle' );
-            el.tooltip = dMap.append( 'div' ).attr( 'class', 'tooltip smaller' );
+            el.tooltip = dMap.append( 'div' ).attr( 'class', 'tooltip left smaller' );
             el.locationContent = $( '#location-content' ).find( '[data-location]' );
             
+            return this;
         },
 
         init: function( dMap ) {
             this.dMap = dMap;
             this.initElements();
             this.events.bindEvents();
+            return this;
         }
 
     };
