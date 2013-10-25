@@ -52,7 +52,7 @@
 #medellin-map {
     .map {
         height: 428px;
-        @include bg( "medellin-interactive-map.jpg", $position: center center, $attachment: scroll );
+        @include bg( "medellin/map/medellin-interactive-map.jpg", $position: center center, $attachment: scroll );
     }
 }   
 
