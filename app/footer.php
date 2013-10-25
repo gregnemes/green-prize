@@ -12,9 +12,14 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
-
-        <!-- build:js scripts/core.js -->
+        
+        <!-- build:js /scripts/vendor.js -->
+        <!-- bower:js -->
         <script src="/bower_components/jquery/jquery.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:js /scripts/core.js -->
         <script src="/scripts/d3.v3.js"></script>
         <script src="/scripts/fotorama.js"></script>
         <script src="/scripts/jquery.event.special.js"></script>

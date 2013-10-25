@@ -164,7 +164,7 @@
             },
 
             hideTip: function( d, idx ) {
-                Medellin.el.tooltip.classed('show', false).style({top:'auto',left:'auto'});
+                Medellin.el.tooltip.classed('show', false);
             },
 
             showTip: function( d, idx ) {

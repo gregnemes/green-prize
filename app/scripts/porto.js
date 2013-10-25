@@ -73,13 +73,7 @@
                     }
                 ;
 
-
-
                 tooltip.style(coords);
-
-                if( mouse[0] < 300 ) {
-                    console.log(' yes ', mouse[0] );
-                }
 
                 if( !data ) {
                     location.datum({
@@ -88,8 +82,6 @@
                         text: text
                     });
                 }
-
-
                 
             },
 

@@ -10,10 +10,10 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <!-- build:css(.tmp) css/main.css -->
+        <!-- build:css /css/main.css -->
         <link rel="stylesheet" href="/css/main.css">
         <!-- endbuild -->
-        <!-- build:js scripts/vendor/modernizr.js -->
+        <!-- build:js /scripts/vendor/modernizr.js -->
         <script src="/bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
     </head>

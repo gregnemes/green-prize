@@ -55,19 +55,28 @@ module.exports = function (grunt) {
                 }]
             }
         },
+        rev: {
+            dist: {
+                files: {
+                    src: [
+                        '<%= yeoman.dist %>/scripts/{,*/}*.js',
+                        '<%= yeoman.dist %>/css/{,*/}*.css'
+                    ]
+                }
+            }
+        },
         useminPrepare: {
             options: {
                 dest: '<%= yeoman.dist %>'
             },
-            html: ['<%= yeoman.app %>/footer.php','<%= yeoman.app %>/header.php']
+            html: ['<%= yeoman.app %>/header.php', '<%= yeoman.app %>/footer.php']
         },
         usemin: {
             options: {
                 dirs: ['<%= yeoman.dist %>']
             },
-            html: ['<% yeoman.dist %>/{,*/}*.php'],
-            css: ['<% yeoman.dist %>/css/{,*/}*.css']
-
+            html: ['<%= yeoman.dist %>/{,*/}*.php'],
+            css: ['<%= yeoman.dist %>/css/{,*/}*.css']
         },
         imagemin: {
             dist: {
@@ -79,9 +88,34 @@ module.exports = function (grunt) {
                 }]
             }
         },
+        svgmin: {
+            options: {
+                plugins: [{
+                    cleanupIDs: false
+                }]
+            },
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: '<%= yeoman.app %>/images',
+                    src: '{,*/{,*/{,*/}}}*.svg',
+                    dest: '<%= yeoman.dist %>/images'
+                }]
+            }
+        },
         htmlmin: {
             dist: {
-                options:{},
+                options: {
+                    /*removeCommentsFromCDATA: true,
+                    // https://github.com/yeoman/grunt-usemin/issues/44
+                    //collapseWhitespace: true,
+                    collapseBooleanAttributes: true,
+                    removeAttributeQuotes: true,
+                    removeRedundantAttributes: true,
+                    useShortDoctype: true,
+                    removeEmptyAttributes: true,
+                    removeOptionalTags: true*/
+                },
                 files: [{
                     expand: true,
                     cwd: '<%= yeoman.app %>',
@@ -102,7 +136,9 @@ module.exports = function (grunt) {
                         '.htaccess',
                         'images/{,*/}*.{webp,gif}',
                         'css/**',
-                        '{,*/{,*/}}*.php'
+                        '{,*/{,*/}}*.php',
+                        'porto/map/*',
+                        'medellin/map/*'
                     ]
                 }]
             }
@@ -148,24 +184,41 @@ module.exports = function (grunt) {
         },
         concurrent: {
             dist: [
-                'compass',
                 'imagemin',
+                'svgmin',
                 'htmlmin'
             ]
+        },
+        'ftp-deploy': {
+            build: {
+                auth: {
+                    host: 'alettieri.com',
+                    port: 21,
+                    authKey: 'key'
+                },
+                src: 'dist',
+                dest: 'home/alettieri/webapps/greenprize',
+                exclusions: ['**/.DS_Store,.ftppass']
+            }
         }
     });
     
 
     grunt.registerTask('build',[
         'clean:dist',
+        'compass',
         'useminPrepare',
         'concurrent:dist',
         'concat',
+        'cssmin',
         'uglify',
         'copy:dist',
-        'cssmin',
+        'rev',
         'usemin'
     ]);
     
-    
+    grunt.registerTask( 'deploy', [
+        'build',
+        'ftp-deploy'
+    ]);
 };
