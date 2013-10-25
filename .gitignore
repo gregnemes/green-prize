@@ -6,5 +6,5 @@ dist
 .sass-cache
 app/bower_components
 dandelion.yml
-css/main.css
+app/css/main.css
 dist
