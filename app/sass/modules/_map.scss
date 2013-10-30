@@ -1,16 +1,18 @@
-.map {
-    position: relative;
-    width: 566px;
-    margin-left: -181px;
+$map-width: 566px;
+$map-offset: 181px;
+
+%map-content {
+    width: $map-width;
 }
 
-.fixed-map {
-    
-    
-    .map {
-        position: fixed;
-    }
+.pull-map-content {
+    @extend %map-content;
+    margin-left: $map-offset * -1;
+}
 
+.map {
+    @extend %map-content;
+    position: relative;
 }
 
 .map #locations {

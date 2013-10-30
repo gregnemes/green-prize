@@ -2,6 +2,8 @@
 @import "grid";
 
 
+
+
 html {
     height: 100%;
 }
@@ -29,24 +31,33 @@ body {
 
 }
 
+%over-dark {
+    background: lighten( $dark-color, 20% );
+    background: rgba( $dark-color, .45 );
+}
 
-
-.canvas-row {
-    background: #fff;
-    
-    &.passive {
-        background: rgba( black, .65 );
-    }
+.dark-back {
+    background: $dark-color;
 }
 
 .over-dark {
-    color: white;
-    background-color: #666;
+    @extend %over-dark;
+    @extend .light-text;
 }
 
 .over-light {
     background-color: white;
 }
+
+.canvas-row {
+    background: #fff;
+    
+    &.passive {
+        @extend %over-dark;
+    }
+}
+
+
 
 
 // =Breathing room

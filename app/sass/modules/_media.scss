@@ -60,6 +60,11 @@ figcaption {
         min-height: 180px;
         position: absolute;
     }
+
+    &.light-caption {
+        @extend .light-text;
+        border-top-color: white;
+    }
 }
 
 

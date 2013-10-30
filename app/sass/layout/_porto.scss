@@ -34,7 +34,10 @@
         @include bg( "porto/map/porto-map-bg.jpg", $position: center center, $attachment: scroll );
     }
 
-    .fixed-map {
-        height: 752px;
+    .fixed-content {
+        min-height: 752px;
+        .fixed {
+            height: 752px;
+        }
     }
 }

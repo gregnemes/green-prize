@@ -7,7 +7,7 @@ $top-bar-min-width: 1000px;
 
 $nav-height: $top-bar-height;
 
-$top-bar-font-size: 12px;
+$top-bar-font-size: 14px;
 
 $sub-nav-padding: 10px;
 
@@ -22,8 +22,8 @@ $sub-nav-padding: 10px;
     min-width: $top-bar-min-width;
     padding: $top-bar-padding;
     font: {
-        size: $top-bar-font-size;
         family: $top-bar-font-family;
+        size: em-calc( $top-bar-font-size );
     };
     
     background: $top-bar-bg;
@@ -70,7 +70,6 @@ nav[role='navigation'] {
             line-height: $nav-height;
 
             color: white;
-            font-size: em-calc( 16px );
             text-align: center;
             text-transform: uppercase;
             margin-bottom: $sub-nav-padding;
@@ -79,6 +78,7 @@ nav[role='navigation'] {
         &:hover {
             .sub-nav {
                 visibility: visible;
+                opacity: 1;
             }
         }
 
@@ -118,11 +118,11 @@ nav[role='navigation'] {
         left: 0;
         
         text-transform: uppercase;
-        
-        
+        opacity: 0;
+        @include transition( opacity .25s ease-in-out );
+
         a {
             color: #000;
-            font-weight: bold;
             padding: 2px 5px 0 5px;
 
             &:after {

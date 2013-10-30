@@ -1,0 +1,9 @@
+#about-intro {
+    @include bg("about-collage.jpg", $repeat: no-repeat, $position: center center);
+}
+
+#about-video {
+    figure {
+        width: 538px;
+    }
+}

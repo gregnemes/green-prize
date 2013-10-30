@@ -23,7 +23,11 @@ $large-intro-line-height: ( 30 / strip-unit( $large-intro-font-size ) );
 $callout-font-family: "Flama", $font-fallback;
 $callout-font-size: 34px;
 $callout-line-height: ( 48 / strip-unit( $callout-font-size ) );
-$callout-txt-color: #a8a8a8;
+$callout-txt-color: $txt-gray;
+
+//= Definition list
+$definition-title-margin: 15px;
+
 
 html {
     -webkit-font-smoothing: antialiased;
@@ -67,6 +71,11 @@ h4 {
 
 h5,
 .heading {
+    font-weight: bold;
+}
+
+h5,
+.heading {
     font-size: $h5-size;
     font-weight: 700;
 }
@@ -82,24 +91,25 @@ p,
 }
 
 
+/** =Strong Text **/
+dt,
 strong {
     font-weight: 600;
 }
 
+/** = Callouts **/
 
-blockquote,
-.callout {
-    
+%callout {
     color: $callout-txt-color;
 
     font: {
         family: $callout-font-family;
         weight: normal;
     };
-    
 }
 
 blockquote {
+    @extend %callout;
     quotes: "\201C""\201D""\2018""\2019";
     position: relative;
 
@@ -112,28 +122,12 @@ blockquote {
     &:after {
         content: close-quote;
     }
-
-}
-
-.location-text {
-    color: white;
-}
-
-.medellin-aside {
-    color: $txt-highlight;
-}
-
-.porto-aside {
-    color: $txt-active;
 }
 
 .callout {
+    @extend %callout;
     font-size: em-calc( $callout-font-size );
     line-height: $callout-line-height;
-}
-
-.attribution {
-
 }
 
 .large-intro-text {
@@ -146,6 +140,60 @@ blockquote {
 
 }
 
-.txt-highlight {
+
+/** = Text Colors **/
+
+.light-text {
+    color: white;
+}
+
+%highlight-text {
     color: $txt-highlight;
+}
+
+%active-text {
+    color: $txt-active;
+}
+
+.location-text {
+    @extend .light-text;
+}
+
+.txt-highlight {
+    @extend %highlight-text;
+}
+
+
+
+.medellin-aside {
+    @extend %highlight-text;
+}
+
+.porto-aside {
+    @extend %active-text;
+}
+
+
+.quote-wrap {
+    color: $txt-gray;
+    font-size: em-calc( 20px );
+}
+
+.quote-signature {
+    color: $txt-dark-gray;
+}
+
+/** =Definition Lists **/
+
+dt {
+    margin-top: $definition-title-margin;
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+.jury-list {
+    dd {
+        color: $callout-txt-color;
+    }
 }

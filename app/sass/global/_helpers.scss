@@ -18,6 +18,9 @@
     @include box-sizing( border-box );
 }
 
+.light-bg {
+    background-color: #fff;
+}
 
 /* Align */
 .alignright {
@@ -26,4 +29,12 @@
 
 .alignleft {
     float: left;
+}
+
+.align-opposite {
+    text-align: right;
+}
+
+.divider {
+border-right: 1px solid $shade-color;
 }
