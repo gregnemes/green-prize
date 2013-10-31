@@ -188,7 +188,7 @@ $(document).ready(function(){
     //var s = skrollr.init();
 
 
-    //$('.gallery').gallery();
+    $('.gallery').gallery();
 
 
     

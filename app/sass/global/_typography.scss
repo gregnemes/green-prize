@@ -38,6 +38,7 @@ body {
     font-family: $base-font-family;
     line-height: $base-line-height;
     font-weight: normal;
+    color: $txt-base-color;
 }
 
 
@@ -155,6 +156,19 @@ blockquote {
     color: $txt-active;
 }
 
+%shade-text {
+    color: $txt-gray;
+}
+
+%dark-shade-text {
+    color: $txt-dark-gray;
+}
+
+%page-title {
+    text-transform: uppercase;
+}
+
+
 .location-text {
     @extend .light-text;
 }
@@ -163,7 +177,17 @@ blockquote {
     @extend %highlight-text;
 }
 
+.shade-text {
+    @extend %shade-text;
+}
 
+.dark-shade-text {
+    @extend %dark-shade-text;
+}
+
+.base-text {
+    color: $txt-base-color;
+}
 
 .medellin-aside {
     @extend %highlight-text;
@@ -173,6 +197,10 @@ blockquote {
     @extend %active-text;
 }
 
+.page-title {
+    @extend %dark-shade-text;
+    @extend %page-title;
+}
 
 .quote-wrap {
     color: $txt-gray;
@@ -181,6 +209,15 @@ blockquote {
 
 .quote-signature {
     color: $txt-dark-gray;
+}
+
+
+.jury {
+    @extend %shade-text;
+}
+
+.allcaps {
+    text-transform: uppercase;
 }
 
 /** =Definition Lists **/

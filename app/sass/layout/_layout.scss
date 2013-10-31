@@ -58,11 +58,27 @@ body {
 }
 
 
+// =Recipients 
 
+.recipient-wrap {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.recipient {
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.recipient-header {
+    @extend %shade-text;
+    border-top: 1px solid $shade-color;
+    line-height: 1;
+}
 
 // =Breathing room
 
-@each $breath in 20, 40, 60, 80, 100, 120, 140, 160, 180, 200 {
+@each $breath in 10, 20, 40, 60, 80, 100, 120, 140, 160, 180, 200 {
     
     .breath-top-#{$breath} {
         margin-top: $breath * 1px;

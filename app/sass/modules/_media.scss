@@ -1,7 +1,7 @@
 $image-margin: 20px;
 
 $caption-border: 1px solid black;
-$caption-font-size: em-calc( 13px );
+$caption-font-size: 13px;
 $caption-margin: 20px;
 $caption-padding: 10px;
 
@@ -49,12 +49,16 @@ img {
 
 .caption,
 figcaption {
-    border-top: $caption-border;
-    font-size: $caption-font-size;
-    margin: $caption-margin 0;
+    
+    font-size: em-calc( $caption-font-size );
     padding-top: $caption-padding;
 
-    width: 280px;
+    &.bordered {
+        border-top: $caption-border;
+        margin: $caption-margin 0; 
+           
+        width: 280px;
+    }
 
     &.out-of-flow {
         min-height: 180px;
@@ -65,7 +69,17 @@ figcaption {
         @extend .light-text;
         border-top-color: white;
     }
+
+    &.large {
+        font-size: em-calc( $caption-font-size + 5 );
+        line-height: 1;
+        font-weight: bold;
+    }
 }
+
+    
+
+
 
 
 body .video {

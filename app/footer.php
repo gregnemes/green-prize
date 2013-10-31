@@ -19,9 +19,10 @@
         <!-- endbower -->
         <!-- endbuild -->
 
+        <script src="http://fotorama.s3.amazonaws.com/4.4.6/fotorama.js"></script> <!-- 13 KB -->
+
         <!-- build:js /scripts/core.js -->
         <script src="/scripts/d3.v3.js"></script>
-        <script src="/scripts/fotorama.js"></script>
         <script src="/scripts/jquery.event.special.js"></script>
         <script src="/scripts/jquery.easing.min.js"></script>
         <script src="/scripts/jquery.scrollsnap.js"></script>
@@ -31,7 +32,6 @@
         <script src="/scripts/map.js"></script>
         <script src="/scripts/medellin.js"></script>
         <script src="/scripts/porto.js"></script>
-        <script src="/scripts/gallery-frame.js"></script>
         <script src="/scripts/gallery.js"></script>
         <script src="/scripts/main.js"></script>
         <!-- endbuild -->

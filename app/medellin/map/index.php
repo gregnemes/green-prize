@@ -7,19 +7,7 @@ $pages = array_diff( scandir( './' ), $exclude );
 
 <section id="medellin-map" class="cf map-wrap">
     <div class="row">
-        <div class="col-5">
-           <div class="map" data-svg="/images/medellin/map/medellin-overlay.svg" data-image="/images/medellin/map/medellin-interactive-map.jpg" data-image-width="566" data-image-height="428">
-            </div>
-            <div id="interactive-graph">
-                <img src="/images/altitude.png" />
-               <ul class="button-group">
-                    <li><a href="#" class="button">Andalucia</a></li>
-                    <li><a href="#" class="button">Popular</a></li>
-                    <li><a href="#" class="button">Santo Domingo Savio</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-6 push-1">
+        <div class="col-6 push-6">
             <div id="interactive-content">
                 <div id="location-content" class="push-top-80 location-text">
                     <div class="map-intro" data-location="intro">
@@ -43,6 +31,20 @@ $pages = array_diff( scandir( './' ), $exclude );
                 </div>
 
             </div>    
+        </div><!-- /div.col-6 -->
+        <div class="col-5 pull-6">
+            <div class="pull-map-content light-bg">
+                <div class="map" data-svg="/images/medellin/map/medellin-map-overlay.svg" data-image="/images/medellin/map/medellin-map-bg.jpg" data-image-width="566" data-image-height="428">
+                </div>
+                <div id="interactive-graph">
+                    <img src="/images/altitude.png" />
+                   <ul class="button-group">
+                        <li><a href="#" class="button">Andalucia</a></li>
+                        <li><a href="#" class="button">Popular</a></li>
+                        <li><a href="#" class="button">Santo Domingo Savio</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </section>

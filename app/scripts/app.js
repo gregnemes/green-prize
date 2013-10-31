@@ -7,6 +7,9 @@
     /** =jQuery Library */
     App.$ = window.jQuery;
 
+    /** Asign Modernizr */
+    App.Mod = window.Modernizr;
+
     /** =UI Namespace */
     App.UI = {};
 
@@ -17,7 +20,7 @@
     App.UI.Fotorama = App.$.Fotorama;
 
     /** =Utilities */
-    App.Utils = (function Utils($) {
+    App.Utils = (function Utils($, Mod) {
             
         var exports = {};
 
@@ -40,6 +43,8 @@
 
         };
 
+        exports.isSmall = !Mod.mq( 'only screen and (min-width: 480px)' );
+
         exports.inherits = function( _obj, _super ) {
             $.extend( true, _obj.prototype, _super.prototype );
         };
@@ -48,7 +53,7 @@
         return exports;
 
 
-    })( App.$ );
+    })( App.$, App.Mod );
 
 })(window);
 

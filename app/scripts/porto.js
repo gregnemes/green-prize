@@ -16,7 +16,7 @@
         },
 
         tips: {
-            'estadio-dragao': 'Estadío do Dragão',
+            'estadio-dragao': 'Estad&iacute;o do Dragão',
             'campanha': 'Campanhã',
             'heroismo': 'Heroísmo',
             'campo-agosto': 'Campo 24 Agosto',
@@ -36,7 +36,7 @@
             'araujo': 'Ara&uacute;jo',
             'maia': 'Maia',
             'modivas-sul': 'Modivas Sul',
-            'vila-do-condo': 'Vila do Condo'
+            'vila-do-conde': 'Vila do Conde'
         },
 
         events: {
