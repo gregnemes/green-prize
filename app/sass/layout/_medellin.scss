@@ -26,7 +26,7 @@
 }
 
 #medellin-intro-3 {
-    @include bg( "medellin-map-bg.jpg", $position: 0 0 );
+    @include bg( "medellin/map/medellin-map-bg.jpg", $position: 0 0 );
     background-size: cover;
 
     color: white;
@@ -49,10 +49,12 @@
 }
 
 
+
+
 #medellin-map {
     .map {
         height: 428px;
-        @include bg( "medellin/map/medellin-interactive-map.jpg", $position: center center, $attachment: scroll );
+        @include bg( "medellin/map/medellin-map-bg.jpg", $position: center center, $attachment: scroll );
     }
 }   
 

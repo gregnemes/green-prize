@@ -44,13 +44,11 @@
                         <li class="has-points">
                             <a href="/about">About the Prize</a>
                             <ul class="sub-nav">
-                                <li><a href="/about/jury">Jury</a></li>
-                                <li><a href="/about/history">History</a></li>
+                                <li><a href="/about/#about-history">History</a></li>
+                                <li><a href="/about/#about-past-recipients">Past Recipients</a></li>
                             </ul>
                         </li>
                         <li><a href="/videos">Video</a></li>
-                        <li><a href="/credits">Credits</a></li>
-                    </ul>
                     </ul>
                 </nav>
             </div>
