@@ -24,7 +24,7 @@ $pages = array_diff( scandir( './' ), $exclude );
                         $name = $info['filename'];
                     ?>
                         <div data-location="<?php echo $name; ?>">
-                            <article>
+                            <article itemscope itemtype="http://schema.org/TrainStation">
                                 <?php include $page; ?>
                             </article>
                         </div>
@@ -34,8 +34,10 @@ $pages = array_diff( scandir( './' ), $exclude );
                 </div>
             </div>
         </div>
-        <div class="fixed-map">
-            <div class="map" data-svg="/images/porto/map/map-overlay.svg" data-image="/images/porto/map/porto-map-bg.jpg" data-image-width="566" data-image-height="752">
+        <div class="col-6 pull-6">
+            <div class="pull-map-content">
+                <div class="map" data-svg="/images/porto/map/porto-map-overlay.svg" data-image="/images/porto/map/porto-map-bg.jpg" data-image-width="566" data-image-height="752">
+                </div>
             </div>
         </div>
     </div>
