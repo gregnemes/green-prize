@@ -18,6 +18,12 @@
     @include box-sizing( border-box );
 }
 
+%ir {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
 .light-bg {
     background-color: #fff;
 }

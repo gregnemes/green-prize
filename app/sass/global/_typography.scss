@@ -234,3 +234,11 @@ dt {
         color: $callout-txt-color;
     }
 }
+
+
+/** =Headings */
+.logo-heading {
+    color: $txt-logo;
+    text-transform: uppercase;
+    font-size: em-calc( $base-font-size );
+}

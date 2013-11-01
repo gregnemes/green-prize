@@ -1,0 +1,5 @@
+.home-logo {
+    @extend %ir;
+    @include bg( "logo.svg", $position: top center, $attachment: scroll );
+    height: 200px;
+}

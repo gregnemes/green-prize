@@ -195,6 +195,27 @@ $(document).ready(function(){
 
     $('#navigation').navPoints();
 
+
+    window.map = window.L.mapbox.map('home-map', 'alettieri.map-t4p7rtsn', {
+        zoomControl: false,
+        zoom: 4,
+        minZoom: 4,
+        maxZoom: 4,
+        center: new window.L.LatLng(23, -40.0),
+        scrollWheelZoom: false,
+        dragging: false,
+        touchZoom: false,
+        doubleClickZoom: false,
+        boxZoom: false,
+        tap: false
+
+    });
+
+    var medellinIcon = L.divIcon({ className: 'map-icon medellin-icon', html: '<span>Medellin</span>', iconSize: new L.Point(60, 20) });
+    var portoIcon = L.divIcon({ className: 'map-icon porto-icon', html: '<span>Porto</span>', iconSize: new L.Point(40,20) } );
+
+    window.L.marker([6.2483085724565814, -75.56811149999989], { icon: medellinIcon }).addTo(window.map);
+    window.L.marker([41.240478418280226, -8.331139695340624], { icon: portoIcon }).addTo(window.map);
 });
 
 

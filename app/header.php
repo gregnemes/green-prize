@@ -9,6 +9,7 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="//api.tiles.mapbox.com/mapbox.js/v1.4.0/mapbox.css">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css /css/main.css -->
         <link rel="stylesheet" href="/css/main.css">

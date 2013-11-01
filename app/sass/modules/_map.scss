@@ -39,3 +39,69 @@ $map-offset: 181px;
 
 }
 
+
+#home-map {
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+#home {
+    position: relative;
+    z-index: 1;
+    width: 585px;
+    margin: auto;
+    padding-bottom: 10px;
+
+    section {
+        margin-left: 225px;
+    }
+}
+
+.map-icon {
+    
+
+    span {
+        display: block;
+        text-transform: uppercase;
+        position: relative;
+        line-height: 20px;
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 10px; height: 10px;
+            border: 5px solid #000;
+            @include border-radius(50px);
+        }
+
+    }
+    
+    &.medellin-icon {
+        span {
+            padding-left: 40px;
+            @include transform( rotate(-90deg) );
+            &:after {
+                left: 10px;
+                
+            }
+        }
+    }
+
+    &.porto-icon {
+        span {
+            @include transform( rotate(-90deg) );
+            direction: rtl;
+            padding-right: 40px;
+            &:after {
+                right: 10px;
+            }
+        }
+    }
+
+
+}
+

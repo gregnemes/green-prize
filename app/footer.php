@@ -20,7 +20,7 @@
         <!-- endbuild -->
 
         <script src="http://fotorama.s3.amazonaws.com/4.4.6/fotorama.js"></script> <!-- 13 KB -->
-
+        <script src="//api.tiles.mapbox.com/mapbox.js/v1.4.0/mapbox.js"></script>
         <!-- build:js /scripts/core.js -->
         <script src="/scripts/d3.v3.js"></script>
         <script src="/scripts/jquery.event.special.js"></script>
