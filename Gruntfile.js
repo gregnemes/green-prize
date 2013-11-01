@@ -187,16 +187,19 @@ module.exports = function (grunt) {
                 'htmlmin'
             ]
         },
-        'ftp-deploy': {
-            build: {
-                auth: {
-                    host: 'alettieri.com',
-                    port: 21,
-                    authKey: 'key'
-                },
-                src: 'dist',
-                dest: 'home/alettieri/webapps/greenprize',
-                exclusions: ['**/.DS_Store,.ftppass']
+        rsync: {
+            options: {
+                args:['--verbose'],
+                exclude: ['.git', '*.scss', 'node_modules', '.DS_Store'],
+                recursive: true
+            },
+            prod: {
+                options: {
+                    src: '<%= yeoman.dist %>/',
+                    dest: 'webapps/greenprize',
+                    host: 'alettieri',
+                    syncDestIgnoreExcl: true
+                }
             }
         }
     });
@@ -217,6 +220,6 @@ module.exports = function (grunt) {
     
     grunt.registerTask( 'deploy', [
         'build',
-        'ftp-deploy'
+        'rsync:prod'
     ]);
 };
