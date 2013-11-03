@@ -41,3 +41,14 @@
         }
     }
 }
+
+
+.porto-timeline__2000 {
+    @include bg( "porto/porto-timeline-2000.svg", $position: 0 0, $attachment: scroll );
+    height: 379px;
+}
+
+.porto-timeline__2008 {
+    @include bg( "porto/porto-timeline-2008.svg", $position: 0 0, $attachment: scroll );
+    height: 591px;
+}

@@ -91,3 +91,8 @@
     }
 }
 
+.medellin-timeline {
+    @include bg("medellin/medellin-timeline.svg", $position: 0 0, $attachment: scroll );
+    height: 738px;
+}
+

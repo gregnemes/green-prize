@@ -242,3 +242,10 @@ dt {
     text-transform: uppercase;
     font-size: em-calc( $base-font-size );
 }
+
+.inline-page-title {
+    @extend .page-title;
+    display: inline-block;
+    border-top: 1px solid $dark-shade-color;
+    padding-right: 100px;
+}

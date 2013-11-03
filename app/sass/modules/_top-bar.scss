@@ -11,6 +11,8 @@ $top-bar-font-size: 14px;
 
 $sub-nav-padding: 10px;
 
+$top-bar-zindex: 2;
+
 .top-bar {
     
     @extend %cf;
@@ -27,7 +29,7 @@ $sub-nav-padding: 10px;
     };
     
     background: $top-bar-bg;
-    z-index: 2;
+    z-index: $top-bar-zindex;
     
 
     a {
@@ -99,8 +101,6 @@ nav[role='navigation'] {
                padding-left: 48%;
             }
         }
-
-
         
     }
     
@@ -119,6 +119,8 @@ nav[role='navigation'] {
         
         text-transform: uppercase;
         opacity: 0;
+        z-index: $top-bar-zindex + 1;
+
         @include transition( opacity .25s ease-in-out );
 
         a {
