@@ -36,12 +36,12 @@ $pages = array_diff( scandir( './' ), $exclude );
             <div class="pull-map-content light-bg">
                 <div class="map" data-svg="/images/medellin/map/medellin-map-overlay.svg" data-image="/images/medellin/map/medellin-map-bg.jpg" data-image-width="566" data-image-height="428">
                 </div>
-                <div id="interactive-graph">
-                    <img src="/images/altitude.png" />
+                <div id="interactive-graph" class="graph">
+                    <img src="/images/altitude.png" alt="Altitude graph" />
                    <ul class="button-group">
-                        <li><a href="#" class="button">Andalucia</a></li>
-                        <li><a href="#" class="button">Popular</a></li>
-                        <li><a href="#" class="button">Santo Domingo Savio</a></li>
+                        <li><a id='andalucia' href="#" class="button" data-area="andalucia">Andalucia</a></li>
+                        <li><a id='popular' href="#" class="button" data-area="popular">Popular</a></li>
+                        <li><a id='santo-domingo-savio' href="#" class="button" data-area="santo-domingo-savio">Santo Domingo Savio</a></li>
                     </ul>
                 </div>
             </div>

@@ -1,3 +1,4 @@
+$porto-map-height: 791px;
 
 #porto-intro {
     @include bg( "porto/intro-image.jpg", $position: top center );
@@ -30,15 +31,42 @@
 
 #porto-map {
     .map {
-        height: 752px;
+        height: $porto-map-height;
         @include bg( "porto/map/porto-map-bg.jpg", $position: center center, $attachment: scroll );
     }
 
     .fixed-content {
-        min-height: 752px;
+        min-height: $porto-map-height;
         .fixed {
-            height: 752px;
+            height: $porto-map-height;
         }
+    }
+
+    svg {
+        path {
+            stroke-dasharray: 780px;
+            stroke-dashoffset: -780px;
+            @include transition( stroke-dashoffset 1.5s linear );
+        }
+
+        #locations {
+            opacity: 0;
+            @include transition( opacity 1s linear );
+            @include transition-delay( 1.5s );
+        }
+    }
+
+    &.ready {
+        svg {
+        
+        path {
+            stroke-dashoffset: 0px;
+        }
+        #locations {
+            opacity: 1;
+        }
+    }
+
     }
 }
 

@@ -1,3 +1,6 @@
+$button-bg: $shade-color;
+$button-active-bg: #F2703A;
+
 // =Buttons
 .button-group {
     list-style: none;
@@ -18,9 +21,18 @@ button,
     padding: 4px 10px;
     text-align: center;
     text-decoration: none;
-    background: #a8a8a8;
+    background: $button-bg;
     color: #000;
 
+    
+    &:hover {
+        background: lighten( $button-bg, 20% );
+    }
+    
+
+    &.active {
+        background: $button-active-bg;
+    }
 }
 
 

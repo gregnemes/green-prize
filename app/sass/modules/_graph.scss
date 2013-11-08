@@ -1,0 +1,29 @@
+.graph {
+    
+    min-height: 240px;
+
+    padding: {
+        left: $map-offset;
+        top: 50px;
+        bottom: 50px;
+    };
+    
+
+    .button-group {
+        
+        font-size: em-calc( 12px );
+
+        li {
+            &:nth-child(1) {
+                width: 146px;
+            }
+            &:nth-child(2) {
+                
+            }
+            &:nth-child(3) {
+                width: 140px;
+            }   
+        }
+    }
+
+}

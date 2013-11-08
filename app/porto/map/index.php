@@ -36,7 +36,7 @@ $pages = array_diff( scandir( './' ), $exclude );
         </div>
         <div class="col-6 pull-6">
             <div class="pull-map-content">
-                <div class="map" data-svg="/images/porto/map/porto-map-overlay.svg" data-image="/images/porto/map/porto-map-bg.jpg" data-image-width="566" data-image-height="752">
+                <div class="map" data-svg="/images/porto/map/porto-map-overlay.svg" data-image="/images/porto/map/porto-map-bg.jpg" data-image-width="565" data-image-height="791">
                 </div>
             </div>
         </div>

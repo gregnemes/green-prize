@@ -31,14 +31,17 @@
 
             sub: function() {
                 this.o.on.apply( this.o, arguments );
+                return this;
             },
 
             un: function() {
                 this.o.off.apply( this.o, arguments );
+                return this;
             },
 
             pub: function() {
                 this.o.trigger.apply( this.o, arguments );
+                return this;
             }
 
         };

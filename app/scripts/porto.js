@@ -134,6 +134,7 @@
         },
 
         initElements: function() {
+            
             var el = this.el,
                 dMap = this.dMap
             ;
@@ -142,7 +143,7 @@
             el.locations = dMap.select( '#locations' ).selectAll( 'circle' );
             el.tooltip = dMap.append( 'div' ).attr( 'class', 'tooltip left smaller' );
             el.locationContent = $( '#location-content' ).find( '[data-location]' );
-            
+
             return this;
         },
 
@@ -150,6 +151,12 @@
             this.dMap = dMap;
             this.initElements();
             this.events.bindEvents();
+
+            // Set timeout so that events can trigger async
+            setTimeout(function(){
+                Utils.pubSub.pub( 'locations:ready', this );
+            });
+
             return this;
         }
 

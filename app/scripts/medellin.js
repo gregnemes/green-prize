@@ -20,6 +20,8 @@
             greenLine: null,
             mask:      null,
             locationContent: null,
+            graph: null,
+            graphAreas: null,
             tooltip: null
         },
         
@@ -141,6 +143,9 @@
             el.locationContent  = $( '#location-content' ).find( '[data-location]');
             el.tooltip          = dMap.append('div').attr( 'class', 'tooltip rotate');
 
+            el.graph = $( '#interactive-graph' );
+            el.graphAreas = el.graph.find( '.button' );
+
             return this;
         },
 
@@ -160,7 +165,16 @@
                     .on( 'mouseout', this.hideTip )
                 ;
 
-                Utils.pubSub.sub( 'location:found', Medellin.showLocation );
+                Medellin.el.graphAreas.on( 'click', this.findArea );
+
+                Utils.pubSub
+                    .sub( 'location:reset', this.resetLocations )
+                    .sub( 'area:reset', this.resetAreas )
+                    .sub( 'location:found', Medellin.showLocation )
+                    .sub( 'locations:hidden', this.resetLocations )
+                    .sub( 'locations:hidden', this.resetAreas )
+                ;
+
             },
 
             hideTip: function( d, idx ) {
@@ -197,21 +211,72 @@
                     });
                 }
                 
-                
-                
 
             },
 
+            resetAreas: function() {
+                
+                Medellin.el.graphAreas.removeClass( 'active' );
+                Medellin.el.areas.style( 'opacity', 0 );
+
+            },
+
+            resetLocations: function() {
+                Medellin.el.locations.classed( 'active', false );
+                
+            },
+
+            // Find areaContent
+            // Reset location circles
+            // Then set area to active
+            // Then show content
+            findArea: function( e ) {
+
+                e.preventDefault();
+
+                var el = Medellin.el,
+                    graphAreas = el.graphAreas,
+                    trigger = graphAreas.filter(this),
+                    contentId
+                ;
+
+                
+                Utils.pubSub.pub( 'location:reset' );
+
+                if( ! trigger.hasClass( 'active' ) ) {
+                    
+                    contentId = trigger.data( 'area' );
+                    Utils.pubSub.pub( 'area:reset' );
+                    trigger.addClass( 'active' );
+
+                    Medellin.toggleArea( contentId, 0.85 );
+
+                }
+
+                Utils.pubSub.pub( 'location:found', [contentId]);
+
+
+            },
+            // findLocation
+            // Reset areas
+            // Set location to active
+            // Show content
             findLocation: function( d, locationIndex ) {
 
                 var el = Medellin.el,
                     location = el.locations.select(function( d, idx ){ return idx === locationIndex ? this : null; }),
-                    content = el.locationContent.filter( '[data-location="' + location.attr('id') + '"]' )
+                    contentId
                 ;
 
+                Utils.pubSub.pub( 'area:reset' );
 
-                Utils.pubSub.pub( 'location:found', [location, content, locationIndex]);
-                
+                if( !location.classed( 'active' ) ) {
+                    contentId = location.attr('id') ;
+                    Utils.pubSub.pub( 'location:reset' );
+                    location.classed( 'active', true );
+                }
+
+                Utils.pubSub.pub( 'location:found', [contentId]);
 
             }
 
@@ -224,51 +289,38 @@
             return this;
 
         },
+        
 
-        showLocation: function( e, location, content ) {
+        // Show location
+        // Should hide 
+        showLocation: function( e, contentId ) {
             
-            var el = Medellin.el,
-                locationContent = el.locationContent,
-                locations = el.locations,
-                isActive = location.classed( 'active' ) ? false : true
+            var locationContent = Medellin.el.locationContent,
+                content = contentId ? locationContent.filter( '[data-location="' + contentId + '"]' ) : false
             ;
-
-
-            locations.classed('active', false );
-            location.classed( 'active', isActive );
+            
             locationContent.hide();
 
-            if( !isActive ) {
+            if( content ) {
+                
+                content.fadeIn();
 
+            } else {
+
+                
                 Utils.pubSub.pub( 'locations:hidden' );
             
-            } else {
-                content.fadeIn();
             }
 
             return this;
 
         },
 
-        next: function(idx) {
-
-            this.events.findLocation( null, idx );
-
-            return this;
-        },
-
-        prev: function(idx) {
-            
-            this.events.findLocation( null, idx );
-
-            return this;
-        },
-
         toggleArea: function( area, opacity ) {
-
+            
             this.el.areas
                 .style( 'opacity', 0 )
-                .filter('#' + area ).style( 'opacity', opacity )
+                .filter( '#' + area ).style( 'opacity', opacity )
             ;
 
             return this;
