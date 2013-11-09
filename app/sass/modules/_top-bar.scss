@@ -66,6 +66,7 @@ nav[role='navigation'] {
         width: ( 100 / 5 ) * 1%;
         display: inline-block;
         position: relative;
+        z-index: 1;
 
         > a {
             height: $nav-height;
@@ -107,21 +108,22 @@ nav[role='navigation'] {
     .sub-nav {
         
         padding: $sub-nav-padding;
-
+        
         position: fixed;
+        left: 0;
+        
         visibility: hidden;
         width: 100%;
 
         background: #fff;
         background: rgba( white, .85 );
-
-        left: 0;
         
         text-transform: uppercase;
         opacity: 0;
-        z-index: $top-bar-zindex + 1;
+        z-index: $top-bar-zindex * 2;
 
-        @include transition( opacity .25s ease-in-out );
+        @include backface-visibility( hidden );
+        @include transition( opacity .15s ease-in );
 
         a {
             color: #000;
