@@ -33,6 +33,7 @@
         <script src="/scripts/medellin.js"></script>
         <script src="/scripts/porto.js"></script>
         <script src="/scripts/gallery.js"></script>
+        <script src="/scripts/home-map.js"></script>
         <script src="/scripts/main.js"></script>
         <!-- endbuild -->
 </body>

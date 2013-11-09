@@ -16,6 +16,9 @@
     /** =D3 Library */
     App.UI.D3 = window.d3;
 
+    /** =Leaflet Library */
+    App.UI.L = window.L;
+
     /** =Fotoram Library */
     App.UI.Fotorama = App.$.Fotorama;
 
@@ -70,11 +73,13 @@
         BaseModule.prototype.options = null;
 
         BaseModule.prototype.setOptions = function( opts, defaults ) {
+            // Optional opts
+            opts = opts || {};
 
             var options = this.options || $.extend( {}, defaults, opts );
             
             /* classNames requires a deep copy */
-            options.classNames = $.extend( {}, options.classNames, opts.classNames || {} );
+            options.classNames = $.extend( {}, options.classNames || {}, opts.classNames || {} );
 
             this.options = options;
 

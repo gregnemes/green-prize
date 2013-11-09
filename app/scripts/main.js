@@ -185,43 +185,25 @@
 
 $(document).ready(function(){
 
-    $(document).scrollsnap({
-        snaps: '.snap',
-        proximity: 100
+    // $(document).scrollsnap({
+    //     snaps: '.snap',
+    //     proximity: 100
+    // });    
 
-    });
-
-    
     //var s = skrollr.init();
-
-
     $('.gallery').gallery();
-
-
-    
-
     $('#navigation').navPoints();
 
 
-    // window.map = window.L.mapbox.map('home-map', 'alettieri.map-t4p7rtsn', {
-    //     zoomControl: false,
-    //     zoom: 4,
-    //     trackResize: true,
-    //     center: new window.L.LatLng(23, -40.0),
-    //     scrollWheelZoom: false,
-    //     dragging: false,
-    //     touchZoom: false,
-    //     doubleClickZoom: false,
-    //     boxZoom: false,
-    //     tap: false
-
-    // });
-
-    // var medellinIcon = L.divIcon({ className: 'map-icon medellin-icon', html: '<a href="/medellin"><span>Medellin</span></a>', iconSize: new L.Point(60, 20) });
-    // var portoIcon = L.divIcon({ className: 'map-icon porto-icon', html: '<a href="/porto"><span>Porto</span></a>', iconSize: new L.Point(40,20) } );
-
-    // window.L.marker([6.2483085724565814, -75.56811149999989], { icon: medellinIcon }).addTo(window.map);
-    // window.L.marker([41.240478418280226, -8.331139695340624], { icon: portoIcon }).addTo(window.map);
+    var homeMap = document.getElementById( 'home-map' );
+    if( homeMap ) {
+        homeMap = new window.App.UI.HomeMap( homeMap );
+        // Medellin
+        homeMap.addDivMarker([6.2483085724565814, -75.56811149999989], { className: 'medellin-icon', html: '<a href="/medellin"><span>Medellin</span></a>', size: [60, 20] } );
+        // Porto
+        homeMap.addDivMarker([41.240478418280226, -8.331139695340624], { className: 'porto-icon', html: '<a href="/porto"><span>Porto</span></a>', size: [40, 20] } );
+    }
+    
 });
 
 
