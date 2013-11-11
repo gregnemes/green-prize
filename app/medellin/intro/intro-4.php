@@ -34,7 +34,7 @@
                     </figure>
                 </div>
             </section>
-            <section class="cf">
+            <section class="cf breath-top-60">
                 <div class="col-6 push-6">
                     <header>
                         <h5>PUI Components</h5>

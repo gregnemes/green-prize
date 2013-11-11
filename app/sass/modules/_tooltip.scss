@@ -1,13 +1,23 @@
+// =Tooltip Fonts
+$tooltip-font-size: em-calc( 14px );
+$tooltip-font-family: $callout-font-family;
+
 .tooltip {
-    font-size: em-calc(12px);
-    padding: 5px 1px 5px 10px;
     position: absolute;
-    width: 220px;
+    padding: 5px 1px 5px 10px;
+    width: 160px;
     height: auto;
-    background: #fff;
+    
     opacity: 0;
+    background: #fff;
     text-transform: uppercase; 
     
+    font: {
+        size: $tooltip-font-size;
+        family: $tooltip-font-family;
+    };
+    
+
     @include transform( translateX( -10px ) );
     @include transition( opacity .5s ease, transform .5s ease );
     

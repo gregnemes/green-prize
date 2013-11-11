@@ -2,8 +2,7 @@
 
     @include bg( "medellin-intro.jpg", $position: 0 0, $repeat: no-repeat );
     
-    height: 500px;
-    padding-top: 200px;
+    padding-bottom: 200px;
 
     aside {
         font-size: em-calc(18px);
@@ -39,8 +38,6 @@
 #medellin-intro-5 {
     
     
-    padding-top: 200px;
-
     @include bg( "medellin-intro-5.jpg", $position: center center );
     background-size: cover;
 

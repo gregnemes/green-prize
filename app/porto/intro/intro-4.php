@@ -6,11 +6,12 @@
     </div>
     <div class="content-area">
         <article>
-            <header>
-                <h5>The Metro and the City</h5>
-            </header>
+
             <div class="row">
                 <div class="col-6 push-6">
+                    <header>
+                        <h5>The Metro and the City</h5>
+                    </header>
                     <p>The surface light rail system glides smoothly over ground on two steel rails, making hardly any sound.</p>
                     <p>The laying of the track is dictated by a closed circuit elevation value system complying with strict rules that have no subjective considerations. The steel rails must be full embedded in the street pavement so that, in the event of an emergency fire, service vehicles can pass from one side of the track to the other. The material used ranges from granite cubes to bituminous pavements or grass covering.</p>
                     <p>For acoustic reasons the rails are laid on a floating slab using steel components cushioned with rubber dampers.</p>

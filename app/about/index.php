@@ -6,7 +6,7 @@
 
 ?>
 
-<section id="about-intro">
+<section id="about-intro" class='more-room'>
     <div class="over-dark">
         <aside class="content-area callout light-text push-top-80 push-bottom-80">
             The <strong>Veronica Rudge Green Prize in Urban Design</strong> is the foremost award recognizing achievement in this field. The award was established in 1986 on the occasion of Harvard University’s 350th anniversary, and the 50th anniversary of the Harvard Graduate School of Design. Nominations for the prize are received from the GSD’s extensive network of academics and urban design professionals.

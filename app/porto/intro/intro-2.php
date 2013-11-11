@@ -4,7 +4,7 @@
             Cities do not change of their own free will or by political decree, but with the emergence of systems that they need to survive. [&hellip;] It will be thus in the 21st Century by which time the surface light rail system must be integrated into a planned system (enough of improvisation) creating a new urban landscape that cannot be postponed.
         </blockquote>
         <p class="attribution">
-            &mdash;Excerpt from A Arquitectura do Metro by Eduardo Souto do Moura
+            &mdash;Excerpt from <em>A Arquitectura do Metro</em> by Eduardo Souto do Moura
         </p>
         <div class="row">
             <section class="col-6 push-6">

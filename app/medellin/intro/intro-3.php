@@ -6,14 +6,14 @@
             </div>
             <div class="col-6">
                 <section id="overview">
-                    <header><h5>MEDELLI'N OVERVIEW</h5></header>
-                    <p>Medelli'n is located in the Aburra' Valley in the central Andes, 1,479 meters above sea level. Known as the "City of Everlasting Spring," it has only recently become a metropolis. It is the second-largest city in Colombia (after Bogota') and the capital of the department of Antioquia. From 1938 to 2008, the population of Medelli'n increased from 168,000 to 2.34 million. This population skews relatively young, with almost 70 percent between five and forty-four years old.</p>
+                    <header><h5>MEDELL&Iacute;N OVERVIEW</h5></header>
+                    <p>Medelli'n is located in the Aburr&aacute; Valley in the central Andes, 1,479 meters above sea level. Known as the "City of Everlasting Spring," it has only recently become a metropolis. It is the second-largest city in Colombia (after Bogota') and the capital of the department of Antioquia. From 1938 to 2008, the population of Medelli'n increased from 168,000 to 2.34 million. This population skews relatively young, with almost 70 percent between five and forty-four years old.</p>
 
                     <p>Ninety percent of the population lives in about 30 percent of the city’s territory. Medelli'n is divided into 249 neighborhoods (barrios), 16 communes, and 6 zones. Of about 600,000 housing units, 77 percent are occupied by those at the lowest socioeconomic levels, while 19 percent house those in the middle and upper-middle levels. Four percent of the housing units are home to those at the highest economic level.</p>
 
                     <p>The city generates more than 8 percent of Colombia’s GDP, with the Aburra' Valley as a whole contributing close to 11 percent. Surpassing that of the other major cities of Colombia, the GDP per capita (with purchasing power parity) is U.S. $3,794; and corporate density is 25 companies per 1,000 people—the second highest in the country. Although Medelli'n was once known as "The Industrial City of Colombia," global and national economic dynamics have shifted the city’s focus to Medelli'n shares the Aburra' Valley with nine other municipalities, which collectively create a metropolitan urban area with a population of 3.5 million people.</p>
                 </section>
-                <section id="marginality">
+                <section id="marginality" class="breath-top-60">
                     <header><h5>MARGINALITY IN MEDELLI'N</h5></header>
                     <p>The process of "informalization," understood as the formation of precarious neighborhoods, has been a characteristic of Medelli'n’s history throughout the twentieth and into the twenty-first century, a consequence of the continuous migration toward the city.</p>
 
@@ -53,7 +53,7 @@
                     <p>The public administration, along with academic and other nongovernmental organizations, has been trying to address decades of inequality by implementing programs aimed at transforming the quality of life for the inhabitants of marginal neighborhoods. Many difficulties of the informal city—inequality, violence, and segregation—were an inherent aspect of its past. Although they remain challenges of the present, there is a move toward change so that they will not be part of the future of Medellín.</p>
 
                 </section>
-                <section>
+                <section class="breath-top-60">
                     <header><h5>Mobility</h5></header>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, reiciendis, earum distinctio eveniet debitis voluptatibus illum pariatur quos maxime nemo aperiam minima ipsum dolores repellat impedit quidem eum minus praesentium.

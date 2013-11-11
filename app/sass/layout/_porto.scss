@@ -1,8 +1,12 @@
 $porto-map-height: 791px;
 
 #porto-intro {
-    @include bg( "porto/intro-image.jpg", $position: top center );
+    @include bg( "porto/intro-image.jpg", $position: 50% 50px );
     color: white;
+    
+    p {
+        @include transform( translateY( -70px ) );
+    }
 }
 
 
@@ -30,7 +34,12 @@ $porto-map-height: 791px;
 }
 
 #porto-map {
+    min-height: $porto-map-height;
+
     .map {
+        position: fixed;
+        left: 0;
+        top: 10px;
         height: $porto-map-height;
         @include bg( "porto/map/porto-map-bg.jpg", $position: center center, $attachment: scroll );
     }
@@ -72,11 +81,11 @@ $porto-map-height: 791px;
 
 
 .porto-timeline__2000 {
-    @include bg( "porto/porto-timeline-2000.svg", $position: 0 0, $attachment: scroll );
+    
     height: 379px;
 }
 
 .porto-timeline__2008 {
-    @include bg( "porto/porto-timeline-2008.svg", $position: 0 0, $attachment: scroll );
+    
     height: 591px;
 }

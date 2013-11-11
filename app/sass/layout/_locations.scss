@@ -1,0 +1,7 @@
+$location-font-size: em-calc( $large-intro-font-size );
+
+[data-location] {
+    h5 {
+        font-size: $location-font-size;
+    }
+}

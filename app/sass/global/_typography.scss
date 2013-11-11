@@ -28,6 +28,8 @@ $callout-txt-color: $txt-gray;
 //= Definition list
 $definition-title-margin: 15px;
 
+//= Italic
+$italic-style: italic;
 
 html {
     
@@ -42,6 +44,10 @@ body {
 }
 
 // Font Smoothing
+
+%sub-pixel {
+    -webkit-font-smoothing: subpixel-antialiased;
+}
 
 .wrap > section {
     -webkit-font-smoothing: antialiased;
@@ -87,6 +93,11 @@ h5,
     font-weight: 700;
 }
 
+
+header > h5 {
+    text-transform: uppercase;
+}
+
 h6 {
     font-size: $h6-size;
 }
@@ -98,10 +109,22 @@ p,
 }
 
 
+i, em {
+    font-style: $italic-style;
+}
+
 /** =Strong Text **/
 dt,
 strong {
     font-weight: 600;
+}
+
+.subpixel {
+    @extend %sub-pixel;
+}
+
+.label {
+    @extend %sub-pixel;
 }
 
 /** = Callouts **/

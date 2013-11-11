@@ -17,7 +17,12 @@ body {
     height: auto;
     
     > section {
-        padding: 100px 0 200px;
+        
+        padding: 30px 0;
+
+        &.more-room {
+            padding: 100px 0;
+        }
     }
 
     .map-wrap {
@@ -30,7 +35,7 @@ body {
 
 %over-dark {
     background: lighten( $dark-color, 20% );
-    background: rgba( $dark-color, .45 );
+    background: rgba( $dark-color, .80 );
 }
 
 .dark-back {
