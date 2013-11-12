@@ -1,8 +1,8 @@
 <?php require realpath('../../header.php' ); ?>
 
-<section id="medellin-timeline">
+<div id="medellin-timeline" class='section'>
     
-</section>
+</div>
 
 
 <?php require realpath( '../../footer.php' ); ?>

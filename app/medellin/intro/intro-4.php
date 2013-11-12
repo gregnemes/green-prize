@@ -1,4 +1,4 @@
-<section id="medellin-intro-4">
+<div id="medellin-intro-4" class='section'>
     <div class="canvas-row">
         <div class="content-area">
             <figure class="col-12">
@@ -57,4 +57,4 @@
             </section>
         </div>
     </div>
-</section>
+</div>

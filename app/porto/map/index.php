@@ -4,7 +4,7 @@ $exclude = array( 'index.php', '.', '..' );
 $pages = array_diff( scandir( './' ), $exclude );
 
 ?>
-<section id="porto-map" class="cf map-wrap">
+<div id="porto-map" class="section cf map-wrap">
     <div class="row">
         <div class="col-6 push-6">
             <div id="interactive-content">
@@ -41,7 +41,7 @@ $pages = array_diff( scandir( './' ), $exclude );
             </div>
         </div>
     </div>
-</section>
+</div>
 
 
 <?php require realpath( '../../footer.php' ); ?>

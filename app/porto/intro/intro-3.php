@@ -1,4 +1,4 @@
-<section class="porto-intro-3">
+<div id="porto-intro-3" class='section'>
     <article>
         <section id="naw-first">
             <div class="row">
@@ -18,7 +18,7 @@
             </div>
         </section>
         <section>
-            <div class="row breath-top-200">
+            <div class="row breath-top-60">
                 <figure>
                     <img src="/images/porto/naw-sketch.jpg" alt="Sketch" />
                     <figcaption class="out-of-flow">
@@ -54,4 +54,4 @@
             </div>
         </section>
     </article>
-</section>
+</div>

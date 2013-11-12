@@ -1,4 +1,4 @@
-<section id="porto-intro-2">
+<div id="porto-intro-2" class='section'>
     <article class="content-area">
         <blockquote class="postfix-2 callout">
             Cities do not change of their own free will or by political decree, but with the emergence of systems that they need to survive. [&hellip;] It will be thus in the 21st Century by which time the surface light rail system must be integrated into a planned system (enough of improvisation) creating a new urban landscape that cannot be postponed.
@@ -29,4 +29,4 @@
         </div>
         <p class="caption">Jurors discuss the history of Metro do Porto. Lorem ipsum dolor sit amet.</p>
     </article>
-</section>
+</div>

@@ -1,4 +1,4 @@
-<section id="medellin-intro-2">
+<div id="medellin-intro-2" class='section'>
     <article class="content-area">
         <aside>
             <blockquote class="callout">Our traditional education is not designed to understand
@@ -35,4 +35,4 @@ complex thought: each discipline jealously strives to protect its boundaries whe
         </div>
         <p class="caption">Jurors discuss the history of Medellin’s Northeast Urban Integration Project. Lorem ipsum dolor sit amet.</p>
     </article>
-</section>
+</div>

@@ -1,6 +1,6 @@
 <?php require realpath('../header.php' ); ?>
 
-<section id="credits">
+<div id="credits" class='section'>
     <div class="row light-text">
         <div class="col-6 push-6">
             <article>
@@ -57,7 +57,7 @@
 
         </div>
     </div>
-</section>
+</div>
 
 
 

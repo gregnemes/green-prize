@@ -1,6 +1,6 @@
 <?php require realpath('../../header.php' ); ?>
 
-<section id="medellin-credits" class="medellin-credits">
+<div id="medellin-credits" class="section medellin-credits">
     <div class="row light-text">
         <div class="col-6 push-6">
             <article>
@@ -57,5 +57,5 @@
 
         </div>
     </div>
-</section>
+</div>
 <?php require realpath( '../../footer.php' ); ?>

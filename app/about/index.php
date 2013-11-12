@@ -6,13 +6,13 @@
 
 ?>
 
-<section id="about-intro" class='more-room'>
+<div id="about-intro" class='section more-room'>
     <div class="over-dark">
         <aside class="content-area callout light-text push-top-80 push-bottom-80">
             The <strong>Veronica Rudge Green Prize in Urban Design</strong> is the foremost award recognizing achievement in this field. The award was established in 1986 on the occasion of Harvard University’s 350th anniversary, and the 50th anniversary of the Harvard Graduate School of Design. Nominations for the prize are received from the GSD’s extensive network of academics and urban design professionals.
         </aside>
-</section>
-<section id="about-history">
+</div>
+<div id="about-history" class='section'>
     <div class="content-area">
         <div class="col-6 postfix-1 push-top-20 push-bottom-20 divider align-opposite">
             <article>
@@ -42,8 +42,8 @@
             </article>
         </div>
     </div>
-</section>
-<section id="about-video" class="dark-back">
+</div>
+<div id="about-video" class="section dark-back">
     <div class="content-area">
         <div class="col-7">
             <div class="quote-wrap align-opposite">
@@ -59,8 +59,8 @@
             </div>
         </div>
     </div>
-</section>
-<section id="about-past-recipients">
+</div>
+<div id="about-past-recipients" class='section'>
     <div class="content-area">
         <article class="recipient-wrap">
             <header>
@@ -86,5 +86,5 @@
 
         </article>
     </div>
-</section>
+</div>
 <?php require realpath( '../footer.php' ); ?>

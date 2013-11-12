@@ -1,4 +1,4 @@
-<section id="porto-intro-4">
+<div id="porto-intro-4" class='section'>
     <div class="row">
         <figure>
             <img src="/images/porto/metro-train.jpg" alt="The Porto Metro Train" />
@@ -47,4 +47,4 @@
             </div>
         </article>
     </div>
-</section>
+</div>
