@@ -185,17 +185,16 @@
 
 $(document).ready(function(){
 
+    var homeMap = document.getElementById( 'home-map' );
+
     // $(document).scrollsnap({
     //     snaps: '.snap',
     //     proximity: 100
     // });    
 
     //var s = skrollr.init();
-    $('.gallery').gallery();
-    $('#navigation').navPoints();
+    
 
-
-    var homeMap = document.getElementById( 'home-map' );
     if( homeMap ) {
         homeMap = new window.App.UI.HomeMap( homeMap );
         // Medellin
@@ -204,18 +203,148 @@ $(document).ready(function(){
         homeMap.addDivMarker([41.240478418280226, -8.331139695340624], { className: 'porto-icon', html: '<a href="/porto"><span>Porto</span></a>', size: [40, 20] } );
     }
     
+
+    $('.gallery').gallery();
+    $('#navigation').navPoints();
+
 });
 
 
+(function(window, $, Utils, d3, undefined ) {
+
+    window.MedellinTimeline = {
+
+        tl: null,
+
+        el: {
+            main: null,
+            lineGraph: null,
+            dataPoints: null,
+            xAxis: null,
+            yAxis: null,
+            
+        },
+
+        buildTimeline: function() {
+
+            var el = this.el,
+                tl = this.tl,
+                segments = [580, 290, 170, 160, 100, 0],
+                currPoint = 1
+            ;
+
+            function point() {
+                el.dataPoints.filter(':nth-child(' + ( currPoint++ ) + ')').transition().style( 'opacity', 1 );
+            }
+
+            function line() {
+                return el.lineGraph.transition().style( 'stroke-dashoffset',  segments.shift() );
+            }
+
+            function start() {
+                el.yAxis.transition().attr('transform', 'translate(0)' );
+                return el.xAxis.transition().delay( 100 ).duration( 1000 ).attr( 'transform', 'translate(0)' );
+            }
+
+            setTimeout(function(){
+
+                tl.classed( 'showgraph', true );
+                
+                start()
+                    .transition()
+                        .each(line)
+                        .each(point)
+                    .transition()
+                        .each(line)
+                    .transition()
+                        .each(point)
+                        .each(line)
+                        .each(point)
+                        .each(line)
+                        .each(point)
+                    .transition()
+                        .each(line)
+                        .each(point)
+                    .transition()
+                        .each(line)
+                        .each(point)
+                ;
 
 
+            });
+
+        },
+
+        initElements: function( e, element, xml ) {
+            
+            var el = this.el,
+                // Get the d3 element
+                tl = this.tl = d3.select( element )
+            ;
+
+            // Insert the xml document into the d3 canvas
+            tl.node().appendChild( document.importNode( xml.documentElement, true ) );
+            // Set main element to document element
+            el.main = element;
+            // Line Graph
+            el.lineGraph = tl.select( '#line-graph' );
+            el.dataPoints = tl.select( '#data-points' ).selectAll( 'g' );
+            el.xAxis = tl.select( '#x-axis' ).attr('transform', 'translate(-780)' );
+            el.yAxis = tl.select( '#y-axis' ).attr( 'transform', 'translate(-30)' );
+
+        },
+
+        load: function( element ) {
+            
+            d3.xml( element.getAttribute( 'data-svg' ), 'image/xvg+xml', function( xml ) {
+                
+                Utils.pubSub.pub( 'medellin:timeline:timelineload', [element, xml] );
+                
+            });
+
+            return this;
+        },
+
+        on: function( evt, cb ) {
+            // Cubscribe to event
+            Utils.pubSub.sub( 'medellin:timeline:' + evt, cb );
+            return this;
+        },
+        /**
+         * Make sure to proxy the call internally, to MedellinTimeline
+         */
+        onProxy: function( evt, cb ) {
+            // Use jQuery proxy method to proxy, the callback to MedellinTimeline
+            this.on( evt, $.proxy( cb, this ) );
+            return this;
+        },
+
+        init: function( element ) {
+            //
+            // Bind to the mapload event.
+            //
+            this.onProxy( 'timelineload', this.initElements )
+                .onProxy( 'timelineload', this.buildTimeline ).load( element );
+
+            return this;
+        }
+
+    };
 
 
+})(window, window.App.$, window.App.Utils, window.App.UI.D3 );
 
 
+$(document).ready(function(){
+
+    var medellinTimeline = document.getElementById( 'medellin-timeline' );
+
+    if( medellinTimeline ) {
+        window.MedellinTimeline.init( medellinTimeline );
+    }
 
 
-
+});
 
 
 

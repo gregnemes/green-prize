@@ -1,0 +1,27 @@
+.timeline {
+    overflow: hidden;
+}
+
+.timeline-medellin {
+    
+    
+    
+    #line-graph {
+        stroke-dasharray: 750px;
+        stroke-dashoffset: 750px;
+    }
+    
+    #data-points g {
+        opacity: 0;
+    }
+    
+    &.showgraph {
+        
+       
+
+    }
+
+
+
+
+}

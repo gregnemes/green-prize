@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="774.25px" height="507.479px" viewBox="0 0 774.25 507.479" enable-background="new 0 0 774.25 507.479"
+	 xml:space="preserve">
+<rect id="back-shadow" x="415.25" y="0.625" opacity="0.1" fill="#8DC641" width="150" height="435.854"/>
+<g id="borders">
+	<polyline fill="none" stroke="#BCBDBF" stroke-width="0.5" stroke-miterlimit="10" points="774.25,208.701 0.25,208.701 
+		0.25,0.625 	"/>
+	<line fill="none" stroke="#BCBDBF" stroke-width="0.5" stroke-miterlimit="10" x1="0.25" y1="264.014" x2="774.25" y2="264.014"/>
+	
+		<line fill="none" stroke="#232020" stroke-width="0.5" stroke-miterlimit="10" x1="415.25" y1="436.479" x2="565.25" y2="436.479"/>
+</g>
+<g id="dotted-lines">
+	<g>
+		<g>
+			
+				<line fill="none" stroke="#D1D2D3" stroke-width="0.5" stroke-miterlimit="10" x1="39.128" y1="176.625" x2="40.628" y2="176.625"/>
+			
+				<line fill="none" stroke="#D1D2D3" stroke-width="0.5" stroke-miterlimit="10" stroke-dasharray="3.0005,4.0007" x1="44.628" y1="176.625" x2="770.75" y2="176.625"/>
+			
+				<line fill="none" stroke="#D1D2D3" stroke-width="0.5" stroke-miterlimit="10" x1="772.75" y1="176.625" x2="774.25" y2="176.625"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			
+				<line fill="none" stroke="#D1D2D3" stroke-width="0.5" stroke-miterlimit="10" x1="39.128" y1="100.625" x2="40.628" y2="100.625"/>
+			
+				<line fill="none" stroke="#D1D2D3" stroke-width="0.5" stroke-miterlimit="10" stroke-dasharray="3.0005,4.0007" x1="44.628" y1="100.625" x2="770.75" y2="100.625"/>
+			
+				<line fill="none" stroke="#D1D2D3" stroke-width="0.5" stroke-miterlimit="10" x1="772.75" y1="100.625" x2="774.25" y2="100.625"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			
+				<line fill="none" stroke="#D1D2D3" stroke-width="0.5" stroke-miterlimit="10" x1="39.128" y1="23.625" x2="40.628" y2="23.625"/>
+			
+				<line fill="none" stroke="#D1D2D3" stroke-width="0.5" stroke-miterlimit="10" stroke-dasharray="3.0005,4.0007" x1="44.628" y1="23.625" x2="770.75" y2="23.625"/>
+			
+				<line fill="none" stroke="#D1D2D3" stroke-width="0.5" stroke-miterlimit="10" x1="772.75" y1="23.625" x2="774.25" y2="23.625"/>
+		</g>
+	</g>
+</g>
+<g id="data-points">
+	<g id="medellin-opening">
+		<line fill="none" stroke="#232020" stroke-miterlimit="10" x1="162.533" y1="269.887" x2="162.533" y2="296.062"/>
+		<circle fill="none" stroke="#232020" stroke-width="4" stroke-miterlimit="10" cx="162.532" cy="299.261" r="5.282"/>
+		<rect x="181.752" y="294.979" fill="none" width="82.426" height="94.588"/>
+		<text transform="matrix(1 0 0 1 181.752 304.8848)"><tspan x="0" y="0" fill="#231F20" font-family="'RobotoCondensed-Light'" font-size="13">Metro de </tspan><tspan x="0" y="15.6" fill="#231F20" font-family="'RobotoCondensed-Light'" font-size="13">Medellín </tspan><tspan x="0" y="31.199" fill="#231F20" font-family="'RobotoCondensed-Light'" font-size="13">opening</tspan></text>
+	</g>
+	<g id="santo-doming">
+		<line fill="none" stroke="#232020" stroke-miterlimit="10" x1="431.25" y1="269.887" x2="431.25" y2="295.062"/>
+		<circle fill="none" stroke="#8DC641" stroke-width="4" stroke-miterlimit="10" cx="431.249" cy="299.261" r="5.282"/>
+		<rect x="450.469" y="294.979" fill="none" width="82.426" height="94.588"/>
+		<text transform="matrix(1 0 0 1 450.4688 304.8848)"><tspan x="0" y="0" fill="#231F20" font-family="'RobotoCondensed-Light'" font-size="13">Metrocable</tspan><tspan x="0" y="15.6" fill="#231F20" font-family="'RobotoCondensed-Light'" font-size="13">Line K</tspan><tspan x="0" y="31.199" fill="#231F20" font-family="'RobotoCondensed-Light'" font-size="13">Santo Domingo</tspan></text>
+	</g>
+	<g id="north-eastern">
+		<rect x="417.02" y="447.833" fill="none" width="126.842" height="59.646"/>
+		<text transform="matrix(1 0 0 1 417.0195 457.7393)"><tspan x="0" y="0" fill="#8DC641" font-family="'RobotoCondensed-Regular'" font-size="13">2004–2008</tspan><tspan x="0" y="15.6" fill="#231F20" font-family="'RobotoCondensed-Regular'" font-size="13">North-Eastern Integral </tspan><tspan x="0" y="31.199" fill="#231F20" font-family="'RobotoCondensed-Regular'" font-size="13">Urban Project</tspan></text>
+	</g>
+	<g id="san-javier">
+		<rect x="570.469" y="395.715" fill="none" width="82.426" height="52.819"/>
+		<text transform="matrix(1 0 0 1 570.4688 405.6201)"><tspan x="0" y="0" fill="#231F20" font-family="'RobotoCondensed-Light'" font-size="13">Metrocable</tspan><tspan x="0" y="15.6" fill="#231F20" font-family="'RobotoCondensed-Light'" font-size="13">Line J</tspan><tspan x="0" y="31.199" fill="#231F20" font-family="'RobotoCondensed-Light'" font-size="13">San Javier</tspan></text>
+		<line fill="none" stroke="#232020" stroke-miterlimit="10" x1="551.248" y1="269.886" x2="551.248" y2="394.715"/>
+		<circle fill="none" stroke="#FEDE51" stroke-width="4" stroke-miterlimit="10" cx="551.249" cy="399.996" r="5.282"/>
+	</g>
+	<g id="arvi-park">
+		<rect x="628.469" y="335.3" fill="none" width="82.426" height="49.684"/>
+		<text transform="matrix(1 0 0 1 628.4688 345.2061)"><tspan x="0" y="0" fill="#231F20" font-family="'RobotoCondensed-Light'" font-size="13">Metrocable</tspan><tspan x="0" y="15.6" fill="#231F20" font-family="'RobotoCondensed-Light'" font-size="13">Line L</tspan><tspan x="0" y="31.199" fill="#231F20" font-family="'RobotoCondensed-Light'" font-size="13">Arvi Park</tspan></text>
+		<line fill="none" stroke="#232020" stroke-miterlimit="10" x1="611.682" y1="269.887" x2="611.682" y2="335.82"/>
+		<circle fill="none" stroke="#C8B299" stroke-width="4" stroke-miterlimit="10" cx="611.681" cy="341.103" r="5.282"/>
+	</g>
+	<g id="metroplus">
+		<line fill="none" stroke="#232020" stroke-miterlimit="10" x1="671.249" y1="269.887" x2="671.249" y2="295.203"/>
+		<circle fill="none" stroke="#28ABE2" stroke-width="4" stroke-miterlimit="10" cx="671.249" cy="299.261" r="5.282"/>
+		<rect x="690.113" y="294.979" fill="none" width="82.426" height="42.82"/>
+		<text transform="matrix(1 0 0 1 690.1143 304.8848)"><tspan x="0" y="0" fill="#231F20" font-family="'RobotoCondensed-Light'" font-size="13">Metroplus</tspan><tspan x="0" y="15.6" fill="#231F20" font-family="'RobotoCondensed-Light'" font-size="13">Line MP1</tspan></text>
+	</g>
+</g>
+<g id="y-axis">
+	<text transform="matrix(1 0 0 1 8.5332 180.9443)" fill="#BCBDBF" font-family="'FlamaSemicondensed-Book'" font-size="10">1000</text>
+	<text transform="matrix(1 0 0 1 8.5332 27.9443)" fill="#BCBDBF" font-family="'FlamaSemicondensed-Book'" font-size="10">8000</text>
+	<text transform="matrix(1 0 0 1 8.5332 104.4443)" fill="#BCBDBF" font-family="'FlamaSemicondensed-Book'" font-size="10">4000</text>
+</g>
+<g id="x-axis">
+	<text transform="matrix(0 1 -1 0 9.251 222.3169)" fill="#231F20" font-family="'FlamaSemicondensed-Book'" font-size="14">1990</text>
+	<text transform="matrix(0 1 -1 0 39.1279 223.7266)" fill="#231F20" font-family="'FlamaSemicondensed-Book'" font-size="14">1991</text>
+	<text transform="matrix(0 1 -1 0 69.0029 222.7358)" fill="#231F20" font-family="'FlamaSemicondensed-Book'" font-size="14">1992</text>
+	<text transform="matrix(0 1 -1 0 98.8799 222.5229)" fill="#231F20" font-family="'FlamaSemicondensed-Book'" font-size="14">1993</text>
+	<text transform="matrix(0 1 -1 0 128.7568 222.3823)" fill="#231F20" font-family="'FlamaSemicondensed-Book'" font-size="14">1994</text>
+	<text transform="matrix(0 1 -1 0 158.6318 222.5439)" fill="#231F20" font-family="'FlamaSemicondensed-Book'" font-size="14">1995</text>
+	<text transform="matrix(0 1 -1 0 188.5088 222.4561)" fill="#231F20" font-family="'FlamaSemicondensed-Book'" font-size="14">1996</text>
+	<text transform="matrix(0 1 -1 0 218.3838 222.7959)" fill="#231F20" font-family="'FlamaSemicondensed-Book'" font-size="14">1997</text>
+	<text transform="matrix(0 1 -1 0 248.2607 222.4702)" fill="#231F20" font-family="'FlamaSemicondensed-Book'" font-size="14">1998</text>
+	<text transform="matrix(0 1 -1 0 278.1377 222.4634)" fill="#231F20" font-family="'FlamaSemicondensed-Book'" font-size="14">1999</text>
+	<text transform="matrix(0 1 -1 0 308.0127 220.9062)" fill="#231F20" font-family="'FlamaSemicondensed-Book'" font-size="14">2000</text>
+	<text transform="matrix(0 1 -1 0 337.8896 222.3135)" fill="#231F20" font-family="'FlamaSemicondensed-Book'" font-size="14">2001</text>
+	<text transform="matrix(0 1 -1 0 367.7666 221.3252)" fill="#231F20" font-family="'FlamaSemicondensed-Book'" font-size="14">2002</text>
+	<text transform="matrix(0 1 -1 0 397.6416 221.1118)" fill="#231F20" font-family="'FlamaSemicondensed-Book'" font-size="14">2003</text>
+	<text transform="matrix(0 1 -1 0 427.5186 220.9717)" fill="#231F20" font-family="'FlamaSemicondensed-Book'" font-size="14">2004</text>
+	<text transform="matrix(0 1 -1 0 457.3955 221.1328)" fill="#231F20" font-family="'FlamaSemicondensed-Book'" font-size="14">2005</text>
+	<text transform="matrix(0 1 -1 0 487.2705 221.0454)" fill="#231F20" font-family="'FlamaSemicondensed-Book'" font-size="14">2006</text>
+	<text transform="matrix(0 1 -1 0 517.1475 221.3828)" fill="#231F20" font-family="'FlamaSemicondensed-Book'" font-size="14">2007</text>
+	<text transform="matrix(0 1 -1 0 547.0244 221.0596)" fill="#231F20" font-family="'FlamaSemicondensed-Book'" font-size="14">2008</text>
+	<text transform="matrix(0 1 -1 0 576.8994 221.0527)" fill="#231F20" font-family="'FlamaSemicondensed-Book'" font-size="14">2009</text>
+	<text transform="matrix(0 1 -1 0 606.7764 222.5322)" fill="#231F20" font-family="'FlamaSemicondensed-Book'" font-size="14">2010</text>
+	<text transform="matrix(0 1 -1 0 636.6514 223.9028)" fill="#231F20" font-family="'FlamaSemicondensed-Book'" font-size="14">2011</text>
+	<text transform="matrix(0 1 -1 0 666.5283 222.9609)" fill="#231F20" font-family="'FlamaSemicondensed-Book'" font-size="14">2012</text>
+	<text transform="matrix(0 1 -1 0 696.4053 222.748)" fill="#231F20" font-family="'FlamaSemicondensed-Book'" font-size="14">2013</text>
+	<text transform="matrix(0 1 -1 0 726.2803 222.6074)" fill="#231F20" font-family="'FlamaSemicondensed-Book'" font-size="14">2014</text>
+	<text transform="matrix(0 1 -1 0 756.1572 222.7686)" fill="#231F20" font-family="'FlamaSemicondensed-Book'" font-size="14">2015</text>
+</g>
+<polyline id="line-graph" fill="none" stroke="#DB4246" stroke-width="2" stroke-miterlimit="10" points="9.251,48.703 
+	43.507,62.181 76.392,69.81 102.426,88.629 134.073,100.836 159.976,107.448 191.491,119.655 223.006,125.495 257.262,122.198 
+	288.777,123.724 355.917,109.991 417.578,172.044 455.521,180.945 488.089,178.656 517.604,180.945 549.496,175.604 
+	598.447,149.156 629.494,151.699 662.443,168.483 702.584,174.587 "/>
+</svg>
