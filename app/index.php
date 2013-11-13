@@ -1,6 +1,6 @@
 <?php require 'header.php'; ?>
 
-<section id="home">
+<div id="home" class='section breath-top-20'>
     <article>
         <header>
             <h1 class="home-logo">The Veronica Rudge Green Prize in Urban Design</h1>
@@ -14,7 +14,7 @@
             </p>
         </section>
     </article>
-</section>
+</div>
 <div id="home-map"></div>
         
 <?php require 'footer.php'; ?>
