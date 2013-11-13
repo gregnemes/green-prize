@@ -229,7 +229,7 @@ $(document).ready(function(){
 
             var el = this.el,
                 tl = this.tl,
-                segments = [580, 290, 170, 160, 100, 0],
+                segments = [580, 290, 160, 100, 0],
                 currPoint = 1
             ;
 
@@ -241,9 +241,13 @@ $(document).ready(function(){
                 return el.lineGraph.transition().style( 'stroke-dashoffset',  segments.shift() );
             }
 
+            function shadow() {
+                return el.shadow.transition().attr('width', 150);
+            }
+
             function start() {
                 el.yAxis.transition().attr('transform', 'translate(0)' );
-                return el.xAxis.transition().delay( 100 ).duration( 1000 ).attr( 'transform', 'translate(0)' );
+                return el.xAxis.transition().ease( 'linear' ).delay(400).duration(1000).attr( 'transform', 'translate(0, 0)' ).style('opacity', 1);
             }
 
             setTimeout(function(){
@@ -253,20 +257,21 @@ $(document).ready(function(){
                 start()
                     .transition()
                         .each(line)
-                        .each(point)
-                    .transition()
-                        .each(line)
                     .transition()
                         .each(point)
                         .each(line)
+                    .transition()
                         .each(point)
                         .each(line)
+                        .each(shadow)
                         .each(point)
                     .transition()
-                        .each(line)
                         .each(point)
-                    .transition()
                         .each(line)
+                    .transition()
+                        .each(point)
+                        .each(line)
+                    .transition()
                         .each(point)
                 ;
 
@@ -289,9 +294,9 @@ $(document).ready(function(){
             // Line Graph
             el.lineGraph = tl.select( '#line-graph' );
             el.dataPoints = tl.select( '#data-points' ).selectAll( 'g' );
-            el.xAxis = tl.select( '#x-axis' ).attr('transform', 'translate(-780)' );
+            el.xAxis = tl.select( '#x-axis' ).attr('transform', 'translate(0, -10)' ).style('opacity', 0);
             el.yAxis = tl.select( '#y-axis' ).attr( 'transform', 'translate(-30)' );
-
+            el.shadow = tl.select( '#back-shadow' ).attr('width', 0);
         },
 
         load: function( element ) {
