@@ -1,6 +1,6 @@
 <?php require realpath('../../header.php' ); ?>
 
-<div class='section'>
+<div id="medellin-timeline-section" class='section'>
     <article class='content-area'>
         <header>
             <h1 class='page-title'>Medell&iacute;n Metro Timeline 1990 - 2015</h1>

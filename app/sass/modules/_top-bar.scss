@@ -133,6 +133,10 @@ nav[role='navigation'] {
                 content: "|";
                 padding-left: 15px;
             }
+            
+            &.active {
+                text-decoration: underline;
+            }
 
         }
 
