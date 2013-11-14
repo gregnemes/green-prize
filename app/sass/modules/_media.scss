@@ -72,7 +72,6 @@ figcaption {
 
     &.large {
         font-size: em-calc( $caption-font-size + 5 );
-        line-height: 1;
         font-weight: bold;
     }
 }
@@ -80,7 +79,11 @@ figcaption {
     
 
 
-
+.image-col {
+    img:first-child {
+        margin-right: 10px;
+    }
+}
 
 body .video {
     clear: both;
