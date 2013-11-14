@@ -229,7 +229,8 @@ $(document).ready(function(){
 
             var el = this.el,
                 tl = this.tl,
-                segments = [580, 290, 160, 100, 0],
+                graphSegments = [580, 290, 160, 100, 0],
+                lineSegments = [ 165, 410, 540, 615, 693],
                 currPoint = 1
             ;
 
@@ -238,7 +239,8 @@ $(document).ready(function(){
             }
 
             function line() {
-                return el.lineGraph.transition().style( 'stroke-dashoffset',  segments.shift() );
+                el.redLine.transition().attr( 'width', lineSegments.shift() );
+                return el.lineGraph.transition().style( 'stroke-dashoffset',  graphSegments.shift() );
             }
 
             function shadow() {
@@ -296,7 +298,10 @@ $(document).ready(function(){
             el.dataPoints   = tl.select( '#data-points' ).selectAll( 'g' );
             el.xAxis        = tl.select( '#x-axis' ).attr('transform', 'translate(0, -10)' ).style( 'opacity', 0 );
             el.yAxis        = tl.select( '#y-axis' ).attr( 'transform', 'translate(-30)' );
-            el.shadow       = tl.select( '#back-shadow' ).attr( 'width', 0 );
+            el.shadow       = tl.select( '#back-shadow' ).selectAll('rect').attr( 'width', 0 );
+            el.redLine      = tl.select( '#red-line' ).attr( 'width', 0 );
+
+            console.log(el.shadow);
         },
 
         load: function( element ) {
@@ -554,16 +559,17 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 
-    var medellinTimeline = document.getElementById( 'medellin-timeline' );
+    var medellinTimeline = document.getElementById( 'medellin-timeline' ),
+        portoTimeline = document.getElementById( 'porto-timeline' )
+    ;
 
     if( medellinTimeline ) {
         window.MedellinTimeline.init( medellinTimeline );
     }
-
-    var p = document.getElementById( 'porto-timeline' );
-
-    window.PortoTimeline.init( p );
-
+    if( portoTimeline ) {
+        window.PortoTimeline.init( portoTimeline );
+    }
+    
 
 });
 
