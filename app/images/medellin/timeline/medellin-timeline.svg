@@ -44,42 +44,42 @@
 	</g>
 </g>
 <g id="data-points">
-	<g>
+	<g id="metro">
 		<line fill="none" stroke="#232020" stroke-miterlimit="10" x1="164.343" y1="214.718" x2="164.343" y2="188.543"/>
 		<circle fill="none" stroke="#232020" stroke-width="4" stroke-miterlimit="10" cx="164.344" cy="185.344" r="5.282"/>
 		<rect x="183.564" y="147.014" fill="none" width="82.426" height="94.589"/>
 		<text transform="matrix(1 0 0 1 183.5645 156.9199)"><tspan x="0" y="0" fill="#231F20" font-family="'RobotoCondensed-Light'" font-size="13">Metro de </tspan><tspan x="0" y="15.6" fill="#231F20" font-family="'RobotoCondensed-Light'" font-size="13">Medellín </tspan><tspan x="0" y="31.199" fill="#231F20" font-family="'RobotoCondensed-Light'" font-size="13">opening</tspan></text>
 	</g>
-	<g>
+	<g id="santo-domingo">
 		<line fill="none" stroke="#232020" stroke-miterlimit="10" x1="430.812" y1="189.679" x2="430.812" y2="214.854"/>
 		<circle fill="none" stroke="#8DC641" stroke-width="4" stroke-miterlimit="10" cx="430.81" cy="183.969" r="5.282"/>
 		<rect x="448.03" y="140.687" fill="none" width="82.426" height="94.588"/>
 		<text transform="matrix(1 0 0 1 448.0312 150.5928)"><tspan x="0" y="0" fill="#231F20" font-family="'RobotoCondensed-Light'" font-size="13">Metrocable</tspan><tspan x="0" y="15.6" fill="#231F20" font-family="'RobotoCondensed-Light'" font-size="13">Line K</tspan><tspan x="0" y="31.199" fill="#231F20" font-family="'RobotoCondensed-Light'" font-size="13">Santo Domingo</tspan></text>
 	</g>
-	<g>
-		<rect x="629.399" y="105.887" fill="none" width="82.426" height="49.684"/>
-		<text transform="matrix(1 0 0 1 629.3994 115.793)"><tspan x="0" y="0" fill="#231F20" font-family="'RobotoCondensed-Light'" font-size="13">Metrocable</tspan><tspan x="0" y="15.6" fill="#231F20" font-family="'RobotoCondensed-Light'" font-size="13">Line L</tspan><tspan x="0" y="31.199" fill="#231F20" font-family="'RobotoCondensed-Light'" font-size="13">Arvi Park</tspan></text>
-		
-			<line fill="none" stroke="#232020" stroke-width="0.9917" stroke-miterlimit="10" x1="612.277" y1="150.014" x2="612.277" y2="214.854"/>
-		<circle fill="none" stroke="#C8B299" stroke-width="4" stroke-miterlimit="10" cx="612.239" cy="146.047" r="5.282"/>
-	</g>
-	<g>
-		<line fill="none" stroke="#232020" stroke-miterlimit="10" x1="670.278" y1="215.342" x2="670.278" y2="190.025"/>
-		<circle fill="none" stroke="#28ABE2" stroke-width="4" stroke-miterlimit="10" cx="670.279" cy="185.968" r="5.282"/>
-		<rect x="687.598" y="163.57" fill="none" width="82.426" height="42.82"/>
-		<text transform="matrix(1 0 0 1 687.5986 173.4766)"><tspan x="0" y="0" fill="#231F20" font-family="'RobotoCondensed-Light'" font-size="13">Metroplus</tspan><tspan x="0" y="15.6" fill="#231F20" font-family="'RobotoCondensed-Light'" font-size="13">Line MP1</tspan></text>
-	</g>
-	<g id="north-eastern_2_">
+	<g id="urban-project">
 		<rect x="418.503" y="14.854" fill="none" width="126.842" height="59.646"/>
 		<text transform="matrix(1 0 0 1 418.5029 24.7607)"><tspan x="0" y="0" fill="#8DC641" font-family="'RobotoCondensed-Regular'" font-size="13">2004–2008</tspan><tspan x="0" y="15.6" fill="#231F20" font-family="'RobotoCondensed-Regular'" font-size="13">North-Eastern Integral </tspan><tspan x="0" y="31.199" fill="#231F20" font-family="'RobotoCondensed-Regular'" font-size="13">Urban Project</tspan></text>
 	</g>
-	<g>
+	<g id="san-javier">
 		<rect x="571.026" y="41.677" fill="none" width="82.426" height="52.819"/>
 		<text transform="matrix(1 0 0 1 571.0264 51.583)"><tspan x="0" y="0" fill="#231F20" font-family="'RobotoCondensed-Light'" font-size="13">Metrocable</tspan><tspan x="0" y="15.6" fill="#231F20" font-family="'RobotoCondensed-Light'" font-size="13">Line J</tspan><tspan x="0" y="31.199" fill="#231F20" font-family="'RobotoCondensed-Light'" font-size="13">San Javier</tspan></text>
 		
 			<line fill="none" stroke="#232020" stroke-width="0.9978" stroke-miterlimit="10" x1="551.698" y1="91.077" x2="551.698" y2="215.364"/>
 		
 			<ellipse fill="none" stroke="#FEDE51" stroke-width="3.9913" stroke-miterlimit="10" cx="552.162" cy="86.95" rx="5.282" ry="5.259"/>
+	</g>
+	<g id="arvi-park">
+		<rect x="629.399" y="105.887" fill="none" width="82.426" height="49.684"/>
+		<text transform="matrix(1 0 0 1 629.3994 115.793)"><tspan x="0" y="0" fill="#231F20" font-family="'RobotoCondensed-Light'" font-size="13">Metrocable</tspan><tspan x="0" y="15.6" fill="#231F20" font-family="'RobotoCondensed-Light'" font-size="13">Line L</tspan><tspan x="0" y="31.199" fill="#231F20" font-family="'RobotoCondensed-Light'" font-size="13">Arvi Park</tspan></text>
+		
+			<line fill="none" stroke="#232020" stroke-width="0.9917" stroke-miterlimit="10" x1="612.277" y1="150.014" x2="612.277" y2="214.854"/>
+		<circle fill="none" stroke="#C8B299" stroke-width="4" stroke-miterlimit="10" cx="612.239" cy="146.047" r="5.282"/>
+	</g>
+	<g id="metroplus">
+		<line fill="none" stroke="#232020" stroke-miterlimit="10" x1="670.278" y1="215.342" x2="670.278" y2="190.025"/>
+		<circle fill="none" stroke="#28ABE2" stroke-width="4" stroke-miterlimit="10" cx="670.279" cy="185.968" r="5.282"/>
+		<rect x="687.598" y="163.57" fill="none" width="82.426" height="42.82"/>
+		<text transform="matrix(1 0 0 1 687.5986 173.4766)"><tspan x="0" y="0" fill="#231F20" font-family="'RobotoCondensed-Light'" font-size="13">Metroplus</tspan><tspan x="0" y="15.6" fill="#231F20" font-family="'RobotoCondensed-Light'" font-size="13">Line MP1</tspan></text>
 	</g>
 </g>
 <g id="y-axis_1_">
