@@ -11,6 +11,9 @@ $h4-size: em-calc( 21px );
 $h5-size: em-calc( $base-font-size );
 $h6-size: em-calc( 14px );
 
+// =Small Text Size
+$small-size: em-calc( $base-font-size - 2 );
+
 //= Paragraphs
 $p-line-height: 1.5;
 $txt-margin: 25px;
@@ -109,7 +112,6 @@ p,
     line-height: $base-line-height;
 }
 
-
 i, em {
     font-style: $italic-style;
 }
@@ -171,6 +173,10 @@ blockquote {
 
 }
 
+/** = Smaller **/
+.smaller {
+    font-size: $small-size;
+}
 
 /** = Text Colors **/
 

@@ -1,3 +1,12 @@
+%timeline-transform-ease {
+    @include transition( transform .5s ease );
+    @include transition-delay( .5s );
+}
+
+%timeline-points-transition {
+    @include transition( opacity .5s linear );
+}
+
 .timeline {
     overflow: hidden;
 }
@@ -21,15 +30,9 @@
     
     width: 775px;
 
-    .timeline-button {
-        right: 17px;
-        bottom: 20px;
-        
-        &:after {
-            position: absolute;
-            right: -34px; top: 0;
-            @include css-triangle( 17px, #000, left );
-        }
+    #points {
+        @extend %timeline-points-transition;
+        opacity: 0;   
     }
 
     @include transform( translateX( 0 ) );
@@ -43,18 +46,36 @@
     margin-top: 26px;
    }
 
-   .timeline-button {
-        left: 17px;
-        top: 418px;
+    #points-top,
+    #points-bottom {
+        @extend %timeline-points-transition;
+        opacity: 0;
+    }
 
-        &:after {
-            position: absolute;
-            left: -34px; top: 0;
-            @include css-triangle( 17px, #000, right );
-        }
-   }
+    @include transform( translateX( 103% ) );
 
-   @include transform( translateX( -100% ) );
+}
+
+#y-axis-08 {
+    @extend %timeline-transform-ease;
+    @include transform( translateX( -5% ) );
+}
+
+
+.timeline-button {
+
+    @extend %timeline-transform-ease;
+
+    position: absolute;
+    bottom: 350px;
+    
+    &:after {
+        position: absolute;
+        right: -34px; top: 0;
+        @include css-triangle( 17px, #000, left );
+    }
+
+    @include transform( translateX( 640px ) );
 
 }
 
@@ -69,31 +90,57 @@
         .timeline {
             position: relative;
         }
-
-        .timeline-button {
-            position: absolute;
-        }
     }
-
-
+    
     &.timeline-ready {
         
+        #points {
+            opacity: 1;
+        }
+
         .timeline {
+            @extend %timeline-transform-ease;
             position: absolute;
             top: 0;
-            @include transition( transform .5s linear );
         }
 
     }
 
     &.show-2008 {
         
+        .timeline-button {
+            
+            &:after {
+                left: -34px;
+                right: auto; top: 0;
+                border-right-style: solid;
+                border-color: transparent #000 transparent transparent;
+            }
+
+            @include transform( translateX( 40px ) );
+        }
+
         .__porto-2008 {
-            @include transform( translateX( 0 ) );
+            @include transform( translateX( 5% ) );
+            
+            #points-top,
+            #points-bottom {
+                opacity: 1;
+            }
+
+            #y-axis-08 {
+                @include transform( translateX( 0 ) );
+            }
+            
         }
         
         .__porto-2000 {
-            @include transform( translateX( 103% ) );
+            @include transform( translateX( -98% ) );
+
+            #points {
+                opacity: 0;
+            }
+
         }
 
     }

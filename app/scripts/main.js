@@ -414,11 +414,16 @@ $(document).ready(function(){
         el: {
             element: null,
             $el: null,
-            $buttons: null,
+            $button: null,
+            $yearLabel: null,
             tl2000: null,
             tl2008: null
         },
 
+        buttonLabel: {
+            '2000': '1989 &mdash; 2000',
+            '2008': '2001 &mdash; 2008'
+        },
 
         trigger: function() {
             Utils.pubSub.pub.apply( Utils.pubSub, arguments );
@@ -441,16 +446,27 @@ $(document).ready(function(){
 
         events: {
 
-            clickHandler: function( e, button ) {
+            clickHandler: function() {
                 
                 var el = this.el,
-                    $button = el.$buttons.filter ( button ),
-                    year = $button.data( 'year' ),
-                    show2008 = year === 'show-2008'
+                    $button = el.$button,
+                    year =  $button.data( 'year' ),
+                    label = year === '2000' ? this.buttonLabel['2000'] : this.buttonLabel['2008']
                 ;
 
+                $button.html( label ).data( 'year', year === '2008' ? '2000' : '2008' );
+
+                el.$el.toggleClass( 'show-2008' );
+
+            },
+
+            updateYear: function() {
                 
-                el.$el.toggleClass( 'show-2008', show2008 );
+                var year = this.el.$button.data( 'year' ),
+                    label = this.buttonLabel[year]
+                ;
+                
+                this.el.$yearLabel.html( label );
 
             }
 
@@ -461,39 +477,33 @@ $(document).ready(function(){
         bind: function() {
             this.onProxy( 'loaded', this.setupElements )
                 .onProxy( 'button:clicked', this.events.clickHandler )
+                .onProxy( 'button:clicked', this.events.updateYear )
             ;
         },
 
         setupElements: function() {
 
             var el = this.el,
+
                 $el = el.$el = $( el.element ).addClass( 'timeline-ready' ),
+                
+                // Create the button
+                $button = el.$button = $( '<a />', { 'href': '#', 'class': 'button timeline-button'} ).text( '2001 - 2008' ).data('year', '2000' ),
+                
                 that = this
             ;
             
-            // Create the first button
-            el.tl2000.tl.insert( 'a' ).attr( {
-                'href': '#',
-                'class': 'button timeline-button',
-                'data-year': 'show-2008'
-            } ).text('1989 - 2000');
-
-            // Create the second button
-            el.tl2008.tl.insert( 'a' ).attr( {
-                'href': '#',
-                'class': 'button timeline-button',
-                'data-year': 'show-2000'
-            }). text( '2001 - 2008' );
-
+            el.$yearLabel = $( '#timeline-year' );
+            
             // Register element click event
             $el.on( 'click', '.timeline-button', function( e ) {
                 e.preventDefault();
                 that.trigger( 'porto:timeline:button:clicked', this );
-            });
+            }).append( $button );
+            
+           
 
-            // Get the buttons
-            el.$buttons = $el.find( '.timeline-button' );
-
+            
         },
 
         loadTimelines: function( element ) {
@@ -539,7 +549,7 @@ $(document).ready(function(){
 
     };
 
-})(window, window.App.$, window.App.Utils, window.App.UI.D3, App.UI.Timeline );
+})(window, window.App.$, window.App.Utils, window.App.UI.D3, window.App.UI.Timeline );
 
 
 $(document).ready(function(){
