@@ -69,7 +69,7 @@ module.exports = function (grunt) {
             options: {
                 dest: '<%= yeoman.dist %>'
             },
-            html: ['<%= yeoman.app %>/header.php', '<%= yeoman.app %>/footer.php']
+            html: ['<%= yeoman.app %>/__header_assets.html', '<%= yeoman.app %>/__footer_assets.html']
         },
         usemin: {
             options: {
@@ -119,7 +119,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: '<%= yeoman.app %>',
-                    src: '*.php',
+                    src: '*.html',
                     dest: '<%= yeoman.dist %>'
                 }]
             }

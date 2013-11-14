@@ -1,3 +1,10 @@
+<?php 
+        function nav_active( $path ) {
+            $url = parse_url( $path );
+            $current = ( $url['path'] === $_SERVER[ 'REQUEST_URI' ] ) ? 'active' : '';
+            return $current;
+        }
+?>
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -9,26 +16,9 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="//api.tiles.mapbox.com/mapbox.js/v1.4.0/mapbox.css">
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <!-- build:css /css/main.css -->
-        <link rel="stylesheet" href="/css/main.css">
-        <!-- endbuild -->
-        <!-- build:js /scripts/vendor/modernizr.js -->
-        <script src="/bower_components/modernizr/modernizr.js"></script>
-        <!-- endbuild -->
+        <?php include '__header_assets.html'; ?>
     </head>
     <body>
-        <?php 
-
-            function nav_active( $path ) {
-                $url = parse_url( $path );
-                $current = ( $url['path'] === $_SERVER[ 'REQUEST_URI' ] ) ? 'active' : '';
-                return $current;
-            }
-            
-        ?>
-       
         <div class="wrap">
             <div class="top-bar">
                 <a href="/" title="Back to Home">The Veronica Rudge Green Prize in Urban Design</a>
