@@ -29,9 +29,16 @@ button,
         background: lighten( $button-bg, 20% );
     }
     
-
     &.active {
         background: $button-active-bg;
+    }
+
+    &.timeline-button {
+        background: #000;
+        color: white;
+        font-family: $callout-font-family;
+        height: 26px;
+        line-height: 26px;
     }
 }
 

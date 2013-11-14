@@ -4,8 +4,6 @@
 
 .timeline-medellin {
     
-    
-    
     #line-graph {
         stroke-dasharray: 750px;
         stroke-dashoffset: 750px;
@@ -15,13 +13,89 @@
         opacity: 0;
     }
     
-    &.showgraph {
-        
-       
+}
 
+
+
+.__porto-2000 {
+    
+    width: 775px;
+
+    .timeline-button {
+        right: 17px;
+        bottom: 20px;
+        
+        &:after {
+            position: absolute;
+            right: -34px; top: 0;
+            @include css-triangle( 17px, #000, left );
+        }
+    }
+
+    @include transform( translateX( 0 ) );
+}
+
+.__porto-2008 {
+   
+   width: 796px;
+
+   svg {
+    margin-top: 26px;
+   }
+
+   .timeline-button {
+        left: 17px;
+        top: 418px;
+
+        &:after {
+            position: absolute;
+            left: -34px; top: 0;
+            @include css-triangle( 17px, #000, right );
+        }
+   }
+
+   @include transform( translateX( -100% ) );
+
+}
+
+.timeline-wrap {
+    overflow: hidden;
+    position: relative; 
+
+    &.porto {
+        
+        min-height: 717px;
+        
+        .timeline {
+            position: relative;
+        }
+
+        .timeline-button {
+            position: absolute;
+        }
     }
 
 
+    &.timeline-ready {
+        
+        .timeline {
+            position: absolute;
+            top: 0;
+            @include transition( transform .5s linear );
+        }
 
+    }
+
+    &.show-2008 {
+        
+        .__porto-2008 {
+            @include transform( translateX( 0 ) );
+        }
+        
+        .__porto-2000 {
+            @include transform( translateX( 103% ) );
+        }
+
+    }
 
 }

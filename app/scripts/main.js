@@ -222,7 +222,7 @@ $(document).ready(function(){
             dataPoints: null,
             xAxis: null,
             yAxis: null,
-            
+            shadow: null
         },
 
         buildTimeline: function() {
@@ -292,11 +292,11 @@ $(document).ready(function(){
             // Set main element to document element
             el.main = element;
             // Line Graph
-            el.lineGraph = tl.select( '#line-graph' );
-            el.dataPoints = tl.select( '#data-points' ).selectAll( 'g' );
-            el.xAxis = tl.select( '#x-axis' ).attr('transform', 'translate(0, -10)' ).style('opacity', 0);
-            el.yAxis = tl.select( '#y-axis' ).attr( 'transform', 'translate(-30)' );
-            el.shadow = tl.select( '#back-shadow' ).attr('width', 0);
+            el.lineGraph    = tl.select( '#line-graph' );
+            el.dataPoints   = tl.select( '#data-points' ).selectAll( 'g' );
+            el.xAxis        = tl.select( '#x-axis' ).attr('transform', 'translate(0, -10)' ).style( 'opacity', 0 );
+            el.yAxis        = tl.select( '#y-axis' ).attr( 'transform', 'translate(-30)' );
+            el.shadow       = tl.select( '#back-shadow' ).attr( 'width', 0 );
         },
 
         load: function( element ) {
@@ -340,6 +340,208 @@ $(document).ready(function(){
 })(window, window.App.$, window.App.Utils, window.App.UI.D3 );
 
 
+
+(function(window, $, App, Utils, undefined ){
+
+
+    App.UI.Timeline = (function($, Utils, d3){
+
+        var Timeline = function( element ) {
+                this._uniqueID = _uniqueID++;
+                this.el = element;
+                this.onProxy( 'load', this.initElements );
+            },
+        
+            _uniqueID = 0 // Unique Identifier
+        ;
+
+        Timeline.prototype.initElements = function( e, xml ) {
+            this.tl = d3.select( this.el );
+            this.tl.node().appendChild( document.importNode( xml, true ) );
+            return this;
+        };
+
+
+        Timeline.prototype.load = function() {
+
+            var that = this;
+
+            d3.xml( this.el.getAttribute( 'data-svg' ), 'image/xvg+xml', function( xml ) {
+                that.trigger( that._uniqueID + ':timeline:load', xml.documentElement );
+            });
+
+            return this;
+        };
+
+
+        Timeline.prototype.trigger = function() {
+            Utils.pubSub.pub.apply( Utils.pubSub, arguments );
+            return this;
+        };
+        
+        Timeline.prototype.off = function( evt, cb ) {
+            Utils.pubSub.un( this._uniqueID + ':timeline:' + evt, cb );
+            return this;
+        };
+        
+        Timeline.prototype.on = function( evt, cb ) {
+            Utils.pubSub.sub( this._uniqueID + ':timeline:' + evt, cb );
+            return this;
+        };
+
+        Timeline.prototype.onProxy = function( evt, cb ) {
+            this.on( evt, $.proxy( cb, this ) );
+            return this;
+        };
+
+        Timeline.prototype.animate = function() {};
+
+
+
+        return Timeline;
+
+    })($, Utils, App.UI.D3 );
+
+})(window, window.App.$, window.App, window.App.Utils );
+
+
+(function(window, $, Utils, d3, Timeline, undefined) {
+
+
+
+    window.PortoTimeline = {
+
+        el: {
+            element: null,
+            $el: null,
+            $buttons: null,
+            tl2000: null,
+            tl2008: null
+        },
+
+
+        trigger: function() {
+            Utils.pubSub.pub.apply( Utils.pubSub, arguments );
+            return this;
+        },
+
+        on: function( evt, cb ) {
+            // Cubscribe to event
+            Utils.pubSub.sub( 'porto:timeline:' + evt, cb );
+            return this;
+        },
+
+        /**
+         * Make sure to proxy the call internally, to MedellinTimeline
+         */
+        onProxy: function( evt, cb ) {
+            // Use jQuery proxy method to proxy, the callback to MedellinTimeline
+            return this.on( evt, $.proxy( cb, this ) );
+        },
+
+        events: {
+
+            clickHandler: function( e, button ) {
+                
+                var el = this.el,
+                    $button = el.$buttons.filter ( button ),
+                    year = $button.data( 'year' ),
+                    show2008 = year === 'show-2008'
+                ;
+
+                
+                el.$el.toggleClass( 'show-2008', show2008 );
+
+            }
+
+
+        },
+
+
+        bind: function() {
+            this.onProxy( 'loaded', this.setupElements )
+                .onProxy( 'button:clicked', this.events.clickHandler )
+            ;
+        },
+
+        setupElements: function() {
+
+            var el = this.el,
+                $el = el.$el = $( el.element ).addClass( 'timeline-ready' ),
+                that = this
+            ;
+            
+            // Create the first button
+            el.tl2000.tl.insert( 'a' ).attr( {
+                'href': '#',
+                'class': 'button timeline-button',
+                'data-year': 'show-2008'
+            } ).text('1989 - 2000');
+
+            // Create the second button
+            el.tl2008.tl.insert( 'a' ).attr( {
+                'href': '#',
+                'class': 'button timeline-button',
+                'data-year': 'show-2000'
+            }). text( '2001 - 2008' );
+
+            // Register element click event
+            $el.on( 'click', '.timeline-button', function( e ) {
+                e.preventDefault();
+                that.trigger( 'porto:timeline:button:clicked', this );
+            });
+
+            // Get the buttons
+            el.$buttons = $el.find( '.timeline-button' );
+
+        },
+
+        loadTimelines: function( element ) {
+
+            var timelines = element.getElementsByClassName( 'timeline' ),
+                tOne = timelines.item(0),
+                tTwo = timelines.item(1),
+                el = this.el
+            ;
+
+            el.element = element;
+            el.tl2000 = new Timeline( tOne );
+            el.tl2008 = new Timeline( tTwo );
+
+            el.tl2008.on( 'load', function(){
+                Utils.pubSub.pub( 'porto:timeline:loaded' );
+            });
+
+            // First load the 2000 timeline.
+            el.tl2000.on( 'load', function() {
+                // When that is done loading, load the 2008 timeline.
+                el.tl2008.load();
+            
+            }).load();
+
+            
+            return this;
+
+        },
+
+        init: function( element ) {
+
+
+            // We need to load both timelines
+            this.bind();
+            this.loadTimelines( element );
+            // Then setup each timeline
+            // There should be events presented for both timelines.
+
+            return this;
+
+        }
+
+    };
+
+})(window, window.App.$, window.App.Utils, window.App.UI.D3, App.UI.Timeline );
+
+
 $(document).ready(function(){
 
     var medellinTimeline = document.getElementById( 'medellin-timeline' );
@@ -347,6 +549,10 @@ $(document).ready(function(){
     if( medellinTimeline ) {
         window.MedellinTimeline.init( medellinTimeline );
     }
+
+    var p = document.getElementById( 'porto-timeline' );
+
+    window.PortoTimeline.init( p );
 
 
 });
