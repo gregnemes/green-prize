@@ -1,10 +1,10 @@
 <div id="medellin-intro-3" class='section'>
     <article>
+        <figure class='fixed-image' data-anchor-target="#marginality" data-bottom-top="opacity: 0" data--500-top="opacity: 0" data-100-top="opacity: 1">
+            <img src="/images/medellin/info-graphics/settlements-1948.jpg" />
+        </figure>
         <div class="content-area">
-            <div class="col-6">
-                &nbsp;<!-- PHOTO GOES HERE --> 
-            </div>
-            <div class="col-6">
+            <div class="col-12 prefix-6">
                 <section id="overview">
                     <header><h5>MEDELL&Iacute;N OVERVIEW</h5></header>
                     <p>Medell&iacute;n is located in the Aburr&aacute; Valley in the central Andes, 1,479 meters above sea level. Known as the "City of Everlasting Spring," it has only recently become a metropolis. It is the second-largest city in Colombia (after Bogota') and the capital of the department of Antioquia. From 1938 to 2008, the population of Medell&iacute;n increased from 168,000 to 2.34 million. This population skews relatively young, with almost 70 percent between five and forty-four years old.</p>
@@ -42,18 +42,17 @@
             </div>
         </div><!-- /.canvas-row -->
         <div class="content-area">
-            <div class="col-6">
-               <img src="/images/homicides.png" data-bottom="transform: rotate(210deg);" data-200-top="transform: rotate(170deg);" />
-               &nbsp;
-            </div>
-            <div class="col-6">
-                <section>
+            <figure class='fixed-image mobility-image' data-anchor-target="#mobility" data-bottom-top="opacity: 0;" data--300-top-bottom="opacity: 0" data-400-top="opacity: 1">
+                <img src="/images/homicides.png" />
+            </figure>
+            <div class="col-12 prefix-6">
+                <section id="thirty-years">
                     <p>Thirty years later, a new wave of violence and rural displacement, combined with emerging narcotics trafficking, drove informalization in dramatic political and social directions. The neighborhoods of the northern slopes of the valley, commonly termed "comunas," became the habitat of illegal gangs—bands of assassins who acted on the orders of narcotics traffickers and other criminals. State control and presence in these sectors was almost nonexistent. As a result of informalization, 25 percent of Medellín’s territory (a total of 2,400 hectares) now lies in marginal neighborhoods.</p>
 
                     <p>The public administration, along with academic and other nongovernmental organizations, has been trying to address decades of inequality by implementing programs aimed at transforming the quality of life for the inhabitants of marginal neighborhoods. Many difficulties of the informal city—inequality, violence, and segregation—were an inherent aspect of its past. Although they remain challenges of the present, there is a move toward change so that they will not be part of the future of Medellín.</p>
 
                 </section>
-                <section class="breath-top-60">
+                <section id="mobility" class="breath-top-60">
                     <header><h5>Mobility</h5></header>
                     <p>
                         The most significant event in the establishment of improved mobility within the Aburr&aacute; Valley was the establishment of the Metro in 1995. With 31 kilometers of track, it is (with the Metro of Santiago, Chile) one of the most efficient in Latin America. The Metro’s speed is 37 kilometers per hour, while the cable-car system Metrocable's is 18 km/hour, and city buses run at speeds of about 15 km/hour. In 2006, the Metro released the master plan for 2006–2020, entitled "Trust in the Future."Several expansion projects were subsequently evaluated, including new cable-car systems, trams along 80th Avenue and Ayacucho Street, and the extension of Line B to the east.
