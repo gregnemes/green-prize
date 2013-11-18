@@ -1,7 +1,7 @@
 <div id="porto-intro-4" class='section'>
     <div class="row">
         <figure>
-            <img src="/images/porto/metro-train.jpg" alt="The Porto Metro Train" />
+            <img src="/images/porto/metro-train.jpg" alt="The Porto Metro Train" width="936" height="445" data-bottom-top="opacity: 0; transform: translateY(50px)" data--100-top="transform: translateY(0); opacity: 1" />
         </figure>
     </div>
     <div class="content-area">
@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div class="row">
-                <aside class="callout col-12">
+                <aside class="callout col-12" data-bottom-top="opacity: 0;" data--100-bottom="opacity: 1">
                 We can alternate materials and modify inclinations but the building stoops are “sacred,” it is like touching a stranger on his shoulder. From shoulder to shoulder we modify elevation values, pavements, textures, pathways, road kerbsides, kerbstones, lamp-posts and trees. lt is not that we want to alter the geography but "Metro oblige."
                 </aside>
             </div>
@@ -33,8 +33,8 @@
                     <p>When difficulties arise we speak to Transmetro or to Normetro, which then speak to the Metro, the town council, the parish council, the residents, and the tradesmen.</p>
                     <p>After being approved, we being to see streets that intersect and widen into squares, plazas, roundabouts, superfluous recesses, small courts, tree-lined plazas, parking on roadsides, and even boulevards—Avenida da Republica: Gaia I Matosinhos.</p>
                     <p>Although this is not our vocation the Metro system builds places, nooks, joins cities, designs metropolises—Gaia, Porta, Matosinhos, Maia, Trofa, Vila do Conde, P6voa de Varzim and Gondomar.</p>
-                    <figure class="alignleft pull-flow-12">
-                        <img src="/images/porto/porto-station.jpg" alt="Porto Station" />
+                    <figure class="alignleft pull-flow-12" data-bottom-top="opacity: 0; transform: translateY(50px)" data--100-bottom="opacity: 1; transform: translateY(0px);">
+                        <img src="/images/porto/porto-station.jpg" alt="Porto Station" width="384" height="572" />
                     </figure>
                     <p>Cities do not change of their own free will or by political decree but with the emergence of systems that they need to survive and develop.</p>
                     <p>lt was thus with the Romans when at the crossroads of two routes they designed the Cardus and the Decomanus with the Forum in the centre. lt was thus in the Middle Ages when the Forum was replaced by Cathedral Square, built with the stones of the demolished temple.</p>

@@ -1,5 +1,5 @@
-<div id="porto-intro-2" class='section'>
-    <article class="content-area">
+<div id="porto-intro-2" class='section over-light'>
+    <article class="content-area" data-0="opacity: .45;" data-100="opacity: 1">
         <blockquote class="postfix-2 callout">
             Cities do not change of their own free will or by political decree, but with the emergence of systems that they need to survive. [&hellip;] It will be thus in the 21st Century by which time the surface light rail system must be integrated into a planned system (enough of improvisation) creating a new urban landscape that cannot be postponed.
         </blockquote>
@@ -8,10 +8,9 @@
         </p>
         <div class="row">
             <section class="col-6 push-6">
-
                 <p>Juror and professor of landscape architecture Gary Hildebrand described the historic center of the city, "Like the phenomena we see in some American cities, there's a kind of hollowed out core. It's historic and it's beautiful, but until this metro project came about, not so vital. The jobs are not in the downtown, and over the last generation people had moved to the boarder reaches." According to Hildebrand, the introduction of the Metro system was "like reviving the circulation in a human. The center could thrive again."</p>
-                <figure class="alignleft pull-flow-11">
-                    <img src="/images/porto/villa-de-gaia.jpg" alt="Villa De Gaia" />
+                <figure class="alignleft pull-flow-11" data-bottom-top="opacity: 0; transform: translateX(-30px);" data--100-bottom="opacity: 1; transform: translateX(0);">
+                    <img src="/images/porto/villa-de-gaia.jpg" alt="Villa De Gaia" width="504" height="360" />
                     <figcaption class="out-of-flow">
                         Lorem ipsum dolor sit amet.
                     </figcaption>
