@@ -69,6 +69,112 @@
 
 })(jQuery, window.Porto, window.App.UI.Map );
 
+
+
+(function($){
+
+
+
+    $.fn.tabs = function() {
+
+
+        var Tabs = {
+
+
+            el: {
+                $container: null,
+                $tabs: null,
+                $content: null
+            },
+
+            events: {
+
+                tabChange: function( e, el ) {
+                    
+                    var tab = this.$tabs.filter( el ),
+                        content = this.$container.find( '#' + tab.data('tab') )
+                    ;
+                    
+                    if( tab.hasClass( 'current' ) ) {
+                        return;
+                    }
+
+                    this.$tabs.removeClass( 'current' );
+                    this.$content.removeClass( 'current' );
+
+                    content.addClass( 'current' );
+                    tab.addClass( 'current' );
+                    
+                }
+
+            },
+
+            initElements: function( el ) {
+
+                this.$container = $( el );
+                this.$tabs = this.$container.find( 'a[data-tab]' );
+                this.$content = this.$container.find( '[data-tab-content]' );
+                return this;
+
+            },
+            
+            bind: function() {
+
+                this.$container
+                
+                    .on( 'tab:change', $.proxy( this.events.tabChange, this  ) )
+                
+                    .on( 'click.tab', '[data-tab]', function(e){
+                        
+                        if( e ) { 
+                            e.preventDefault();
+                        }
+
+                        $(this).trigger( 'tab:change', this );
+
+                    });
+
+            },
+
+            prepare: function() {
+
+                this.$tabs.first().click();
+
+            },
+
+            init: function( el ) {
+
+                this.initElements( el );
+                this.bind();
+                this.prepare();
+                return this;
+            }
+
+        };
+
+
+        this.each(function(){
+            
+            var tabs = this._tabs;
+
+            if( !tabs ) {
+                tabs = Tabs.init( this );
+            }
+
+            this._tabs = tabs;
+        });
+
+        return this;
+
+
+    };
+
+    
+
+
+})(window.App.$);
+
+
 $( document ).ready(function(){
 
     var  homeMap             = document.getElementById( 'home-map' ),
@@ -76,13 +182,6 @@ $( document ).ready(function(){
          portoTimeline       = document.getElementById( 'porto-timeline' )
     ;
     
-    // $(document).scrollsnap({
-    //     snaps: '.snap',
-    //     proximity: 100
-    // });
-
-    
-
     if( homeMap ) {
         homeMap = new window.App.UI.HomeMap( homeMap );
         // Medellin
@@ -98,11 +197,19 @@ $( document ).ready(function(){
         window.PortoTimeline.init( portoTimeline );
     }
 
-    
+    $( '.tabs' ).tabs();
 
     $( '.gallery' ).gallery();
     $( '#navigation' ).navPoints();
     
+
+    $(document).scrollsnap({
+        snaps: '.snap',
+        proximity: 100,
+        offset: -100 // account for top-bar
+    });
+
+
     window.skrollr.init();
 
 });

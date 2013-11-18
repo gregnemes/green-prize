@@ -1,7 +1,20 @@
 <div id="medellin-intro-3" class='section'>
     <article>
-        <figure class='fixed-image' data-anchor-target="#marginality" data-bottom-top="opacity: 0" data--500-top="opacity: 0" data-100-top="opacity: 1">
-            <img src="/images/medellin/info-graphics/settlements-1948.jpg" />
+        <figure class='fixed-image settlements' data-anchor-target="#marginality" data-bottom-top="display: none; opacity: 0" data--500-top="opacity: 0;" data--1-bottom-top="display: block;" data-top-bottom="display: none;" data-100-top="opacity: 1">
+            <div class="tabs">
+                <ul>
+                    <li><a href="#1948" data-tab="1948">1948</a></li>
+                    <li><a href="#1970" data-tab="1970">1970</a></li>
+                    <li><a href="#1996" data-tab="1996">1996</a></li>
+                    <li><a href="#2011" data-tab="2011">2011</a></li>
+                </ul>
+                <div class='tab-content-wrap'>
+                    <img id="1948" src="/images/medellin/info-graphics/settlements-1948.jpg" alt="Settlments in 1948" data-tab-content />
+                    <img id="1970" src="/images/medellin/info-graphics/settlements-1970.jpg" alt="Settlments in 1970" data-tab-content />
+                    <img id="1996" src="/images/medellin/info-graphics/settlements-1996.jpg" alt="Settlments in 1996" data-tab-content />
+                    <img id="2011" src="/images/medellin/info-graphics/settlements-2011.jpg" alt="Settlments in 2011" data-tab-content />
+                </div>
+            </div>
         </figure>
         <div class="content-area">
             <div class="col-12 prefix-6">
@@ -13,7 +26,7 @@
 
                     <p>The city generates more than 8 percent of Colombia’s GDP, with the Aburra' Valley as a whole contributing close to 11 percent. Surpassing that of the other major cities of Colombia, the GDP per capita (with purchasing power parity) is U.S. $3,794; and corporate density is 25 companies per 1,000 people—the second highest in the country. Although Medell&iacute;n was once known as "The Industrial City of Colombia," global and national economic dynamics have shifted the city’s focus to Medell&iacute;n shares the Aburra' Valley with nine other municipalities, which collectively create a metropolitan urban area with a population of 3.5 million people.</p>
                 </section>
-                <section id="marginality" class="breath-top-60">
+                <section id="marginality" class="breath-top-60 snap">
                     <header><h5>Marginality in Medell&iacute;n</h5></header>
                     <p>The process of "informalization," understood as the formation of precarious neighborhoods, has been a characteristic of Medell&iacute;n’s history throughout the twentieth and into the twenty-first century, a consequence of the continuous migration toward the city.</p>
 
@@ -42,30 +55,25 @@
             </div>
         </div><!-- /.canvas-row -->
         <div class="content-area">
-            <figure class='fixed-image mobility-image' data-anchor-target="#mobility" data-bottom-top="opacity: 0;" data--300-top-bottom="opacity: 0" data-400-top="opacity: 1">
-                <img src="/images/homicides.png" />
+            <figure>
+                <div class='fixed-image homicides-image' data-anchor-target="#thirty-years" data-bottom-top="display: none; opacity: 0;" data-top-bottom="display: none;" data--1-bottom-top="display: block;" data-100-top="opacity: 1" data-50-top-bottom="opacity: 0">
+                    <img src="/images/medellin/homicides.png" />
+                </div>
+                <div class='fixed-image homicides-area' data-anchor-target="#social-urbanism" data-bottom-top="display: none; opacity: 0" data--1-bottom-top="display: block;" data-100-top="opacity: 1" data--100-top="opacity: 0" data--105-top="display: none;">
+                    <img src="/images/medellin/homicides-area.png" />
+                </div>
+                 <div class='fixed-image metro-lines' data-anchor-target="#mobility" data-bottom-top="display: none; opacity: 0" data--1-bottom-top="display: block;" data-100-top="opacity: 1" data--400-top="opacity: 0" data--405-top="display: none;">
+                    <img src="/images/medellin/medellin-metro-lines.png" width="360" height="523" />
+                </div>
             </figure>
             <div class="col-12 prefix-6">
-                <section id="thirty-years">
+                <section id="thirty-years" class='snap'>
                     <p>Thirty years later, a new wave of violence and rural displacement, combined with emerging narcotics trafficking, drove informalization in dramatic political and social directions. The neighborhoods of the northern slopes of the valley, commonly termed "comunas," became the habitat of illegal gangs—bands of assassins who acted on the orders of narcotics traffickers and other criminals. State control and presence in these sectors was almost nonexistent. As a result of informalization, 25 percent of Medellín’s territory (a total of 2,400 hectares) now lies in marginal neighborhoods.</p>
 
                     <p>The public administration, along with academic and other nongovernmental organizations, has been trying to address decades of inequality by implementing programs aimed at transforming the quality of life for the inhabitants of marginal neighborhoods. Many difficulties of the informal city—inequality, violence, and segregation—were an inherent aspect of its past. Although they remain challenges of the present, there is a move toward change so that they will not be part of the future of Medellín.</p>
 
                 </section>
-                <section id="mobility" class="breath-top-60">
-                    <header><h5>Mobility</h5></header>
-                    <p>
-                        The most significant event in the establishment of improved mobility within the Aburr&aacute; Valley was the establishment of the Metro in 1995. With 31 kilometers of track, it is (with the Metro of Santiago, Chile) one of the most efficient in Latin America. The Metro’s speed is 37 kilometers per hour, while the cable-car system Metrocable's is 18 km/hour, and city buses run at speeds of about 15 km/hour. In 2006, the Metro released the master plan for 2006–2020, entitled "Trust in the Future."Several expansion projects were subsequently evaluated, including new cable-car systems, trams along 80th Avenue and Ayacucho Street, and the extension of Line B to the east.
-                    </p>
-                        <figure>
-                            <img src="/images/medellin-metro.jpg" class="big-border" />
-                        </figure>
-                </section>
-            </div>
-        </div>
-        <div class="content-area">
-            <div class="col-6 push-6">
-                <section>
+                <section id="social-urbanism" class='snap'>
                     <header>
                         <h5>Social Urbanism</h5>
                     </header>
@@ -80,7 +88,15 @@
 
                     <p>The EDU experienced an internal transformation as specialized interdisciplinary teams dedicated to each of the strategic urban projects were set up, becoming vital instruments that planned and executed urban projects in the prioritized territories. Each strategic project had a manager responsible for creating channels of communication and coordinating relations between the various actors and institutions.</p>
                     <p>The EDU assumed sole technical leadership over this exclusive group of projects and territories. Some of the keys to success were the political leadership and inter-institutional coordination. Teaming with the city’s planning office and rigorously monitoring all of the internal processes of administration and execution enabled, in only a few years, the completion of a wide range of highly complex projects.</p>
-                    
+                </section>
+                <section id="mobility" class='snap'>
+                    <header><h5>Mobility</h5></header>
+                    <p>
+                        The most significant event in the establishment of improved mobility within the Aburr&aacute; Valley was the establishment of the Metro in 1995. With 31 kilometers of track, it is (with the Metro of Santiago, Chile) one of the most efficient in Latin America. The Metro’s speed is 37 kilometers per hour, while the cable-car system Metrocable's is 18 km/hour, and city buses run at speeds of about 15 km/hour. In 2006, the Metro released the master plan for 2006–2020, entitled "Trust in the Future."Several expansion projects were subsequently evaluated, including new cable-car systems, trams along 80th Avenue and Ayacucho Street, and the extension of Line B to the east.
+                    </p>
+                    <figure>
+                        <img src="/images/medellin-metro.jpg" class="big-border" />
+                    </figure>
                 </section>
             </div>
         </div>

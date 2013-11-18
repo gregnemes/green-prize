@@ -1,0 +1,46 @@
+.tabs {
+    
+    .tab-content-wrap,
+    ul {
+        @include cf();
+        position: relative;
+    }
+
+    li {
+        @extend %sizing;
+        display: inline-block;
+        float: left;
+    }
+
+    
+    [data-tab] {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 2px 4px;
+
+        &.current {
+            text-decoration: underline;
+        }
+    }
+
+    [data-tab-content] {
+        z-index: 0;
+        opacity: 0;
+        position: absolute;
+        left: 0; top: 0;
+
+        &.current {
+            
+            z-index: 1;
+            opacity: 1;
+
+        }
+
+        @include transition( opacity 1s linear );
+        
+        
+    }
+
+
+}

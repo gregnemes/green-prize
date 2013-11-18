@@ -49,11 +49,35 @@
     position: fixed;
     top: 130px;
     left: 110px;
-    opacity: 0;
 
-    &.mobility-image {
+    &.homicides-image {
         top: 190px;
         left: 170px;
+    }
+
+    &.homicides-area {
+        top: 217px;
+        left: 389px;
+    }
+
+    &.metro-lines {
+        left: 210px;
+    }
+
+    &.settlements {
+        width: 404px;
+        top: 68px;
+        left: 140px;
+
+        ul {
+            margin-bottom: 25px;
+        }
+
+        li {
+            width: 25%;
+            text-align: right;
+        }
+
     }
 }
 
@@ -73,7 +97,7 @@
 
 
 .medellin-timeline {
-    @include bg("medellin/medellin-timeline.svg", $position: 0 0, $attachment: scroll );
+    @include bg("medellin/timeline/medellin-timeline.svg", $position: 0 0, $attachment: scroll );
     height: 738px;
 }
 
