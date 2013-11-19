@@ -82,6 +82,16 @@ body {
 
 // =Breathing room
 
+.index-superior {
+    z-index: 1;
+    position: relative;
+}
+
+.index-inferior {
+    z-index: 0;
+    position: relative;
+}
+
 @each $breath in 10, 20, 40, 60, 80, 100, 120, 140, 160, 180, 200 {
     
     .breath-top-#{$breath} {

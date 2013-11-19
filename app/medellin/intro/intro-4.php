@@ -1,13 +1,13 @@
-<div id="medellin-intro-4" class='section'>
+<div id="medellin-intro-4" class='section index-superior'>
     <div class="canvas-row">
         <div class="content-area">
             <figure class="col-12">
-                <div class="row">
-                    <div class="col-7">
-                        <img src="/images/edu-meeting.jpg" alt="EDU Meeting" />
+                <div class="row" data-bottom-top="opacity: 0" data--100-bottom="opacity: 1">
+                    <div class="col-7" data-bottom-top="transform: translateX(-30px);" data--100-bottom="transform: translateX(0px)">
+                        <img src="/images/edu-meeting.jpg" alt="EDU Meeting" width="525" height="393" />
                     </div>
-                    <div class="col-5">
-                        <img src="/images/edu-city.jpg" alt="EDU City" />
+                    <div class="col-5" data-bottom-top="transform: translateX(30px);" data--100-bottom="transform: translateX(0px)">
+                        <img src="/images/edu-city.jpg" alt="EDU City" width="336" height="393" />
                     </div>
                 </div>
                 <figcaption>
@@ -28,8 +28,8 @@
                     <p>The methodology applied in the northeastern PUI was gradually developed during the project. This method is similar to those used in comparable projects: first comes identification of the issues, next a diagnosis, and then a formulation of strategies to solve or minimize the problems. In addition to the high degree of institutional coordination, this project was innovative because of its sustainability phase; this phase began parallel with the intervention and continues after it, involving the community as an active part of the process from the start.</p>
                 </div>
                 <div class="col-5 pull-6">
-                    <figure class="breath-top-80">
-                        <img src="/images/carrera.jpg" alt="Carrera" />
+                    <figure class="breath-top-80" data-bottom-top="transform: translateY(50px); opacity: 0;" data--50-bottom="transform: translateY(0px); opacity: 1;">
+                        <img src="/images/carrera.jpg" alt="Carrera" width="384" height="507" />
                         <figcaption>Aperiam, explicabo sed deleniti.</figcaption>
                     </figure>
                 </div>
@@ -46,8 +46,8 @@
                     <p><strong>Institutional:</strong> Involving the coordination of activities carried out by all elements of the municipality in a particular zone. In addition, alliances with the private sector, NGOs, national and international bodies, and community organizations are promoted.</p>
                 </div>
                 <div class="col-5 pull-6">
-                    <figure>
-                        <img src="/images/imagen.jpg" alt="Imagen" />
+                    <figure data-bottom-top="transform: translateY(50px); opacity: 0;" data--50-bottom="transform: translateY(0px); opacity: 1;">
+                        <img src="/images/imagen.jpg" alt="Picture of Imagen" />
                         <figcaption>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         </figcaption>

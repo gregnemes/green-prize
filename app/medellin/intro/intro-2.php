@@ -1,5 +1,5 @@
 <div id="medellin-intro-2" class='section'>
-    <article class="content-area">
+    <article class="content-area" data-0="opacity: .25;" data-100="opacity: 1">
         <aside>
             <blockquote class="callout">Our traditional education is not designed to understand
 complex thought: each discipline jealously strives to protect its boundaries when, paradoxically, the problems we face demand a structural change in the way we tackle them.</blockquote>
@@ -11,9 +11,9 @@ complex thought: each discipline jealously strives to protect its boundaries whe
     <article class="content-area">
         <div class="col-6 push-6">
             
-            <strong>The Northeastern Urban Integration Project</strong> in Medell&iaccute;n (Proyecto Urbano Integral, or PUI) was initiated by the City of Medell&iaccute;n in 2004 to harness opportunities presented by the MetroCable, a new cable-car project connecting three informal settlements to the metropolitan transit system.
-            <figure class="alignleft pull-flow-12">
-                <img src="/images/medellin-intro-2.jpg" />
+            <strong>The Northeastern Urban Integration Project</strong> in Medell&iacute;n (Proyecto Urbano Integral, or PUI) was initiated by the City of Medell&iacute;n in 2004 to harness opportunities presented by the MetroCable, a new cable-car project connecting three informal settlements to the metropolitan transit system.
+            <figure class="alignleft pull-flow-12" data-bottom-top="opacity: 0; transform: translateX(-30px);" data--100-bottom="opacity: 1; transform: translateX(0px);">
+                <img src="/images/medellin-intro-2.jpg" width="504" height="332" />
                 <figcaption class="bordered out-of-flow">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu lectus non quam laoreet tristique eget a tortor.</figcaption>
             </figure>
             In concert with the MetroCable, the PUI has made a significant
@@ -30,7 +30,7 @@ complex thought: each discipline jealously strives to protect its boundaries whe
         </div>
     </article>
     <article id="medellin-video" class="content-area">
-        <div class="video">
+        <div class="video snap">
             <iframe src="//player.vimeo.com/video/73717434?title=0&amp;byline=0&amp;portrait=0&amp;color=9086c0" width="980" height="551" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
         <p class="caption">Jurors discuss the history of Medellin’s Northeast Urban Integration Project. Lorem ipsum dolor sit amet.</p>

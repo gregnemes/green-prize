@@ -42,21 +42,21 @@
                 </section>
             </div>
         </div><!-- /.content-area -->
-        <div class="canvas-row">
+        <div class="canvas-row index-superior">
             <div class="content-area">
-                <figure class="row">
-                    <div class="col-7">
-                        <img src="/images/settlements-1.jpg" />
+                <figure class="row" data-bottom-top="opacity: 0;" data--50-bottom="opacity: 1;">
+                    <div class="col-7" data-bottom-top="transform: translateX(-30px);" data--50-bottom="transform: translateX(0);">
+                        <img src="/images/settlements-1.jpg" width="526" height="395" />
                     </div>
-                    <div class="col-5">
-                        <img src="/images/settlements-2.jpg" />
+                    <div class="col-5"  data-bottom-top="transform: translateX(30px);" data--50-bottom="transform: translateX(0);">
+                        <img src="/images/settlements-2.jpg" width="316" height="395" />
                     </div>
                 </figure>
             </div>
         </div><!-- /.canvas-row -->
         <div class="content-area">
-            <figure>
-                <div class='fixed-image homicides-image' data-anchor-target="#thirty-years" data-bottom-top="display: none; opacity: 0;" data-top-bottom="display: none;" data--1-bottom-top="display: block;" data-100-top="opacity: 1" data-50-top-bottom="opacity: 0">
+            <figure class="index-inferior">
+                <div class='fixed-image homicides-image' data-anchor-target="#thirty-years" data-bottom-top="display: none; opacity: 0;" data-top-bottom="display: none;" data--1-bottom-top="display: block;" data-center="opacity: 1" data-50-top-bottom="opacity: 0">
                     <img src="/images/medellin/homicides.png" />
                 </div>
                 <div class='fixed-image homicides-area' data-anchor-target="#social-urbanism" data-bottom-top="display: none; opacity: 0" data--1-bottom-top="display: block;" data-100-top="opacity: 1" data--100-top="opacity: 0" data--105-top="display: none;">
