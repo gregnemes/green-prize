@@ -35,15 +35,12 @@
 }
 
 #medellin-intro-5 {
-    
-    
+
     @include bg( "medellin-intro-5.jpg", $position: center center );
     background-size: cover;
-
     color: white;
     
 }
-
 
 .fixed-image {
     position: fixed;
@@ -83,25 +80,13 @@
 
 
 #medellin-map {
-    
-    min-height: 768px;
-    
-    .fixed-map {
-        left: -70px;
-        height: 768px;
-    }
-
-    .map {
-        height: 428px;
-        @include bg( "medellin/map/medellin-map-bg.jpg", $position: center center, $attachment: scroll );
-    }
-}   
+    min-height: $medellin-map-height;
+}
 
     #green-line {
         stroke-dasharray: 360px;
         stroke-dashoffset: -360px;
     }
-
 
 
 .medellin-timeline {

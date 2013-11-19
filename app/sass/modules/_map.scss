@@ -1,5 +1,7 @@
 $map-width: 566px;
 $map-offset: 181px;
+$porto-map-height: 791px;
+$medellin-map-height: 768px;
 
 %map-content {
     width: $map-width;
@@ -17,8 +19,25 @@ $map-offset: 181px;
 
 .fixed-map {
     position: fixed;
-    left: 0;
+    left: -70px;
     top: 0;
+
+    &.porto-map {
+        top: 10px;
+        height: $porto-map-height;
+        @include bg( "porto/map/porto-map-bg.jpg", $position: center center, $attachment: scroll );
+    }
+
+    &.medellin-map {
+        height: $medellin-map-height;
+        
+        .map {
+            height: 428px;
+            @include bg( "medellin/map/medellin-map-bg.jpg", $position: center center, $attachment: scroll );
+        }
+    
+    }
+
 }
 
 .map #locations {

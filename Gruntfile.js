@@ -136,7 +136,7 @@ module.exports = function (grunt) {
                         '.htaccess',
                         'images/{,*/}*.{webp,gif}',
                         'css/**',
-                        '{,*/{,*/}}*.{php,html}'
+                        '{,*/{,*/{,*/}}}*.{php,html}'
                     ]
                 }]
             }

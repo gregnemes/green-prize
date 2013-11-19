@@ -34,7 +34,7 @@ $pages = array_diff( scandir( './' ), $exclude );
             </div>    
         </div><!-- /div.col-6 -->
         <div class="col-5 pull-6">
-            <div class="fixed-map light-bg">
+            <div class="fixed-map medellin-map light-bg">
                 <div class="map" data-svg="/images/medellin/map/medellin-map-overlay.svg" data-image="/images/medellin/map/medellin-map-bg.jpg" data-image-width="566" data-image-height="428">
                 </div>
                 <div id="interactive-graph" class="graph">
