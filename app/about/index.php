@@ -50,7 +50,7 @@
             <div class="quote-wrap align-opposite">
                 &quot;Since its inception in 1986, the Veronica Rudge Green Prize in Urban Design has become an important aspect of our School's life. It is in fact one of the few opportunities we have left, institutionally speaking, to pause for a moment and take a good hard look at what's
                 <figure class="alignright push-flow-10">
-                    <iframe src="//player.vimeo.com/video/78175905?title=0&amp;byline=0&amp;portrait=0&amp;color=9086c0" width="538" height="303" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    <iframe src="//player.vimeo.com/video/78636985?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="538" height="302" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     <figcaption class="light-caption alignright">
                         The history of the Green Prize, consectetur adipiscing elit. Vestibulum ut blandit eros, eget sagittis augue.
                     </figcaption>
