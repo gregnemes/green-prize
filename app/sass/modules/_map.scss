@@ -15,6 +15,12 @@ $map-offset: 181px;
     position: relative;
 }
 
+.fixed-map {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
 .map #locations {
     
     circle {

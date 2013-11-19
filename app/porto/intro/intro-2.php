@@ -22,9 +22,9 @@
             </section>
         </div>
     </article>
-    <article id="porto-video" class="content-area breath-top-60 push-top-60 snap">
-        <div class="video">
-            <iframe src="//player.vimeo.com/video/79429651?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="980" height="551" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <article id="porto-video" class="content-area breath-top-60 push-top-60">
+        <div class="video snap">
+            <iframe src="//player.vimeo.com/video/79429651?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="936" height="526" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
         <p class="caption">Jurors discuss the history of Metro do Porto. Lorem ipsum dolor sit amet.</p>
     </article>

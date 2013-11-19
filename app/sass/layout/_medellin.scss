@@ -83,6 +83,14 @@
 
 
 #medellin-map {
+    
+    min-height: 768px;
+    
+    .fixed-map {
+        left: -70px;
+        height: 768px;
+    }
+
     .map {
         height: 428px;
         @include bg( "medellin/map/medellin-map-bg.jpg", $position: center center, $attachment: scroll );

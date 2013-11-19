@@ -211,7 +211,8 @@ $( document ).ready(function(){
 
 
     window.skrollr.init();
-
+    window.scrollEnd.init();
+    
 });
 
 

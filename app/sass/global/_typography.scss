@@ -239,6 +239,10 @@ blockquote {
 .page-title {
     @extend %dark-shade-text;
     @extend %page-title;
+    
+    &.sectioned {
+        border-bottom: 1px solid $dark-shade-color;
+    }
 }
 
 .quote-wrap {

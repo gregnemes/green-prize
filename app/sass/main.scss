@@ -6,8 +6,13 @@
 @import "mixins/all";
 
 @import "global/all";
+
+@import "layout/grid";
+@import "layout/layout";
+
 @import "modules/all";
 
-@import "layout/all";
+@import "layout/pages";
+
 
 
