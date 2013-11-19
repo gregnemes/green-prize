@@ -1,4 +1,4 @@
-<?php define( 'allowed', true ); require '../../templates/__base_template.php';
+<?php define( 'allowed', true ); require '../../__base_template.php';
 
 $exclude = array( 'index.php', '.', '..' );
 $pages = array_diff( scandir( './' ), $exclude );

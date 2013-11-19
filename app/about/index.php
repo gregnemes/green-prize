@@ -1,4 +1,4 @@
-<?php define( 'allowed', true ); require '../templates/__base_template.php';
+<?php define( 'allowed', true ); require '../__base_template.php';
 
     $recipients = array_diff( scandir('./past-recipients' ), array( '.', '..' ) );
     arsort($recipients, SORT_ASC);

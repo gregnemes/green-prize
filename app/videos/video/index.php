@@ -1,4 +1,4 @@
-<?php define( 'allowed', true ); require '../../templates/__base_template.php'; require 'vimeo.php'; ?>
+<?php define( 'allowed', true ); require '../../__base_template.php'; require 'vimeo.php'; ?>
 
 <?php
     $id         = $_GET['v'];
