@@ -1,4 +1,4 @@
-<?php define( 'CACHE_PATH', realpath( dirname( __FILE__ ) . '/cache/' ) );
+<?php if( !defined('allowed') ) die( 'Direct access is not allowed' ); define( 'CACHE_PATH', realpath( dirname( __FILE__ ) . '/cache/' ) );
 
 class Vimeo {
 
