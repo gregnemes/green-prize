@@ -31,7 +31,7 @@ complex thought: each discipline jealously strives to protect its boundaries whe
     </article>
     <article id="medellin-video" class="content-area">
         <div class="video snap">
-            <iframe src="//player.vimeo.com/video/79432925?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="980" height="552" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <iframe src="//player.vimeo.com/video/79432925?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="936" height="526" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
         <p class="caption">Jurors discuss the history of Medellin’s Northeast Urban Integration Project. Lorem ipsum dolor sit amet.</p>
     </article>
