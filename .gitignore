@@ -8,3 +8,4 @@ app/bower_components
 dandelion.yml
 app/css/main.css
 dist
+cache
