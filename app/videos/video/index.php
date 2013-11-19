@@ -8,7 +8,10 @@
 <div class='section'>
     <article class='content-area'>
         <?php if( !$details || $details[ 'user_id' ] !== 6435327 ): ?>
-            <p>We couldn't find the video you were looking for, please find more videos on <a href="http://vimeo.com/harvardgsd/videos">Vimeo</a></p>
+            <header>
+                <h2>Video not found</h2>
+            </header>
+            <p>We couldn't find the video you are looking for, find more videos on our <a href="http://vimeo.com/harvardgsd/videos">Vimeo</a> page.</p>
         <?php else: ?>
         <figure>
             <?php echo Vimeo::getIframe( $id ); ?>
