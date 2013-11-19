@@ -1,10 +1,10 @@
-<?php 
-    require realpath('../header.php' ); 
+<?php define( 'allowed', true ); require '../templates/__base_template.php';
 
     $recipients = array_diff( scandir('./past-recipients' ), array( '.', '..' ) );
     arsort($recipients, SORT_ASC);
 
 ?>
+<?php get_header( 'About the Prize' ); ?>
 
 <div id="about-intro" class="section more-room">
     <div class="over-dark">
@@ -88,4 +88,4 @@
         </article>
     </div>
 </div>
-<?php require realpath( '../footer.php' ); ?>
+<?php get_footer(); ?>

@@ -1,4 +1,7 @@
-<?php require realpath('../../header.php' ); ?>
+<?php define( 'allowed', true ); require '../../templates/__base_template.php'; ?>
+
+<?php get_header( 'Porto - Project Credits' ); ?>
+
 <div id="porto-credits" class="section porto-credits">
     <div class="row light-text">
         <div class="col-6 push-6">
@@ -720,4 +723,4 @@
 </div>
 
 
-<?php require realpath( '../../footer.php' ); ?>
+<?php get_footer(); ?>

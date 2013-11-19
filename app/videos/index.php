@@ -1,4 +1,4 @@
-<?php require realpath('../header.php' ); require 'video/vimeo.php'; ?>
+<?php define( 'allowed', true ); require '../templates/__base_template.php'; require 'video/vimeo.php'; ?>
 
 <?php 
 
@@ -7,6 +7,8 @@
     }
 
 ?>
+
+<?php get_header( 'Videos' ); ?>
 
 <div class="section breath-top-40">
     <div class="content-area">
@@ -177,4 +179,4 @@
     </div>
 </div>
 
-<?php require realpath( '../footer.php' ); ?>
+<?php get_footer(); ?>

@@ -1,4 +1,6 @@
-<?php require realpath('../../header.php' ); ?>
+<?php define( 'allowed', true ); require '../../templates/__base_template.php'; ?>
+
+<?php get_header( 'Medell&iacute;n - Timeline' ); ?>
 
 <div id="medellin-timeline-section" class='section'>
     <article class='content-area'>
@@ -13,4 +15,4 @@
 </div>
 
 
-<?php require realpath( '../../footer.php' ); ?>
+<?php get_footer(); ?>

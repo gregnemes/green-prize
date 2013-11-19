@@ -1,9 +1,10 @@
-<?php require realpath('../../header.php' ); 
+<?php define( 'allowed', true ); require '../../templates/__base_template.php';
 
 $exclude = array( 'index.php', '.', '..' );
 $pages = array_diff( scandir( './' ), $exclude );
 ?>
 
+<?php get_header( 'Medell&iacute;n - Interactive Map' ); ?>
 
 <div id="medellin-map" class="section cf map-wrap">
     <div class="row">
@@ -48,5 +49,7 @@ $pages = array_diff( scandir( './' ), $exclude );
         </div>
     </div>
 </div>
+
 <a href="/medellin/credits" title="Next Section: Credits" class='section-link'>Project Credits</a>
-<?php require realpath('../../footer.php' ); ?>
+
+<?php get_footer(); ?>

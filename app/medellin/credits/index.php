@@ -1,4 +1,6 @@
-<?php require realpath('../../header.php' ); ?>
+<?php define( 'allowed', true ); require '../../templates/__base_template.php'; ?>
+
+<?php get_header( 'Medell&iacute;n - Project Credits' ); ?>
 
 <div id="medellin-credits" class="section medellin-credits">
     <div class="row light-text">
@@ -58,4 +60,4 @@
         </div>
     </div>
 </div>
-<?php require realpath( '../../footer.php' ); ?>
+<?php get_footer(); ?>

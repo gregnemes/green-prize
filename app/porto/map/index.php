@@ -1,9 +1,12 @@
-<?php require realpath('../../header.php' ); 
+<?php define( 'allowed', true ); require '../../templates/__base_template.php';
 
 $exclude = array( 'index.php', '.', '..' );
 $pages = array_diff( scandir( './' ), $exclude );
 
 ?>
+
+<?php get_header( 'Porto - Interactive Map' ); ?>
+
 <div id="porto-map" class="section cf map-wrap">
     <div class="row">
         <div class="col-6 push-6">
@@ -43,5 +46,4 @@ $pages = array_diff( scandir( './' ), $exclude );
     </div>
 </div>
 
-
-<?php require realpath( '../../footer.php' ); ?>
+<?php get_footer(); ?>

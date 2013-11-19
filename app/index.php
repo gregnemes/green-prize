@@ -1,4 +1,6 @@
-<?php require 'header.php'; ?>
+<?php define( 'allowed', true ); require 'templates/__base_template.php'; ?>
+
+<?php get_header(); ?>
 
 <div id="home" class='section breath-top-20'>
     <article>
@@ -17,4 +19,4 @@
 </div>
 <div id="home-map"></div>
         
-<?php require 'footer.php'; ?>
+<?php get_footer(); ?>
