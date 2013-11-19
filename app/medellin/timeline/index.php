@@ -9,6 +9,7 @@
             
         </div>
     </article>
+    <a href="/medellin/map" title="Next Section: Medellin Interactive Map" class='section-link'>Interactive Map</a>
 </div>
 
 

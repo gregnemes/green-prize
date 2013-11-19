@@ -1,0 +1,43 @@
+$section-link-font-size: em-calc( $base-font-size + 2);
+$section-link-font-family: $callout-font-family;
+
+.section-link {
+
+    display: inline-block;
+    padding: 4px 36px 4px 30px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+
+
+
+    font-size: $section-link-font-size;
+    
+    text: {
+        transform: uppercase;
+        decoration: none;
+    };
+    
+    background: black;
+    background: rgba( black, .75 );
+    
+    color: white;
+    letter-spacing: 1px;
+    
+    &:after {
+        position: absolute;
+        content: '';
+        right: 10px;
+        top: 50%;
+        @include transform(translateY(-50%));
+
+        @include css-triangle( 6px, white, left );
+    }
+    
+    &:hover {
+        background: black;
+    }
+
+
+}

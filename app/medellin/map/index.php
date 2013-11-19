@@ -47,5 +47,6 @@ $pages = array_diff( scandir( './' ), $exclude );
             </div>
         </div>
     </div>
+    <a href="/medellin/credits" title="Next Section: Credits" class='section-link'>Project Credits</a>
 </div>
 <?php require realpath('../../footer.php' ); ?>
