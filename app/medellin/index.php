@@ -1,7 +1,7 @@
 <?php define( 'allowed', true ); require '../__base_template.php'; ?>
 
-<?php get_header( 'Medell&iacute;n - Introduction' ); ?>
-
+<?php $template = new Template( 'Medell&iacute;n - Introduction' ); ?>
+<?php $template->header(); ?>
 <?php include 'intro.php'; ?>
 
-<?php get_footer(); ?>
+<?php $template->footer(); ?>

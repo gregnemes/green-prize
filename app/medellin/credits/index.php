@@ -1,7 +1,7 @@
 <?php define( 'allowed', true ); require '../../__base_template.php'; ?>
 
-<?php get_header( 'Medell&iacute;n - Project Credits' ); ?>
-
+<?php $template = new Template( 'Medell&iacute;n - Project Credits' ); ?>
+<?php $template->header(); ?>
 <div id="medellin-credits" class="section medellin-credits">
     <div class="row light-text">
         <div class="col-6 push-6">
@@ -60,4 +60,4 @@
         </div>
     </div>
 </div>
-<?php get_footer(); ?>
+<?php $template->footer(); ?>

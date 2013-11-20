@@ -1,6 +1,8 @@
 <?php define( 'allowed', true ); require '__base_template.php'; ?>
 
-<?php get_header(); ?>
+<?php $template = new Template(); ?>
+
+<?php $template->header(); ?>
 
 <div id="home" class='section breath-top-20'>
     <article>
@@ -19,4 +21,4 @@
 </div>
 <div id="home-map"></div>
         
-<?php get_footer(); ?>
+<?php $template->footer(); ?>

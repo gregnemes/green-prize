@@ -5,9 +5,11 @@
     $details    = ( !empty( $id ) ) ? Vimeo::getDetails( $id ) : false;
     $isUser     = ( $details && $details['user_id'] === 6435327 ) ? true : false;
     $videoTitle = $isUser ? $details['title'] : 'Not Found';
+
+    $template = new Template( "Video - $videoTitle" ); 
 ?>
 
-<?php get_header( "Video - $videoTitle" ); ?>
+<?php $template->header() ?>
 
 <div class='section'>
     <article class='content-area'>
@@ -28,4 +30,4 @@
 </div>
 
 
-<?php get_footer(); ?>
+<?php $template->footer(); ?>

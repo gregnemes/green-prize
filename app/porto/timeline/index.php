@@ -1,7 +1,8 @@
 <?php define( 'allowed', true ); require '../../__base_template.php'; ?>
 
-<?php get_header( 'Porto - Timeline' ); ?>
+<?php $template = new Template( 'Porto - Timeline' ); ?>
 
+<?php $template->header(); ?>
 <div class='section'>
     <article class="content-area">
         
@@ -17,4 +18,4 @@
     </article>
 </div>
 
-<?php get_footer(); ?>
+<?php $template->footer(); ?>

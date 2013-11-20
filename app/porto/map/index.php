@@ -3,9 +3,10 @@
 $exclude = array( 'index.php', '.', '..' );
 $pages = array_diff( scandir( './' ), $exclude );
 
+$template = new Template('Porto - Interactive Map' );
 ?>
 
-<?php get_header( 'Porto - Interactive Map' ); ?>
+<?php $template->header(); ?>
 
 <div id="porto-map" class="section cf map-wrap">
     <div class="row">
@@ -46,4 +47,4 @@ $pages = array_diff( scandir( './' ), $exclude );
     </div>
 </div>
 
-<?php get_footer(); ?>
+<?php $template->footer(); ?>

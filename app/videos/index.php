@@ -1,14 +1,15 @@
 <?php define( 'allowed', true ); require '../__base_template.php'; require 'video/vimeo.php'; ?>
 
 <?php 
-
+    
     function get_thumb($id) {
         return Vimeo::getThumb($id);
     }
+    $template = new Template( 'Videos' );
 
 ?>
 
-<?php get_header( 'Videos' ); ?>
+<?php $template->header(); ?>
 
 <div class="section breath-top-40">
     <div class="content-area">
@@ -179,4 +180,4 @@
     </div>
 </div>
 
-<?php get_footer(); ?>
+<?php $template->footer(); ?>

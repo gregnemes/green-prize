@@ -1,7 +1,7 @@
 <?php define( 'allowed', true ); require '../../__base_template.php'; ?>
 
-<?php get_header( 'Medell&iacute;n - Timeline' ); ?>
-
+<?php $template = new Template( 'Medell&iacute;n - Timeline' ); ?>
+<?php $template->header(); ?>
 <div id="medellin-timeline-section" class='section'>
     <article class='content-area'>
         <header>
@@ -15,4 +15,4 @@
 </div>
 
 
-<?php get_footer(); ?>
+<?php $template->footer(); ?>

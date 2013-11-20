@@ -1,7 +1,7 @@
 <?php define( 'allowed', true ); require '../../__base_template.php'; ?>
 
-<?php get_header( 'Porto - Project Credits' ); ?>
-
+<?php $template = new Template( 'Porto - Project Credits' ); ?>
+<?php $template->header(); ?>
 <div id="porto-credits" class="section porto-credits">
     <div class="row light-text">
         <div class="col-6 push-6">
@@ -723,4 +723,4 @@
 </div>
 
 
-<?php get_footer(); ?>
+<?php $template->footer(); ?>

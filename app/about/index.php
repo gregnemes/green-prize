@@ -2,9 +2,9 @@
 
     $recipients = array_diff( scandir('./past-recipients' ), array( '.', '..' ) );
     arsort($recipients, SORT_ASC);
-
+    $template = new Template('About the Prize');
 ?>
-<?php get_header( 'About the Prize' ); ?>
+<?php $template->header(); ?>
 
 <div id="about-intro" class="section more-room">
     <div class="over-dark">
@@ -88,4 +88,4 @@
         </article>
     </div>
 </div>
-<?php get_footer(); ?>
+<?php $template->footer(); ?>

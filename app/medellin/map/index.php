@@ -2,9 +2,10 @@
 
 $exclude = array( 'index.php', '.', '..' );
 $pages = array_diff( scandir( './' ), $exclude );
+$template = new Template( 'Medell&iacute;n - Interactive Map' );
 ?>
 
-<?php get_header( 'Medell&iacute;n - Interactive Map' ); ?>
+<?php $template->header(); ?>
 
 <div id="medellin-map" class="section cf map-wrap">
     <div class="row">
@@ -52,4 +53,4 @@ $pages = array_diff( scandir( './' ), $exclude );
 
 <a href="/medellin/credits" title="Next Section: Credits" class='section-link'>Project Credits</a>
 
-<?php get_footer(); ?>
+<?php $template->footer(); ?>
