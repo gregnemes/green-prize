@@ -100,7 +100,11 @@
                     }
 
                     this.$tabs.removeClass( 'current' );
-                    this.$content.removeClass( 'current' );
+                    this.$content
+                            .removeClass('last')
+                            .filter('.current')
+                                .addClass('last')
+                                .removeClass( 'current' );
 
                     content.addClass( 'current' );
                     tab.addClass( 'current' );

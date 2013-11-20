@@ -1,3 +1,4 @@
+
 #medellin-intro {
 
     @include bg( "medellin-intro.jpg", $position: 0 0, $repeat: no-repeat );
@@ -24,6 +25,88 @@
 
 }
 
+.keys {
+    position: absolute;
+    width: 100px;
+    padding: 10px 10px 10px 25px;
+    right: 0; 
+    bottom: 0;
+    z-index: 10;
+    
+    font-size: em-calc( 14px );
+
+    li {
+
+        position: relative;
+        margin-bottom: 10px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: -15px;
+            top: 5px;
+
+            width: 10px;
+            height: 10px;
+            background-color: #000;
+        }
+
+    }
+
+}
+
+.marginality-keys {
+    background: white;
+    color: black;
+
+    .precarious {}
+
+    .upgraded {
+        color: #655A4E;
+        &:after {
+            background: #655A4E;
+        }
+    }
+    .formal {
+        color: #86705A;
+        &:after {
+            background: #86705A;
+        }
+    }
+    .pui {
+
+        margin-bottom: 0;
+        color: #C7542C;
+
+        &:after {
+            height: 3px;
+            top: 8px;
+            background: #C7542C;
+        }
+    }
+}
+
+.homicide-keys {
+    width: 60px;
+    bottom: -30px;
+   
+    li:after {
+        background: #fff;
+    }
+
+    .high-rate:after {
+        background: #8B5994;
+    }
+
+    .med-rate:after {
+        background: #C7A9D0;
+    }
+}
+
+
 #medellin-intro-3 {
     @include bg( "medellin/medellin-map.jpg", $position: -30px 0, $color: #000 );
 
@@ -32,7 +115,81 @@
     .content-area {
         padding-bottom: 40px;
     }
+
 }
+
+.metro-line-keys {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    font-size: em-calc( 14px );
+
+    div {
+        width: 100px;
+        position: absolute;
+        &:after {
+            content: "";
+            position: absolute;
+            width: 33px; height: 22px;
+            background: #000;
+        }
+    }
+
+    h6,
+    p {
+        line-height: 1;
+        margin: 0 0 5px;
+    }
+    
+
+    .new-west {
+        top: 40px;
+        left: 13px;
+        
+        .metro-label {
+            color: #FEDE2F;
+        }
+
+        &:after {
+            bottom: -33px;
+            left: 0;
+            background: inline-image( "medellin/metro-markers/marker-1.svg" );
+        }
+    }
+
+    .santo {
+        width: 110px;
+        right: 60px;
+        bottom: 220px;
+
+        .metro-label {
+            color: #A5CE3A;
+        }
+
+        &:after {
+            top: -33px;
+            background: inline-image( "medellin/metro-markers/marker-2.svg" );
+            @include transform( rotate(180deg) );
+        }
+    }
+
+    .parque-arvi {
+
+        top: 55px;
+        right: -10px;
+    
+        .metro-label {
+            color: #C8B299;
+        }
+
+        &:after {
+            right: 30px;
+            bottom: -33px;
+            background: inline-image( "medellin/metro-markers/marker-3.svg" );
+        }
+    }
+}
+
 
 #medellin-intro-5 {
 
@@ -46,9 +203,11 @@
     position: fixed;
     top: 130px;
     left: 110px;
+    visibility: hidden;
 
     &.homicides-image {
-        top: 190px;
+        width: 344px;
+        top: 138px;
         left: 170px;
     }
 
@@ -58,24 +217,39 @@
     }
 
     &.metro-lines {
+        width: 360px;
+        height: 523px;
         left: 210px;
     }
 
     &.settlements {
-        width: 404px;
+        width: 380px;
         top: 68px;
-        left: 140px;
+        left: 150px;
 
-        ul {
-            margin-bottom: 25px;
+        .tabs {
+            > ul {
+                margin-bottom: 25px;
+                
+                li {
+                    width: 25%;
+                    text-align: right;
+                }
+
+            }
         }
 
-        li {
-            width: 25%;
-            text-align: right;
+        .tab-content-wrap {
+            height: 546px;
         }
 
     }
+
+    &.skrollable {
+        visibility: visible;
+    }
+
+   
 }
 
 

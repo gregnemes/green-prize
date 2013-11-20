@@ -13,6 +13,14 @@
                     <img id="1970" src="/images/medellin/info-graphics/settlements-1970.jpg" alt="Settlments in 1970" data-tab-content />
                     <img id="1996" src="/images/medellin/info-graphics/settlements-1996.jpg" alt="Settlments in 1996" data-tab-content />
                     <img id="2011" src="/images/medellin/info-graphics/settlements-2011.jpg" alt="Settlments in 2011" data-tab-content />
+                    <div class='keys marginality-keys'>
+                        <ul>
+                            <li class='precarious'>Precarious Settlements</li>
+                            <li class='upgraded'>Upgraded Precarious Settlements</li>
+                            <li class='formal'>Formal City</li>
+                            <li class='pui'>PUI Area</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </figure>
@@ -55,17 +63,52 @@
             </div>
         </div><!-- /.canvas-row -->
         <div class="content-area">
-            <figure class="index-inferior">
+            <div class="index-inferior">
                 <div class='fixed-image homicides-image' data-anchor-target="#thirty-years" data-bottom-top="display: none; opacity: 0;" data-top-bottom="display: none;" data--1-bottom-top="display: block;" data-center="opacity: 1" data-50-top-bottom="opacity: 0">
-                    <img src="/images/medellin/homicides.png" />
+                    <h5 class='allcaps'>Violent Deaths Index 2003</h5>
+                    <figure>
+                        <img src="/images/medellin/homicides.png" />
+                        <div class='keys homicide-keys'>
+                            <ul>
+                                <li class='high-rate'>140 - 269 Homicides</li>
+                                <li class='med-rate'>59 - 123 Homicides</li>
+                                <li class='low-rate'>30 - 40 Homicides</li>
+                            </ul>
+                        </div>
+                    </figure>
                 </div>
                 <div class='fixed-image homicides-area' data-anchor-target="#social-urbanism" data-bottom-top="display: none; opacity: 0" data--1-bottom-top="display: block;" data-100-top="opacity: 1" data--100-top="opacity: 0" data--105-top="display: none;">
-                    <img src="/images/medellin/homicides-area.png" />
+                    <figure>
+                        <img src="/images/medellin/homicides-area.png" />
+                    </figure>
                 </div>
                  <div class='fixed-image metro-lines' data-anchor-target="#mobility" data-bottom-top="display: none; opacity: 0" data--1-bottom-top="display: block;" data-100-top="opacity: 1" data--400-top="opacity: 0" data--405-top="display: none;">
-                    <img src="/images/medellin/medellin-metro-lines.png" width="360" height="523" />
+                    <figure>
+                        <img src="/images/medellin/medellin-metro-lines.png" width="360" height="523" />
+                        <div class='metro-line-keys'>
+                            <div class='new-west'>
+                                <h6 class='allcaps'>Opened 2008</h6>
+                                <h6 class='metro-label'>Metrocable "New West" (Line J)</h6>
+                                <p>2.8 kilometers</p>
+                                <p>119 cable cars</p>
+                            </div>
+                            <div class='parque-arvi'>
+                                <h6 class='allcaps'>Opened 2010</h6>
+                                <h6 class='metro-label'>Parque Arv&iacute; Metrocable (Line L)</h6>
+                                <p>4.6 kilometers</p>
+                                <p>27 cable cars</p>
+                            </div>
+                            <div class='santo'>
+                                <h6 class='allcaps'>Opened 2004</h6>
+                                <h6 class='metro-label'>Metrocable Santo Domingo (Line K)</h6>
+                                <p>2 kilometers</p>
+                                <p>90 cable cars</p>
+                                <p>Moves about 27,000 people per day</p>
+                            </div>
+                        </div>
+                    </figure>
                 </div>
-            </figure>
+            </div>
             <div class="col-12 prefix-6">
                 <section id="thirty-years" class='snap'>
                     <p>Thirty years later, a new wave of violence and rural displacement, combined with emerging narcotics trafficking, drove informalization in dramatic political and social directions. The neighborhoods of the northern slopes of the valley, commonly termed "comunas," became the habitat of illegal gangs—bands of assassins who acted on the orders of narcotics traffickers and other criminals. State control and presence in these sectors was almost nonexistent. As a result of informalization, 25 percent of Medellín’s territory (a total of 2,400 hectares) now lies in marginal neighborhoods.</p>

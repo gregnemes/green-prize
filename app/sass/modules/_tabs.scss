@@ -1,18 +1,18 @@
 .tabs {
     
     .tab-content-wrap,
-    ul {
+    > ul {
         @include cf();
         position: relative;
-    }
-
-    li {
-        @extend %sizing;
-        display: inline-block;
-        float: left;
-    }
-
     
+        li {
+            @extend %sizing;
+            display: inline-block;
+            float: left;
+        }
+    }
+    
+
     [data-tab] {
         display: block;
         text-decoration: none;
@@ -29,15 +29,18 @@
         opacity: 0;
         position: absolute;
         left: 0; top: 0;
-
-        &.current {
-            
-            z-index: 1;
-            opacity: 1;
-
+        
+        &.last {
+            opacity: 0;
+            @include transition-delay(.25s);
         }
 
-        @include transition( opacity 1s linear );
+        &.current {
+            z-index: 1;
+            opacity: 1;
+        }
+
+        @include transition( opacity .5s linear, z-index .5s linear );
         
         
     }
