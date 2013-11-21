@@ -10,9 +10,6 @@
                         <img src="/images/edu-city.jpg" alt="EDU City" width="336" height="393" />
                     </div>
                 </div>
-                <figcaption>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </figcaption>
             </figure>
         </div>
         <div class="content-area">
@@ -30,7 +27,6 @@
                 <div class="col-5 pull-6">
                     <figure class="breath-top-80" data-bottom-top="transform: translateY(50px); opacity: 0;" data--50-bottom="transform: translateY(0px); opacity: 1;">
                         <img src="/images/carrera.jpg" alt="Carrera" width="384" height="507" />
-                        <figcaption>Aperiam, explicabo sed deleniti.</figcaption>
                     </figure>
                 </div>
             </section>
@@ -48,9 +44,6 @@
                 <div class="col-5 pull-6">
                     <figure data-bottom-top="transform: translateY(50px); opacity: 0;" data--50-bottom="transform: translateY(0px); opacity: 1;">
                         <img src="/images/imagen.jpg" alt="Picture of Imagen" />
-                        <figcaption>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        </figcaption>
                     </figure>
                    
                 </div>

@@ -14,7 +14,9 @@ complex thought: each discipline jealously strives to protect its boundaries whe
             <strong>The Northeastern Urban Integration Project</strong> in Medell&iacute;n (Proyecto Urbano Integral, or PUI) was initiated by the City of Medell&iacute;n in 2004 to harness opportunities presented by the MetroCable, a new cable-car project connecting three informal settlements to the metropolitan transit system.
             <figure class="alignleft pull-flow-12" data-bottom-top="opacity: 0; transform: translateX(-30px);" data--100-bottom="opacity: 1; transform: translateX(0px);">
                 <img src="/images/medellin-intro-2.jpg" width="504" height="332" />
-                <figcaption class="bordered out-of-flow">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu lectus non quam laoreet tristique eget a tortor.</figcaption>
+                <figcaption class="bordered out-of-flow">
+                    The Puente Mirador, located over the La Herrera stream, improves travel times to and from the Andaluc&iacute;a Metrocable station and has become a new public space and meeting place between previously separate areas.
+                </figcaption>
             </figure>
             In concert with the MetroCable, the PUI has made a significant
             contribution toward improving the quality of life for approximately 170,000 residents experiencing severe social inequality, poverty, and violence.
@@ -33,6 +35,6 @@ complex thought: each discipline jealously strives to protect its boundaries whe
         <div class="video snap">
             <iframe src="//player.vimeo.com/video/79432925?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="936" height="526" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
-        <p class="caption">Jurors discuss the history of Medellin’s Northeast Urban Integration Project. Lorem ipsum dolor sit amet.</p>
+        <p class="caption">Jurors discuss Medell&iacute;n’s Northeast Urban Integration Project</p>
     </article>
 </div>
