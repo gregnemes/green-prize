@@ -3,7 +3,7 @@
 <footer class='ft<?php echo ($sectionTitle && $sectionUrl) ? " with-link" : "" ?>' role="contentinfo">
     <div class='row'>
         <div class="col-3">
-            <a href="#gsdlink" class='gsd-logo'>GSD</a>
+            <a href="#gsdlink" class='gsd-logo'>Harvard University <br />Graduate School of Design</a>
         </div>
         <div class='col-5'>
              <p class='copyright'>Copyright &copy <?php echo date("Y"); ?> The President and Fellows of Harvard College</p>
