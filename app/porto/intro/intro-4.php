@@ -2,6 +2,9 @@
     <div class="row">
         <figure>
             <img src="/images/porto/metro-train.jpg" alt="The Porto Metro Train" width="936" height="445" data-bottom-top="opacity: 0; transform: translateY(50px)" data--100-top="transform: translateY(0); opacity: 1" />
+            <figcaption>
+                Aeroporto Metro Station designed by Jo&atilde;o Leal
+            </figcaption>
         </figure>
     </div>
     <div class="content-area">
@@ -35,6 +38,9 @@
                     <p>Although this is not our vocation the Metro system builds places, nooks, joins cities, designs metropolises—Gaia, Porta, Matosinhos, Maia, Trofa, Vila do Conde, P6voa de Varzim and Gondomar.</p>
                     <figure class="alignleft pull-flow-12" data-bottom-top="opacity: 0; transform: translateY(50px)" data--100-bottom="opacity: 1; transform: translateY(0px);">
                         <img src="/images/porto/porto-station.jpg" alt="Porto Station" width="384" height="572" />
+                        <figcaption>
+                            Trindade Station designed by Eduardo Souto de Moura
+                        </figcaption>
                     </figure>
                     <p>Cities do not change of their own free will or by political decree but with the emergence of systems that they need to survive and develop.</p>
                     <p>lt was thus with the Romans when at the crossroads of two routes they designed the Cardus and the Decomanus with the Forum in the centre. lt was thus in the Middle Ages when the Forum was replaced by Cathedral Square, built with the stones of the demolished temple.</p>

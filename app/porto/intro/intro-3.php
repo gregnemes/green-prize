@@ -24,7 +24,7 @@
                 <figure data-bottom-top="transform: translateY(50px);" data--100-bottom="transform: translateY(0px)" data--100-top="transform: translateY(-50px)">
                     <img src="/images/porto/naw-sketch.jpg" alt="Sketch of Porto Station" width="930" height="638" />
                     <figcaption class="out-of-flow">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Drawing by Eduardo Souto de Moura
                     </figcaption>
                 </figure>
                 <div class="row">
@@ -32,7 +32,7 @@
                         <figure class="breath-top-160" data-bottom-top="opacity: 0;" data--200-bottom="opacity: 1">
                             <img src="/images/porto/naw-station.jpg" alt="Porto Station" />
                             <figcaption>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Salguerios Station by Eduardo Souto de Moura
                             </figcaption>
                         </figure>
                     </div>
@@ -42,7 +42,7 @@
                         <figure class="alignleft pull-flow-12" data-bottom-top="opacity: 0; transform:translateX(-30px)" data--200-bottom="opacity: 1; transform:translateX(0)">
                             <img src="/images/porto/naw-sketch-book.jpg" alt="Sketch Boook of Station" width="504" height="354" />
                             <figcaption class="out-of-flow">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, optio, quod, blanditiis.
+                                Sketchbook of Eduardo Souto de Moura
                             </figcaption>
                         </figure>
 

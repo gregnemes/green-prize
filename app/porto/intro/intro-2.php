@@ -12,7 +12,7 @@
                 <figure class="alignleft pull-flow-11" data-bottom-top="opacity: 0; transform: translateX(-30px);" data--100-bottom="opacity: 1; transform: translateX(0);">
                     <img src="/images/porto/villa-de-gaia.jpg" alt="Villa De Gaia" width="504" height="360" />
                     <figcaption class="out-of-flow">
-                        Lorem ipsum dolor sit amet.
+                        The Dom Lu&iacute;s Bridge connecting Porto with Vila Nova de Gaia
                     </figcaption>
                 </figure>
                 <p>Metro do Porto has been a strategically decisive project for shaping the intense demographic change and socio-economic restructuring occurring in the metropolitan area and provides a future template for cohesive and resilient regional change. While mobility plays an important role in achieving these outcomes, the decision to engage the exemplary urban design skills of Eduardo Souto de Moura (Pritzker Prize winner and former GSD visiting professor) underlines the ambitious holistic aims of the project.</p>
@@ -26,6 +26,6 @@
         <div class="video snap">
             <iframe src="//player.vimeo.com/video/79429651?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="936" height="526" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
-        <p class="caption">Jurors discuss the history of Metro do Porto. Lorem ipsum dolor sit amet.</p>
+        <p class="caption">Jurors discuss the Metro do Porto</p>
     </article>
 </div>
