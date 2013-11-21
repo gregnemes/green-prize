@@ -1,8 +1,9 @@
 @import "compass/css3/box-sizing";
 @import "grid";
 
-html {
-    
+html,
+body {
+    height: 100%;
 }
 
 body {
@@ -12,7 +13,9 @@ body {
 
 .wrap {
     @extend %sizing;
-
+    min-height: 100%;
+    height: auto;
+    
     .map-wrap {
         background: #666;
         padding-top: 0;
