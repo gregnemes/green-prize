@@ -1,8 +1,9 @@
-<?php define( 'allowed', true ); require '../../__base_template.php'; ?>
+<?php define( 'allowed', true ); require '../../__base_template.php';
 
-<?php $template = new Template( 'Porto - Timeline' ); ?>
-
-<?php $template->header(); ?>
+$template = new Template( 'Porto - Timeline' );
+$template->nextSection( "/porto/map", "Interactive Map" );
+$template->header();
+?>
 <div class='section'>
     <article class="content-area">
         

@@ -3,8 +3,9 @@
     $recipients = array_diff( scandir('./past-recipients' ), array( '.', '..' ) );
     arsort($recipients, SORT_ASC);
     $template = new Template('About the Prize');
-?>
-<?php $template->header(); ?>
+    $template->nextSection( "/videos/", "Videos" );
+
+$template->header(); ?>
 
 <div id="about-intro" class="section more-room">
     <div class="over-dark">

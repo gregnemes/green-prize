@@ -2,7 +2,7 @@
 @import "grid";
 
 html {
-    height: 100%;
+    
 }
 
 body {
@@ -13,9 +13,6 @@ body {
 .wrap {
     @extend %sizing;
 
-    min-height: 100%;
-    height: auto;
-    
     .map-wrap {
         background: #666;
         padding-top: 0;
@@ -34,6 +31,113 @@ body {
     }
     
 }
+
+// .gsd-logo {
+
+//     display: block;
+//     overflow: hidden;
+//     text-decoration: none;
+//     text-indent: 200%;
+//     width: 40px;
+//     height: 60px;
+//     opacity: .45;
+
+    
+//     &:hover {
+//         opacity: 1;
+//     }
+
+//     @include bg( "gsd-logo.svg", $position: 0 0, $attachment: scroll );
+//     @include background-size( cover );
+
+//     @include transition( width .25s linear );
+//     @include transition-delay( .25s );
+
+// }
+
+
+.gsd-logo {
+    display: block;
+    width: 165px;
+    height: 40px;
+    margin-bottom: 15px;
+    
+    overflow: hidden;
+    
+    text-decoration: none;
+    text-indent: 100%;
+
+    @include bg( "gsd-logo.svg", $position: 0 0, $attachment: scroll );
+    @include background-size( cover );
+
+}
+
+.ft {
+    position: relative;
+    z-index: 2;
+    padding: 5px 0;
+    background: #000;
+    color: white;
+
+    .section-link {
+        float: right;
+        margin-top: 14px;
+    }
+
+    .copyright {
+        margin-top: 22px
+    }
+}
+
+
+
+
+// .ft {
+//     position: fixed;
+//     width: 180px;
+    
+//     border: 1px solid #a8a8a8;
+//     background: rgba( white, .85 );
+
+//     padding: 10px;
+
+//     right: 0;
+//     bottom: 10px;
+    
+//     .gsd-logo {
+//         position: relative;
+//     }
+
+//     &.with-link {
+//         height: 180px;
+//     }
+
+//     &:hover {
+//         width: 260px;
+        
+
+//         .gsd-logo {
+//             width: 246px;
+
+//         }
+
+//     }
+//     .section-link {
+//         position: absolute;
+//         left: 0;
+//         right: 0;
+//         bottom: 0;
+//     }
+    
+//     @include transform( scale(.5 ) );
+
+//     @include transition( width .25s linear );
+//     @include transition-delay( .25s );
+// }
+
+
+
+
 
 %over-dark {
     background: lighten( $dark-color, 20% );

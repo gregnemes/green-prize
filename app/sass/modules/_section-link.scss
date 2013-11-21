@@ -1,17 +1,11 @@
-$section-link-font-size: em-calc( $base-font-size + 2);
+$section-link-font-size: em-calc( $base-font-size );
 $section-link-font-family: $callout-font-family;
 
 .section-link {
 
+    position: relative;
     display: inline-block;
     padding: 4px 36px 4px 30px;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    opacity: 0;
-
-
     font-size: $section-link-font-size;
     
     text: {
@@ -39,12 +33,4 @@ $section-link-font-family: $callout-font-family;
         background: black;
     }
 
-
-    @include transition( opacity .25s linear );
-
-}
-
-
-.bottom .section-link {
-    opacity: 1;
 }

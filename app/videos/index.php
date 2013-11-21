@@ -5,8 +5,9 @@
     function get_thumb($id) {
         return Vimeo::getThumb($id);
     }
+    
     $template = new Template( 'Videos' );
-
+    $template->nextSection( "/porto/", "Porto" );
 ?>
 
 <?php $template->header(); ?>

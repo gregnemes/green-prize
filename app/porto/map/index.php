@@ -2,11 +2,10 @@
 
 $exclude = array( 'index.php', '.', '..' );
 $pages = array_diff( scandir( './' ), $exclude );
-
 $template = new Template('Porto - Interactive Map' );
-?>
+$template->nextSection( "/porto/credits", "Project Credits" );
 
-<?php $template->header(); ?>
+$template->header(); ?>
 
 <div id="porto-map" class="section cf map-wrap">
     <div class="row">

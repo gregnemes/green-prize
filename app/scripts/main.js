@@ -214,7 +214,10 @@ $( document ).ready(function(){
     });
 
 
-    window.skrollr.init();
+    window.skrollr.init({
+        forceHeight: false
+    });
+    
     window.scrollEnd.init();
     
 });

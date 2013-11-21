@@ -10,6 +10,8 @@
 
         public $pageTitle = "";
         public $pageDescription = "";
+        public $sectionUrl = "";
+        public $sectionTitle = "";
 
         public function __construct( $title = "The Veronica Rudge Green Prize in Urban Design", $desc = "") {
             $this->pageTitle = $title;
@@ -24,8 +26,17 @@
             ob_end_flush();
         }
 
+        public function nextSection( $url, $title ) {
+            $this->sectionTitle = $title;
+            $this->sectionUrl = $url;
+        }
+
         public function footer() {
             ob_start();
+
+            $sectionUrl = $this->sectionUrl;
+            $sectionTitle = $this->sectionTitle;
+
             include '__footer.php';
             ob_end_flush();
         }

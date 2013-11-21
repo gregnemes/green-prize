@@ -263,6 +263,10 @@ blockquote {
     text-transform: uppercase;
 }
 
+.copyright {
+    font-size: em-calc( 14px );
+}
+
 /** =Definition Lists **/
 
 dt {
@@ -277,6 +281,8 @@ dt {
         color: $callout-txt-color;
     }
 }
+
+
 
 
 /** =Headings */

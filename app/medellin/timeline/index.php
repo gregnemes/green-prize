@@ -1,7 +1,10 @@
 <?php define( 'allowed', true ); require '../../__base_template.php'; ?>
 
 <?php $template = new Template( 'Medell&iacute;n - Timeline' ); ?>
-<?php $template->header(); ?>
+<?php 
+$template->nextSection( "/medellin/map", "Interactive Map" );
+$template->header(); 
+?>
 <div id="medellin-timeline-section" class='section'>
     <article class='content-area'>
         <header>
@@ -11,7 +14,7 @@
             
         </div>
     </article>
-    <a href="/medellin/map" title="Next Section: Medellin Interactive Map" class='section-link'>Interactive Map</a>
+    
 </div>
 
 

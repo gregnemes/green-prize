@@ -1,7 +1,8 @@
-<?php define( 'allowed', true ); require '../../__base_template.php'; ?>
+<?php define( 'allowed', true ); require '../../__base_template.php';
 
-<?php $template = new Template( 'Porto - Project Credits' ); ?>
-<?php $template->header(); ?>
+$template = new Template( 'Porto - Project Credits' );
+$template->nextSection( "/medellin/", "Medell&iacute;n" );
+$template->header(); ?>
 <div id="porto-credits" class="section porto-credits">
     <div class="row light-text">
         <div class="col-6 push-6">

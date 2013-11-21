@@ -7,6 +7,7 @@
     $videoTitle = $isUser ? $details['title'] : 'Not Found';
 
     $template = new Template( "Video - $videoTitle" ); 
+    
 ?>
 
 <?php $template->header() ?>

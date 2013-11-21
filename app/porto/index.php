@@ -1,8 +1,10 @@
-<?php define( 'allowed', true ); require '../__base_template.php'; ?>
-<?php $template = new Template( 'Porto - Introduction' ); ?>
+<?php define( 'allowed', true ); require '../__base_template.php';
 
-<?php $template->header(); ?>
+$template = new Template( 'Porto - Introduction' );
 
-<?php include 'intro.php'; ?>
+$template->nextSection( "/porto/timeline", "Timeline" );
+$template->header();
 
-<?php $template->footer(); ?>
+include 'intro.php';
+
+$template->footer();
