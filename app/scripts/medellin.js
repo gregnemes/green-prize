@@ -26,13 +26,13 @@
         },
         
         tips: {
-            'puente-mirador': 'Puente Mirador: Andaluci\'a-la fancia bridge',
-            'dwelling-consolidation': 'Dwelling consolidation and environmental restoration in juan bobo stream',
+            'puente-mirador': 'Puente Mirador',
+            'dwelling-consolidation': 'juan bobo stream',
             'paseo-urbano': 'Paseo urbano de la 107',
-            'improving-road': 'Improving the road system: 42C, 42D, and 43',
-            'parque-imaginacion': 'Parque de la imaginacio\'n',
+            'improving-road': 'Improving the road',
+            'parque-imaginacion': 'Parque de la imaginaci&oacute;n',
             'parque-lineal': 'Parque lineal la herrera',
-            'parque-biblioteca': 'Parque biblioteca españa, Santo Domingo',
+            'parque-biblioteca': 'Parque biblioteca espa&ntilde;a',
             'paseo-calle': 'Paseo calle 106, urban street promenade',
             'santo-domingo': 'Santo domingo savio cedezo',
             'granzial-sports': 'Granzial Sports Complex'
@@ -190,7 +190,7 @@
                     mouse       = d3.mouse( this ),
                     id          = location.property('id'),
                     text        = data ? data.text : Medellin.tips[id],
-                    tooltip     = Medellin.el.tooltip.text(text).classed( 'show', true ),
+                    tooltip     = Medellin.el.tooltip.html(text).classed( 'show', true ),
                     height      = data ? data.height : parseInt( tooltip.style('height'), 10 ),
                     width       = data ? data.width :  parseInt( tooltip.style('width'), 10 ) + 10,
                     coords      = {

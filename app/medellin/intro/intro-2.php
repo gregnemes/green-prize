@@ -35,6 +35,6 @@ complex thought: each discipline jealously strives to protect its boundaries whe
         <div class="video snap">
             <iframe src="//player.vimeo.com/video/79432925?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="936" height="526" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
-        <p class="caption">Jurors discuss Medell&iacute;n’s Northeast Urban Integration Project</p>
+        <p class="caption">Jurors discuss Medell&iacute;n’s Northeastern Urban Integration Project</p>
     </article>
 </div>

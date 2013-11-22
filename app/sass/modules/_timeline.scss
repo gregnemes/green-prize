@@ -59,7 +59,7 @@
 
 #y-axis-08 {
     @extend %timeline-transform-ease;
-    @include transform( translateX( -5% ) );
+    @include transform( translateX( -30px ) );
 }
 
 
@@ -68,7 +68,7 @@
     @extend %timeline-transform-ease;
 
     position: absolute;
-    bottom: 350px;
+    bottom: 250px;
     
     &:after {
         position: absolute;
@@ -86,7 +86,7 @@
 
     &.porto {
         
-        min-height: 717px;
+        min-height: 617px;
         
         .timeline {
             position: relative;

@@ -25,5 +25,15 @@
             }   
         }
     }
+    
+
+    
+    [data-area="popular"].active {
+        background-color: #2DB46A;
+    }
+
+    [data-area="santo-domingo-savio"].active {
+        background-color: #FDC140;
+    }
 
 }

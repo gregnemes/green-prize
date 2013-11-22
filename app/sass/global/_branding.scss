@@ -1,17 +1,13 @@
+
 .gsd-logo {
+    @extend %ir;
     display: block;
     width: 165px;
     height: 40px;
-    text: {
-        decoration: none;
-        indent: 200%;
-    };
-    font-size: 0;
+    text-indent: 200%;
     overflow: hidden;
     
     @include bg( "gsd-logo-white.png", $position: 0 0, $attachment: scroll );
-    
-
 }
 
 .home-logo {
@@ -19,3 +15,6 @@
     @include bg( "logo.svg", $position: top center, $attachment: scroll );
     height: 200px;
 }
+
+
+

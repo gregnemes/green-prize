@@ -4,7 +4,7 @@ $exclude = array( 'index.php', '.', '..' );
 $pages = array_diff( scandir( './' ), $exclude );
 $template = new Template( 'Medell&iacute;n - Interactive Map' );
 $template->nextSection( "/medellin/credits", "Project Credits" );
-$template->header();
+$template->header("dark");
 ?>
 
 
@@ -41,7 +41,7 @@ $template->header();
                 <div class="map" data-svg="/images/medellin/map/medellin-map-overlay.svg" data-image="/images/medellin/map/medellin-map-bg.jpg" data-image-width="566" data-image-height="428">
                 </div>
                 <div id="interactive-graph" class="graph">
-                    <img src="/images/altitude.png" alt="Altitude graph" />
+                    <img src="/images/medellin/map/altitude.png" alt="Altitude graph" />
                    <ul class="button-group">
                         <li><a id='andalucia' href="#" class="button" data-area="andalucia">Andalucia</a></li>
                         <li><a id='popular' href="#" class="button" data-area="popular">Popular</a></li>

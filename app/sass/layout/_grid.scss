@@ -18,6 +18,11 @@
     @extend .row;
     padding-top: 20px;
     padding-bottom: 20px;
+
+    &.squeeze-area {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
 }
 
 .content-area,

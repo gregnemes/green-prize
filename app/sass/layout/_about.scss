@@ -13,3 +13,21 @@
         opacity: .45;
     }
 }
+
+.about-logos {
+
+    a {
+        float: left;
+        &:first-child {
+            margin-top: 28px;       
+        }
+
+        &:last-child {
+            float: right;
+        }
+    }
+    
+
+    @include cf;
+    
+}

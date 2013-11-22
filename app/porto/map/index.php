@@ -5,7 +5,7 @@ $pages = array_diff( scandir( './' ), $exclude );
 $template = new Template('Porto - Interactive Map' );
 $template->nextSection( "/porto/credits", "Project Credits" );
 
-$template->header(); ?>
+$template->header("dark"); ?>
 
 <div id="porto-map" class="section cf map-wrap">
     <div class="row">

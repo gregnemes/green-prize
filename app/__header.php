@@ -12,6 +12,6 @@
         <meta name="viewport" content="width=device-width">
         <?php include '__header_assets.html'; ?>
     </head>
-    <body>
+    <body<?php echo ($class) ? " class='$class'" : ""; ?>>
         <div class="wrap">
             <?php include '__nav.php'; ?>

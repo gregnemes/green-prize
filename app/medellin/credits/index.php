@@ -35,9 +35,9 @@ $template->header(); ?>
                     <dt>Project Manager</dt>
                     <dd>Ing. Cesar Augusto Hernández Correa</dd>
                 </dl>
-                <section>
+                <section class="breath-top-40">
                     <header>
-                        <h6>Architects</h6>
+                        <h5>Architects</h5>
                     </header>
                     <p>
                         Isabel Arcos Zuluaga, Luis Fernando Arango Arboleda, Andrés Benítez Giraldo, Héctor Javier Cruz Londoño, Carmen Elisa Hurtado Figueroa, Esteban Henao, Eliana Idárraga Castaño, Mauricio Iván Mendoza Martinez, Carlos David Montoya Valencia,  Oscar Montoya, John Octavio Ortiz Lopera, Diego Armando Pino Pino, Francesco Maria Orsini, Claudia Juliana Portillo Rubio, Oscar Mauricio Santana Vélez, Ana Milena Vergara Monsalve

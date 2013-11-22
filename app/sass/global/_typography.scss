@@ -1,3 +1,5 @@
+@import "compass/utilities/links/link-colors";
+
 // =Base
 $base-line-height: 1.6;
 
@@ -65,6 +67,19 @@ p {
     margin-top: $txt-margin;
 }
 
+h6 {
+    margin-bottom: 0;
+}
+
+ul {
+    margin-bottom: $txt-margin;
+}
+
+    .tight {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
 h1, h2, h3, h4, h5, h6 {
     font-family: $header-font-family;
 }
@@ -122,6 +137,11 @@ strong {
     font-weight: 600;
 }
 
+.stronger {
+    @extend strong;
+}
+
+
 .subpixel {
     @extend %sub-pixel;
 }
@@ -129,6 +149,20 @@ strong {
 .label {
     @extend %sub-pixel;
 }
+
+
+.title-link {
+    @extend %dark-shade-text;
+    text-decoration: none;
+    
+}
+
+
+a {
+    text-decoration: none;
+    @include link-colors( $txt-dark-gray, lighten( $txt-dark-gray, 10% ) );
+}
+
 
 /** = Callouts **/
 
@@ -155,6 +189,10 @@ blockquote {
     &:after {
         content: close-quote;
     }
+}
+
+cite {
+    font-style: $italic-style;
 }
 
 .callout {
@@ -185,6 +223,10 @@ blockquote {
 
 .light-text {
     color: white;
+
+    a {
+        @include link-colors( white, darken( white, 20% ) );
+    }
 }
 
 %highlight-text {
@@ -265,6 +307,15 @@ blockquote {
 
 .copyright {
     font-size: em-calc( 12px );
+}
+
+
+/** =BUllets **/
+
+.bullet {
+    margin-left: 30px;
+    list-style: disc;
+    margin-bottom: 25px;
 }
 
 /** =Definition Lists **/

@@ -18,7 +18,7 @@
             $this->pageDescription = $desc;
         }
 
-        public function header() {
+        public function header($class="") {
             ob_start();
             $title = $this->pageTitle;
             $description = $this->pageDescription;
