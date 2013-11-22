@@ -42,8 +42,8 @@ $template->header(); ?>
                 </header>
                 <p>The prize is awarded biennially to recognize exemplary urban design projects. Projects must be more than one building or an open space built anywhere in the world within the last ten years that makes a positive contribution to the public realm of a city and improves the quality of urban life in that context. The project must also demonstrate a humane and worthwhile direction for the design of urban environments.</p>
                 <figure class="about-logos">
-                    <a href="#gsd-url"><img src="/images/gsd-logo-black.png" width="185" height="45" class='gsd-black-logo' alt="Harvard University Graduate School of Design" /></a>
-                    <a href="/" title="The Veronica Rudge Green Prize in Urban Design"><img src="/images/logo.png" width="153" height="70" class='green-logo' alt="The Veronica Rudge Green Prize in Urban Design" /></a>
+                    <a href="http://www.gsd.harvard.edu/" title="Visit: Harvard University Graduate School of Design"><img src="/images/gsd-logo-black.png" width="185" height="45" class='gsd-black-logo' alt="Harvard University Graduate School of Design" /></a>
+                    <a href="/" title="Back to: The Veronica Rudge Green Prize in Urban Design"><img src="/images/logo.png" width="153" height="70" class='green-logo' alt="The Veronica Rudge Green Prize in Urban Design" /></a>
                 </figure>
             </article>
         </div>
