@@ -135,6 +135,23 @@ module.exports = function (grunt) {
                         '*.{ico,png,txt}',
                         '.htaccess',
                         'images/{,*/}*.{webp,gif}',
+                        'css/fonts/**',
+                        '{,*/{,*/{,*/}}}*.{php,html}'
+                    ]
+                }]
+            },
+            dev: {
+                files: [{
+                    expand: true,
+                    dot: true,
+                    cwd: '<%= yeoman.app %>',
+                    dest: '<%= yeoman.dist %>',
+                    src: [
+                        '*.{ico,png,txt}',
+                        '.htaccess',
+                        'images/{,*/}*.{webp,gif}',
+                        'bower_components/**',
+                        'scripts/**',
                         'css/**',
                         '{,*/{,*/{,*/}}}*.{php,html}'
                     ]
@@ -154,16 +171,24 @@ module.exports = function (grunt) {
                 httpGeneratedImagesPath: '/images/generated',
                 httpFontsPath: '/css/fonts',
                 relativeAssets: false,
-                require: 'compass'
+                require: 'compass',
+                debugInfo: false,
+                outputStyle: 'compressed',
+                noLineComments: true,
+                
             },
             dist: {
                 options: {
-                    generatedImagesDir: '<%= yeoman.dist %>/images/generated'
+                    generatedImagesDir: '<%= yeoman.dist %>/images/generated',
+                    force: true
                 }
             },
             server: {
                 options: {
-                    debugInfo: true
+                    debugInfo: true,
+                    outputStyle: 'expanded',
+                    noLineComments: false,
+                    force: false
                 }
             }
         },
@@ -193,23 +218,37 @@ module.exports = function (grunt) {
                 exclude: ['.git', '*.scss', 'node_modules', '.DS_Store'],
                 recursive: true
             },
-            prod: {
+            dev: {
                 options: {
                     src: '<%= yeoman.dist %>/',
                     dest: 'webapps/greenprize',
                     host: 'alettieri',
                     syncDestIgnoreExcl: true
                 }
+            },
+            prod: {
+                options: {
+                    src: '<%= yeoman.dist %>/',
+                    dest: 'webapps/greenprize',
+                    host: 'greenprize',
+                    syncDestIgnoreExcl: true
+                }
             }
         }
     });
     
-
-    grunt.registerTask('build',[
+    grunt.registerTask('build:dev',[
         'clean:dist',
-        'compass',
+        'concurrent:dist',
+        'compass:dist',
+        'copy:dev'
+    ]);
+
+    grunt.registerTask('build:prod',[
+        'clean:dist',
         'useminPrepare',
         'concurrent:dist',
+        'compass:dist',
         'concat',
         'cssmin',
         'uglify',
@@ -219,7 +258,12 @@ module.exports = function (grunt) {
     ]);
     
     grunt.registerTask( 'deploy', [
-        'build',
+        'build:dev',
+        'rsync:dev'
+    ]);
+
+    grunt.registerTask( 'deploy:prod', [
+        'build:prod',
         'rsync:prod'
     ]);
 };

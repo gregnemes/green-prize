@@ -1,4 +1,9 @@
-@include face( "Flama", $src: "Flama/FlamaSemicondensed-Book" );
+// Standard browser support
+@include face( "FlamaSemicondensed-Book", $src: "Flama/FlamaSemicondensed-Book" );
 @include face( "Roboto", $src: "Roboto/robotocondensed-light-webfont" );
 @include face( "Roboto", $src: "Roboto/robotocondensed-regular-webfont", $weight: 700 );
+
+// Doing this for svg support.
+@include face( "RobotoCondensed-Light", $src: "Roboto/robotocondensed-light-webfont" );
+@include face( "RobotoCondensed-Regular", $src: "Roboto/robotocondensed-regular-webfont", $weight: 700 );
 

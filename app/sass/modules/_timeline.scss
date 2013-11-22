@@ -76,7 +76,7 @@
         @include css-triangle( 17px, #000, left );
     }
 
-    @include transform( translateX( 640px ) );
+    @include transform( translateX( 630px ) );
 
 }
 
@@ -118,7 +118,7 @@
                 border-color: transparent #000 transparent transparent;
             }
 
-            @include transform( translateX( 40px ) );
+            @include transform( translateX( 20px ) );
         }
 
         .__porto-2008 {
