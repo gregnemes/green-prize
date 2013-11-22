@@ -22,7 +22,7 @@
             </section>
         </div>
     </article>
-    <article id="porto-video" class="content-area breath-top-60 push-top-60">
+    <article id="porto-video" class="content-area breath-top-80">
         <div class="video snap">
             <iframe src="//player.vimeo.com/video/79429651?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="936" height="526" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>

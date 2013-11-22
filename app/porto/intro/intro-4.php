@@ -14,9 +14,16 @@
                 <div class="col-6 push-6">
                     <header>
                         <h5>The Metro and the City</h5>
+                        <h6>by Eduardo Souto de Moura</h6>
                     </header>
                     <p>The surface light rail system glides smoothly over ground on two steel rails, making hardly any sound.</p>
                     <p>The laying of the track is dictated by a closed circuit elevation value system complying with strict rules that have no subjective considerations. The steel rails must be full embedded in the street pavement so that, in the event of an emergency fire, service vehicles can pass from one side of the track to the other. The material used ranges from granite cubes to bituminous pavements or grass covering.</p>
+                    <figure class='alignleft pull-flow-12' data-bottom-top="opacity: 0; transform: translateX(-30px)" data--100-bottom="opacity: 1; transform: translateX(0px);">
+                        <img src="/images/porto/page-1.jpg" alt="Matosinhos Station" />
+                        <figcaption>
+                            Matosinhos Station
+                        </figcaption>
+                    </figure>
                     <p>For acoustic reasons the rails are laid on a floating slab using steel components cushioned with rubber dampers.</p>
                     <p>The installation of the system meant that whole streets had to be destroyed and, as a result, their infrastructures also.</p>
                     <p>New sewage, rainwater, gas, electricity, telephone, cable TV, optic fibre cables and even oil pipe pipeline distribution networks have to coexist with the Metro light rail system being built—which is achieved with multi-transport pipelines with access points every 20 metres.</p>
@@ -26,9 +33,9 @@
                     <p>We work from the track outwards to the sides of the roads (the Metro track is always inflexible). Any space left over on the street is given over to other vehicles and parking where possible, and pedestrian pavement until the stoops are reached.</p>
                 </div>
             </div>
-            <div class="row">
+            <div class="row breath-top-40 breath-bottom-40">
                 <aside class="callout col-12" data-bottom-top="opacity: 0;" data--100-bottom="opacity: 1">
-                We can alternate materials and modify inclinations but the building stoops are “sacred,” it is like touching a stranger on his shoulder. From shoulder to shoulder we modify elevation values, pavements, textures, pathways, road kerbsides, kerbstones, lamp-posts and trees. lt is not that we want to alter the geography but "Metro oblige."
+                We can alternate materials and modify inclinations but the building stoops are &ldquo;sacred,&rdquo; it is like touching a stranger on his shoulder. From shoulder to shoulder we modify elevation values, pavements, textures, pathways, road kerbsides, kerbstones, lamp-posts and trees. lt is not that we want to alter the geography but &ldquo;Metro oblige.&rdquo;
                 </aside>
             </div>
             <div class="row">
