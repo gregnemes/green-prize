@@ -62,8 +62,6 @@
     background: white;
     color: black;
 
-    .precarious {}
-
     .upgraded {
         color: #655A4E;
         &:after {
@@ -91,7 +89,7 @@
 
 .homicide-keys {
     width: 60px;
-    bottom: -30px;
+    bottom: -60px;
    
     li:after {
         background: #fff;
