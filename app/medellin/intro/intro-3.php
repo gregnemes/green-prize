@@ -1,6 +1,6 @@
 <div id="medellin-intro-3" class='section'>
     <article>
-        <figure class='fixed-image settlements' data-anchor-target="#marginality" data-bottom-top="display: none; opacity: 0" data--500-top="opacity: 0;" data--1-bottom-top="display: block;" data-top-bottom="display: none;" data-100-top="opacity: 1">
+        <figure class='fixed-image settlements' data-anchor-target="#marginality" data-100-bottom-top="display: !none;" data-1-bottom-top="opacity: !0" data-bottom-top="display: !block;" data-10-top-bottom="display: !none" data--100-bottom-top="opacity: !1" data-400-top-bottom="opacity: !0">
             <div class="tabs">
                 <ul>
                     <li><a href="#1948" data-tab="1948">1948</a></li>
@@ -64,7 +64,7 @@
         </div><!-- /.canvas-row -->
         <div class="content-area">
             <div class="index-inferior">
-                <div class='fixed-image homicides-image' data-anchor-target="#thirty-years" data-bottom-top="display: none; opacity: 0;" data-top-bottom="display: none;" data--1-bottom-top="display: block;" data-center="opacity: 1" data-50-top-bottom="opacity: 0">
+                <div class='fixed-image homicides-image' data-anchor-target="#thirty-years" data-1-bottom-top="display: !none; opacity: !0;" data-top-bottom="display: !none;" data-bottom-top="display: !block;" data-100-center="opacity: !1" data-90-top-bottom="opacity: !0">
                     <h5 class='allcaps'>Violent Deaths Index 2003</h5>
                     <figure>
                         <img src="/images/medellin/homicides.png" />
@@ -77,12 +77,12 @@
                         </div>
                     </figure>
                 </div>
-                <div class='fixed-image homicides-area' data-anchor-target="#social-urbanism" data-bottom-top="display: none; opacity: 0" data--1-bottom-top="display: block;" data-100-top="opacity: 1" data--100-top="opacity: 0" data--105-top="display: none;">
+                <div class='fixed-image homicides-area' data-anchor-target="#social-urbanism" data-bottom-top="display: !none; opacity: 0" data--1-bottom-top="display: !block;" data-100-top="opacity: 1" data--100-top="opacity: 0" data--105-top="display: !none;">
                     <figure>
                         <img src="/images/medellin/homicides-area.png" />
                     </figure>
                 </div>
-                 <div class='fixed-image metro-lines' data-anchor-target="#mobility" data-bottom-top="display: none; opacity: 0" data--1-bottom-top="display: block;" data-100-top="opacity: 1" data--400-top="opacity: 0" data--405-top="display: none;">
+                 <div class='fixed-image metro-lines' data-anchor-target="#mobility" data-bottom-top="display: !none; opacity: 0" data--1-bottom-top="display: !block;" data-100-top="opacity: 1" data--400-top="opacity: 0" data--405-top="display: !none;">
                     <figure>
                         <img src="/images/medellin/medellin-metro-lines.png" width="360" height="523" />
                         <div class='metro-line-keys'>

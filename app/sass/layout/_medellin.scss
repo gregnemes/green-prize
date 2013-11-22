@@ -209,6 +209,7 @@
         width: 344px;
         top: 138px;
         left: 170px;
+        @include transition( opacity .5s linear );
     }
 
     &.homicides-area {
@@ -243,6 +244,8 @@
             height: 546px;
         }
 
+
+        @include transition( opacity .5s linear );
     }
 
     &.skrollable {
