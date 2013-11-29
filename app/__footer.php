@@ -13,6 +13,7 @@
             <a href="<?php echo $sectionUrl; ?>" class='section-link'><?php echo $sectionTitle; ?></a>
         <?php endif; ?>
         </div>
+    </div>
 </footer>
 
         <!--[if lt IE 7]>

@@ -13,5 +13,5 @@
         <?php include '__header_assets.html'; ?>
     </head>
     <body<?php echo ($class) ? " class='$class'" : ""; ?>>
-        <div class="wrap">
+        <div id="skrollr-body" class="wrap">
             <?php include '__nav.php'; ?>
