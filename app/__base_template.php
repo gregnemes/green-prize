@@ -13,7 +13,7 @@
         public $sectionUrl = "";
         public $sectionTitle = "";
 
-        public function __construct( $title = "The Veronica Rudge Green Prize in Urban Design", $desc = "") {
+        public function __construct( $title = "The Veronica Rudge Green Prize in Urban Design", $desc = "Awarded biennially by the Harvard Graduate School of Design, the Veronica Rudge Green Prize in Urban Design is the foremost award recognizing achievement in this field.") {
             $this->pageTitle = $title;
             $this->pageDescription = $desc;
         }

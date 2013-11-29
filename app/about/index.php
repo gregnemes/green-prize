@@ -23,13 +23,13 @@ $template->header(); ?>
                 </header>
                 <dl class="jury-list">
                     <dt>Anita Berrizebeitia</dt>
-                    <dd>Professor of Landscape Architecture</dd>
+                    <dd>Professor of Landscape Architecture, GSD</dd>
                     <dt>Joan Busquets</dt>
-                    <dd></dd>
-                    <dt>Martin Bucksbaum</dt>
-                    <dd>Professor in Practice of Urban Planning and Design</dd>
+                    <dd>Martin Bucksbaum Professor in Practice of Urban Planning and Design, GSD</dd>
+                    <dt>Rahul Mehrotra</dt>
+                    <dd>Green Prize Jury Chair and Chair of the Department of Urban Planning and Design, GSD</dd>
                     <dt>Gary Hilderbrand</dt>
-                    <dd>Adjunct Professor of Landscape Architecture</dd>
+                    <dd>Adjunct Professor of Landscape Architecture, GSD</dd>
                     <dt>Michael Sorkin</dt>
                     <dd>Distinguished Professor of Architecture Director of the Graduate Program in Urban Design at the Bernard and Anne Spitzer School of Architecture</dd>
                 </dl>

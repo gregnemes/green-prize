@@ -9,7 +9,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title><?php echo $title; ?></title>
         <meta name="description" content="<?php echo $description; ?>">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=1040">
         <?php include '__header_assets.html'; ?>
     </head>
     <body<?php echo ($class) ? " class='$class'" : ""; ?>>
