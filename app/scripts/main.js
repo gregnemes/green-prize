@@ -213,7 +213,7 @@ $( document ).ready(function(){
         offset: -100 // account for top-bar
     });
 
-    if( !Modernizr.touch ) {
+    if( !window.Modernizr.touch ) {
         window.skrollr.init({
             forceHeight: false,
             mobileCheck: function() {
