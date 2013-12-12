@@ -1,26 +1,35 @@
 
 
 #porto-intro {
-    @include bg( "porto/intro-image.jpg", $position: 50% 50px );
+    
     color: white;
     
     p {
         @include transform( translateY( -70px ) );
     }
+
+    @include bg( "porto/intro-image.jpg", $position: 50% 0 );
+    
+    @include bp( medium ) {
+        background-position: 50% 50px;
+    }
+    
+    
+
 }
 
 
 #naw-first {
-    @include bg( "porto/naw-bg.jpg", $position: top center, $attachment: scroll );
     background-size: cover;   
+    @include bg( "porto/naw-bg.jpg", $position: top center );
 }
 
 #naw-second {
-    @include bg( "porto/naw-second-bg.jpg", $position: top left, $attachment: scroll );
+    @include bg( "porto/naw-second-bg.jpg", $position: top left );
 }
 
 #porto-intro-5 {
-    @include bg( "porto/section-4-bg.jpg", $position: top center, $attachment: fixed );
+   
     background-size: cover;
     
     padding-top: 300px;
@@ -31,6 +40,8 @@
         font-size: em-calc( 30px );
         text-align: center;
     }
+
+    @include bg( "porto/section-4-bg.jpg", $position: top center );
 }
 
 #porto-map {

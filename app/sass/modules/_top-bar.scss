@@ -2,13 +2,10 @@
 .top-bar {
     
     @extend %cf;
-    position: fixed;
-
-    top: 0; left: 0;
-    width: 100%;
+    position: relative;
     height: $top-bar-height;
-    min-width: $top-bar-min-width;
     padding: $top-bar-padding;
+    
     font: {
         family: $top-bar-font-family;
         size: em-calc( $top-bar-font-size );
@@ -24,7 +21,7 @@
     }
     
     > a {
-        width: 18%;
+        width: 15%;
         height: $top-bar-height;
         float: left;
         line-height: $top-bar-height - 10px;
@@ -34,9 +31,18 @@
 
     nav {
         float: left;
-        width: 80%;
+        width: 85%;
         height: $top-bar-height - 10px;
     }
+
+    
+    @include bp( medium ) {
+        min-width: $top-bar-min-width;
+        width: 100%;
+        position: fixed;
+        top: 0; left: 0;   
+    }
+
 }
 
 
@@ -70,47 +76,43 @@ nav[role='navigation'] {
                 opacity: 1;
             }
         }
+        
+        @include bp( medium ) {
+            &:nth-child(1) {
+                .sub-nav{
+                    padding-left: 10%;
+                }
+            }
 
-        &:nth-child(1) {
-            .sub-nav{
-                padding-left: 10%;
+            &:nth-child(2) {
+                .sub-nav {
+                    padding-left: 25%;
+                }
+            }
+
+            &:nth-child(3) {
+                .sub-nav {
+                   padding-left: 48%;
+                }
             }
         }
-
-        &:nth-child(2) {
-            .sub-nav {
-                padding-left: 25%;
-            }
-        }
-
-        &:nth-child(3) {
-            .sub-nav {
-               padding-left: 48%;
-            }
-        }
+        
         
     }
     
     .sub-nav {
-        
+        position: absolute;
         padding: $sub-nav-padding;
-        
-        position: fixed;
-        left: 0;
-        
-        visibility: hidden;
-        width: 100%;
-
         background: #fff;
         background: rgba( white, .85 );
-        
         text-transform: uppercase;
-        opacity: 0;
         z-index: $top-bar-zindex * 2;
-
-        @include backface-visibility( hidden );
-        @include transition( opacity .15s ease-in );
-
+            
+        visibility: hidden;
+        width: 100%;
+        opacity: 0;
+            
+        
         a {
             color: #000;
             padding: 2px 5px 0 5px;
@@ -120,22 +122,42 @@ nav[role='navigation'] {
             }
 
         }
+        
 
-        li {
-            float: left;
-            margin-right: 5px;            
-        }
-
-        .sep {
-            border-right: solid 1px #000;
-            height: 14px;
-            width: 0;
-            margin-top: 6px;
-        }
-    
         &.show {
             visibility: visible;
         }
+
+
+        @include backface-visibility( hidden );
+        @include transition( opacity .15s ease-in );
+
+        
+        @include bp( medium ) {
+            position: fixed;
+            left: 0;
+            
+            
+            li {
+                float: left;
+                margin-right: 5px;            
+            }
+
+            .sep {
+                border-right: solid 1px #000;
+                height: 14px;
+                width: 0;
+                margin-top: 6px;
+            }
+        }
+
+
+
+            
+
+
+        
+
     }
 
 

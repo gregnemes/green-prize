@@ -37,3 +37,18 @@ $top-bar-font-size: 14px;
 $sub-nav-padding: 10px;
 
 $top-bar-zindex: 2;
+
+$screen: "only screen";
+
+$large-range: 1440px;
+$medium-range: 1060px;
+$small-range: 768px;
+
+$landscape: "#{$screen} and (orientation: landscape)";
+$portrait: "#{$screen} and (orientation: portrait)";
+
+$small-up: $screen;
+$medium-up: "#{$screen} and (min-width: #{$medium-range})";
+$large-up: "#{$screen} and (min-width: #{$large-range})";
+
+

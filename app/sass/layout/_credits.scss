@@ -5,8 +5,8 @@
     background: {
         position: 0 0;
         repeat: no-repeat;
-        attachment: fixed;
         color: #666;
+        size: 45%;
     };
     
     &.porto-credits {
@@ -15,6 +15,11 @@
     
     &.medellin-credits {
         @include bg("medellin/credits.jpg", $position: false, $repeat: false, $attachment: false, $color: false );
+    }
+
+    @include bp( medium ) {
+        background-attachment: fixed;
+        background-size: auto auto;
     }
 }
 

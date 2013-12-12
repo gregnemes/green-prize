@@ -1,0 +1,20 @@
+@mixin bp( $size: small ) {
+    
+
+    @if $size == medium  {
+        @media #{$medium-up} {
+            @content;
+        }
+    }
+    @else if $size == large {
+        @media #{$large-up} {
+            @content;
+        }
+    }
+    @else {
+        @media #{$small-up} {
+            @content;
+        }
+    }
+
+}

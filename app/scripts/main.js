@@ -213,10 +213,14 @@ $( document ).ready(function(){
         offset: -100 // account for top-bar
     });
 
-
-    window.skrollr.init({
-        forceHeight: false
-    });
+    if( !Modernizr.touch ) {
+        window.skrollr.init({
+            forceHeight: false,
+            mobileCheck: function() {
+                return false;
+            }
+        });
+    }
     
     window.scrollEnd.init();
     

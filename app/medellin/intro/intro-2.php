@@ -13,7 +13,7 @@ complex thought: each discipline jealously strives to protect its boundaries whe
             
             <strong>The Northeastern Urban Integration Project</strong> in Medell&iacute;n (Proyecto Urbano Integral, or PUI) was initiated by the City of Medell&iacute;n in 2004 to harness opportunities presented by the MetroCable, a new cable-car project connecting three informal settlements to the metropolitan transit system.
             <figure class="alignleft pull-flow-12" data-bottom-top="opacity: 0; transform: translateX(-30px);" data--100-bottom="opacity: 1; transform: translateX(0px);">
-                <img src="/images/medellin-intro-2.jpg" width="504" height="332" />
+                <img src="/images/medellin-intro-2.jpg" width="504" height="332" alt="The Puente Mirador" />
                 <figcaption class="bordered out-of-flow">
                     The Puente Mirador, located over the La Herrera stream, improves travel times to and from the Andaluc&iacute;a Metrocable station and has become a new public space and meeting place between previously separate areas.
                 </figcaption>

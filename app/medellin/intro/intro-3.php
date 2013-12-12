@@ -54,10 +54,10 @@
             <div class="content-area">
                 <figure class="row" data-bottom-top="opacity: 0;" data--50-bottom="opacity: 1;">
                     <div class="col-7" data-bottom-top="transform: translateX(-30px);" data--50-bottom="transform: translateX(0);">
-                        <img src="/images/settlements-1.jpg" width="526" height="395" />
+                        <img src="/images/settlements-1.jpg" width="526" height="395" alt="Settlements" />
                     </div>
                     <div class="col-5"  data-bottom-top="transform: translateX(30px);" data--50-bottom="transform: translateX(0);">
-                        <img src="/images/settlements-2.jpg" width="316" height="395" />
+                        <img src="/images/settlements-2.jpg" width="316" height="395" alt="Room inside one of the settlements" />
                     </div>
                 </figure>
             </div>
@@ -67,7 +67,7 @@
                 <div class='fixed-image homicides-image' data-anchor-target="#thirty-years" data-1-bottom-top="display: !none; opacity: !0;" data-top-bottom="display: !none;" data-bottom-top="display: !block;" data-100-center="opacity: !1" data-90-top-bottom="opacity: !0">
                     <h5 class='allcaps'>Violent Deaths Index 2003</h5>
                     <figure>
-                        <img src="/images/medellin/homicides.png" />
+                        <img src="/images/medellin/homicides.png" alt="Image map of death Index" />
                         <div class='keys homicide-keys'>
                             <ul>
                                 <li class='high-rate'>140 - 269 Homicides</li>
@@ -79,12 +79,12 @@
                 </div>
                 <div class='fixed-image homicides-area' data-anchor-target="#social-urbanism" data-bottom-top="display: !none; opacity: 0" data--1-bottom-top="display: !block;" data-100-top="opacity: 1" data--100-top="opacity: 0" data--105-top="display: !none;">
                     <figure>
-                        <img src="/images/medellin/homicides-area.png" />
+                        <img src="/images/medellin/homicides-area.png" alt="Highlighted are of homicides" />
                     </figure>
                 </div>
                  <div class='fixed-image metro-lines' data-anchor-target="#mobility" data-bottom-top="display: !none; opacity: 0" data--1-bottom-top="display: !block;" data-100-top="opacity: 1" data--400-top="opacity: 0" data--405-top="display: !none;">
                     <figure>
-                        <img src="/images/medellin/medellin-metro-lines.png" width="360" height="523" />
+                        <img src="/images/medellin/medellin-metro-lines.png" width="360" height="523" alt="Map of metro lines" />
                         <div class='metro-line-keys'>
                             <div class='new-west'>
                                 <h6 class='allcaps'>Opened 2008</h6>
@@ -122,7 +122,7 @@
                     </header>
                     <div>Under the leadership of Mayor Sergio Fajardo in 2004, the city bet on a public policy focused on reducing the profound social debts that had accumulated over decades, in addition to the legacy of violence. To address these problems, structural transformations that combined programs of education, culture, and entrepreneurship were implemented. Neighborhoods located in the most critical zones of the 
                     <figure class="alignleft pull-flow-8">
-                        <img src="/images/medellin-pui-sattelite.jpg" alt="" class="border" />
+                        <img src="/images/medellin-pui-sattelite.jpg" alt="Sattelite image of homicide area" class="border" />
                     </figure>
                         city were given special attention; for the transformation of the comunas, this involved social urbanism and urban projects that drew on the best technical knowledge and designs.
                     </div>
@@ -138,7 +138,7 @@
                         The most significant event in the establishment of improved mobility within the Aburr&aacute; Valley was the establishment of the Metro in 1995. With 31 kilometers of track, it is (with the Metro of Santiago, Chile) one of the most efficient in Latin America. The Metro’s speed is 37 kilometers per hour, while the cable-car system Metrocable's is 18 km/hour, and city buses run at speeds of about 15 km/hour. In 2006, the Metro released the master plan for 2006–2020, entitled "Trust in the Future."Several expansion projects were subsequently evaluated, including new cable-car systems, trams along 80th Avenue and Ayacucho Street, and the extension of Line B to the east.
                     </p>
                     <figure>
-                        <img src="/images/medellin-metro.jpg" class="big-border" />
+                        <img src="/images/medellin-metro.jpg" class="big-border" alt="Medellin Metro line" />
                     </figure>
                 </section>
             </div>

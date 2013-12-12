@@ -1,4 +1,4 @@
-@mixin bg( $image, $repeat: no-repeat, $position: top center, $attachment: fixed, $color: false ) {
+@mixin bg( $image, $repeat: no-repeat, $position: top center, $attachment: scroll, $color: false ) {
     
     background-image: image-url( $image );
 
