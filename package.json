@@ -25,5 +25,13 @@
   },
   "engines": {
     "node": ">=0.8.0"
+  },
+  "scripts": {
+      "grunt": "grunt-cli",
+      "build": "npm run build-dev",
+      "build-dev": "grunt build:dev",
+      "build-prod": "grunt build:prod",
+      "deploy-prod": "grunt deploy:prod",
+      "deploy-dev": "grunt deploy:dev"
   }
 }
